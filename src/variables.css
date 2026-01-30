@@ -1,4 +1,7 @@
 body {
+	--titlebar-background: hsl(57, 6%, 92%);
+	--titlebar-background-focused: hsl(57, 6%, 92%);
+
 	--system-font:
 		system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -6,34 +9,40 @@ body {
 	--radius-m: 1px;
 	--radius-l: 1px;
 	--input-radius: 1px;
-	--tab-radius-active: 1px;
 	--checkbox-radius: 1px;
 	--toggle-radius: 1px;
 	--toggle-thumb-radius: 1px;
 	--slider-thumb-radius: 1px;
-
-	--metadata-label-text-color: var(--color-base-60);
 	--icon-color: var(--color-base-50);
+
+	--line-height-normal: 1.6;
+	--line-height-tight: 1.3;
+
+	/* title */
 	--inline-title-font: var(--system-font);
 	--inline-title-size: 2em;
 	--inline-title-weight: 500;
+
+	/* list */
 	--list-marker-color: var(--text-muted);
 
-	--checkbox-border-color: var(--text-muted);
-	--checkbox-margin-inline-start: 0em;
-	--checkbox-margin-inline-end: 0em;
-
-	--metadata-label-font-size: var(--font-smallest);
-	--code-size: var(--font-smallest);
-
-	--callout-padding: 14px;
-	--callout-default: 0, 0, 0;
-	--callout-title-weight: 500;
-
-	--h1-size: 1.462em;
-	--h2-size: 1.318em;
-	--h3-size: 1.188em;
-	--h4-size: 1.076em;
-	--h5-size: 1.02em;
-	--h6-size: 1em;
+	/* Text */
+	--text-normal: var(--color-monoA12);
+	--text-muted: var(--color-monoA11);
+	--text-faint: var(--color-monoA8);
+	--text-on-accent: white;
+	--text-on-accent-inverted: black;
+	--text-error: var(--color-red);
+	--text-warning: var(--color-orange);
+	--text-success: var(--color-green);
+	--text-selection: hsla(var(--color-accent-hsl), 0.2);
+	--text-highlight-bg-rgb: 255, 208, 0;
+	--text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+	--text-accent: var(--color-accent);
+	--text-accent-hover: var(--color-accent-2);
+	--interactive-normal: var(--color-base-00);
+	--interactive-hover: var(--color-base-10);
+	--interactive-accent-hsl: var(--color-accent-hsl);
+	--interactive-accent: var(--color-accent-1);
+	--interactive-accent-hover: var(--color-accent-2);
 }

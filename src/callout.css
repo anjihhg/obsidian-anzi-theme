@@ -1,0 +1,110 @@
+body {
+	/* Callouts */
+	--callout-border-width: 0px;
+	--callout-border-opacity: 0.25;
+	--callout-radius: 10px;
+	--callout-blend-mode: var(--highlight-mix-blend-mode);
+	--callout-title-color: inherit;
+	--callout-title-padding: 0;
+	--callout-title-size: inherit;
+	--callout-content-padding: 0;
+	--callout-content-background: transparent;
+	--callout-bug: var(--color-red-rgb);
+	--callout-default: var(--color-blue-rgb);
+	--callout-error: var(--color-red-rgb);
+	--callout-example: var(--color-purple-rgb);
+	--callout-fail: var(--color-red-rgb);
+	--callout-important: var(--color-cyan-rgb);
+	--callout-info: var(--color-blue-rgb);
+	--callout-question: var(--color-orange-rgb);
+	--callout-success: var(--color-green-rgb);
+	--callout-summary: var(--color-cyan-rgb);
+	--callout-tip: var(--color-cyan-rgb);
+	--callout-todo: var(--color-blue-rgb);
+	--callout-warning: var(--color-orange-rgb);
+	--callout-quote: 158, 158, 158;
+
+	--callout-padding: 13px;
+	--callout-title-weight: 500;
+}
+
+.cm-callout {
+	width: calc(100% + 6px);
+	position: relative;
+	left: -3px;
+}
+.callout {
+	font-size: 0.9em;
+	box-shadow:
+		inset 0 0 0 0.5px var(--color-monoA3),
+		inset 0 -1px 0 0 var(--color-monoA5);
+}
+
+.callout-icon {
+	display: none;
+}
+
+.callout-title {
+	color: var(--color-monoA12);
+}
+
+.markdown-rendered p {
+	margin-block-start: 0.2em;
+	margin-block-end: 0em;
+}
+
+.markdown-source-view.mod-cm6
+	.cm-embed-block:not(.cm-table-widget, .cm-lang-base):hover {
+	box-shadow: inset 0 0 0 1px var(--color-monoA4);
+	border-radius: var(--callout-radius);
+	overflow: hidden;
+	cursor: text;
+}
+
+.callout[data-callout="note"] {
+	background-color: var(--color-monoA2);
+}
+
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"],
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+	background-color: var(--color-redA3);
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
+	background-color: var(--color-purpleA3);
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+	background-color: var(--color-yellowA3);
+}
+
+.callout[data-callout="check"],
+.callout[data-callout="success"],
+.callout[data-callout="done"] {
+	background-color: var(--color-greenA3);
+}
+
+.callout[data-callout="info"],
+.callout[data-callout="todo"] {
+	background-color: var(--color-blueA3);
+}
+
+.callout[data-callout="example"] {
+	background-color: var(--color-mauveA3);
+}
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+	background-color: var(--color-whiteA8);
+	box-shadow:
+		inset 0 0 0 0.5px var(--color-monoA5),
+		inset 0 -1px 0 0 var(--color-monoA5);
+}

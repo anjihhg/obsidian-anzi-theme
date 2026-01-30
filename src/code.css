@@ -1,0 +1,44 @@
+body {
+	--code-white-space: pre-wrap;
+	--code-border-width: 0px;
+	--code-border-color: var(--background-modifier-border);
+	--code-bracket-background: var(--background-modifier-hover);
+	--code-radius: 10px;
+	--code-size: 14px;
+	--code-background: var(--color-monoA2);
+	--code-normal: var(--text-normal);
+	--code-comment: var(--color-monoA9);
+	--code-function: var(--color-amberA11);
+	--code-important: var(--color-orangeA11);
+	--code-keyword: var(--color-pinkA11);
+	--code-operator: var(--color-redA11);
+	--code-property: var(--color-cyanA11);
+	--code-punctuation: var(--text-muted);
+	--code-string: var(--color-greenA11);
+	--code-tag: var(--color-redA11);
+	--code-value: var(--color-purpleA11);
+}
+
+/* CODE */
+.cm-s-obsidian span.cm-inline-code {
+	/* background-color: var(--color-amberA2); */
+	/* box-shadow: 0 1px 0 0 var(--color-amberA3); */
+	background-color: unset;
+	color: var(--color-amberA11);
+	font-size: var(--code-size);
+	position: relative;
+	font-weight: 400;
+	margin-left: -0.1em;
+	top: -0.1em;
+	padding: 0.1em 0.1em !important;
+	font-style: italic;
+}
+
+.cm-s-obsidian span.cm-inline-code:hover {
+	color: var(--color-amberA12);
+	background-color: var(--color-amberA4);
+}
+
+.cm-s-obsidian .HyperMD-codeblock {
+	font-size: 80%;
+}

@@ -1,0 +1,36 @@
+body {
+	--checkbox-border-color: var(--text-muted);
+	--checkbox-margin-inline-start: 0em;
+	--checkbox-margin-inline-end: 0em;
+	--checkbox-color: var(--color-green9);
+	--checkbox-color-hover: var(--color-green11);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	border-width: 1.5px;
+}
+
+.cm-formatting-list,
+.task-list-label {
+	display: inline-block;
+	min-width: 1em;
+	position: relative;
+	left: 0.2em;
+}
+input[type="checkbox"]:checked:after {
+	top: -1.5px;
+	inset-inline-start: -1.5px;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+	background-color: var(--color-monoA4);
+}
+
+input[type="radio"]:active,
+input[type="checkbox"]:active {
+	background-color: var(--color-monoA7);
+}
