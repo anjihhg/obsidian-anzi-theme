@@ -1594,9 +1594,9 @@ body {
     0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 15px 30px rgba(0, 0, 0, 0.1);
+    2px 60px 60px 0 rgba(0, 0, 0, 0.4),
+    0 0 0 0.5px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.1);
 }
 .theme-dark {
   color-scheme: dark;
@@ -1712,7 +1712,7 @@ body {
 body {
   --callout-border-width: 0px;
   --callout-border-opacity: 0.25;
-  --callout-radius: 10px;
+  --callout-radius: 8px;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-color: inherit;
   --callout-title-padding: 0;
@@ -1809,7 +1809,7 @@ body {
   --code-border-width: 0px;
   --code-border-color: var(--background-modifier-border);
   --code-bracket-background: var(--background-modifier-hover);
-  --code-radius: 10px;
+  --code-radius: 8px;
   --code-size: 14px;
   --code-background: var(--color-monoA2);
   --code-normal: var(--text-normal);
@@ -2089,7 +2089,7 @@ body {
 
 /* src/baseCard.css */
 body {
-  --bases-cards-background: var(--color-whiteA5);
+  --bases-cards-background: var(--color-whiteA6);
   --bases-cards-cover-background: var(--color-monoA3);
   --bases-cards-shadow: inset 0 0 0 0.5px var(--color-monoA5), inset 0 -1px 0 0 var(--color-monoA5);
   --bases-cards-shadow-hover: inset 0 0 0 0.5px var(--color-monoA7), inset 0 -1px 0 0 var(--color-monoA4);
@@ -2143,6 +2143,16 @@ body {
 }
 .bases-cards-item:last-child {
   padding-bottom: 14px;
+}
+
+/* src/prompt.css */
+.prompt,
+.modal {
+  border: unset;
+  border-radius: 5px;
+}
+.modal-bg {
+  background-color: var(--color-monoA9);
 }
 
 /* src/theme.css */

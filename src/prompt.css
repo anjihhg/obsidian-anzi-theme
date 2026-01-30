@@ -1,0 +1,9 @@
+.prompt,
+.modal {
+	border: unset;
+	border-radius: 5px;
+}
+
+.modal-bg {
+	background-color: var(--color-monoA9);
+}
