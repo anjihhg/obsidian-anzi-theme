@@ -1911,7 +1911,7 @@ body {
   margin-block-end: 1rem;
 }
 input.metadata-property-key-input {
-  font-family: var(--font-monospace-override);
+  font-family: var(--font-monospace);
   font-size: 80%;
 }
 .metadata-add-button {
@@ -1927,7 +1927,7 @@ input.metadata-property-key-input {
   margin-top: 1px !important;
   font-size: 80% !important;
   text-transform: lowercase;
-  font-family: var(--font-monospace-override) !important;
+  font-family: var(--font-monospace) !important;
 }
 .metadata-add-button:hover {
   background-color: var(--color-monoA3);
@@ -1964,10 +1964,6 @@ body {
   --checkbox-color: var(--color-green9);
   --checkbox-color-hover: var(--color-green11);
 }
-input[type=radio],
-input[type=checkbox] {
-  border-width: 1.5px;
-}
 .cm-formatting-list,
 .task-list-label {
   display: inline-block;
@@ -1979,15 +1975,33 @@ input[type=checkbox]:checked:after {
   top: -1.5px;
   inset-inline-start: -1.5px;
 }
+input[type=radio],
+input[type=checkbox] {
+  border-width: 1.5px;
+  transition: background-color 0.25s;
+}
 input[type=radio]:hover,
-input[type=checkbox]:hover,
-input[type=radio]:focus,
-input[type=checkbox]:focus {
+input[type=checkbox]:hover {
   background-color: var(--color-monoA4);
 }
 input[type=radio]:active,
 input[type=checkbox]:active {
   background-color: var(--color-monoA7);
+}
+input[type=radio]:hover,
+input[type=checkbox]:hover,
+input[type=radio]:focus,
+input[type=checkbox]:focus {
+  box-shadow: 0 0 0 2px var(--color-monoA6);
+}
+input[type=radio]:checked:hover,
+input[type=checkbox]:checked:hover {
+  background-color: var(--color-green11);
+}
+input[type=radio]:checked:focus,
+input[type=checkbox]:checked:focus {
+  border-color: transparent;
+  background-color: var(--color-green11);
 }
 
 /* src/tabContainer.css */
@@ -2119,9 +2133,6 @@ body {
   box-shadow: var(--bases-cards-shadow-hover);
   background-color: var(--color-monoA7);
 }
-.bases-cards-line.bases-rendered-value {
-  padding: 0;
-}
 .bases-cards-label {
   font-family: var(--font-monospace);
   font-size: 10px;
@@ -2135,7 +2146,8 @@ body {
   padding: 0 16px;
 }
 .bases-cards-property.mod-title {
-  padding-top: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .bases-cards-property.mod-title .bases-cards-line {
   font-size: 0.9em;
@@ -2143,6 +2155,22 @@ body {
 }
 .bases-cards-item:last-child {
   padding-bottom: 14px;
+}
+.bases-cards-property input,
+.bases-cards-property input::-webkit-datetime-edit-text,
+.bases-cards-property input::-webkit-datetime-edit-month-field,
+.bases-cards-property input::-webkit-datetime-edit-day-field,
+.bases-cards-property input::-webkit-datetime-edit-year-field {
+  font-size: unset;
+  padding: unset;
+  color: var(--text-normal);
+  letter-spacing: -0.03em;
+}
+.bases-cards-property .bases-rendered-value {
+  padding: 0;
+  padding-top: 0.1em;
+  font-family: var(--font-monospace);
+  font-size: 0.85em;
 }
 
 /* src/prompt.css */

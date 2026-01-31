@@ -10,6 +10,7 @@ body {
 	margin: 0;
 	font-family: var(--font-monospace);
 	gap: 0.1em;
+	/* display: none; */
 }
 
 .embed-title::before {

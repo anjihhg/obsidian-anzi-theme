@@ -19,7 +19,7 @@ body {
 }
 
 input.metadata-property-key-input {
-	font-family: var(--font-monospace-override);
+	font-family: var(--font-monospace);
 	font-size: 80%;
 }
 
@@ -37,7 +37,7 @@ input.metadata-property-key-input {
 	margin-top: 1px !important;
 	font-size: 80% !important;
 	text-transform: lowercase;
-	font-family: var(--font-monospace-override) !important;
+	font-family: var(--font-monospace) !important;
 }
 
 .metadata-add-button:hover {

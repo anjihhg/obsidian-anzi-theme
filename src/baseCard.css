@@ -43,10 +43,6 @@ body {
 	background-color: var(--color-monoA7);
 }
 
-.bases-cards-line.bases-rendered-value {
-	padding: 0;
-}
-
 .bases-cards-label {
 	font-family: var(--font-monospace);
 	font-size: 10px;
@@ -62,7 +58,8 @@ body {
 }
 
 .bases-cards-property.mod-title {
-	padding-top: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .bases-cards-property.mod-title .bases-cards-line {
@@ -72,4 +69,23 @@ body {
 
 .bases-cards-item:last-child {
 	padding-bottom: 14px;
+}
+
+.bases-cards-property input,
+.bases-cards-property input::-webkit-datetime-edit-text,
+.bases-cards-property input::-webkit-datetime-edit-month-field,
+.bases-cards-property input::-webkit-datetime-edit-day-field,
+.bases-cards-property input::-webkit-datetime-edit-year-field {
+	font-size: unset;
+	padding: unset;
+	color: var(--text-normal); /* 회색 대신 적용할 색상 */
+	/* font-family: var(--font-text); */
+	letter-spacing: -0.03em;
+}
+
+.bases-cards-property .bases-rendered-value {
+	padding: 0;
+	padding-top: 0.1em;
+	font-family: var(--font-monospace);
+	font-size: 0.85em;
 }
