@@ -1,18 +1,30 @@
 .theme-light {
 	color-scheme: light;
-	--color-monoA1: hsla(60, 89.3%, 18.3%, 0.012);
-	--color-monoA2: hsla(60, 78.1%, 9%, 0.028);
-	--color-monoA3: hsla(60, 99%, 3.9%, 0.051);
-	--color-monoA4: hsla(60, 88.9%, 5.9%, 0.075);
-	--color-monoA5: hsla(60, 86%, 6.9%, 0.099);
-	--color-monoA6: hsla(60, 93.2%, 5.2%, 0.122);
-	--color-monoA7: hsla(60, 98.3%, 5.1%, 0.157);
-	--color-monoA8: hsla(51, 94.1%, 6%, 0.244);
-	--color-monoA9: hsla(60, 99.8%, 1.7%, 0.451);
-	--color-monoA10: hsla(60, 90.7%, 1.8%, 0.491);
-	--color-monoA11: hsla(45, 93.7%, 1.5%, 0.577);
-	--color-monoA12: #3f3b33;
-	--color-primary: #da7600;
+	--color-baseA1: hsla(60, 89.3%, 18.3%, 0.012);
+	--color-baseA2: hsla(60, 78.1%, 9%, 0.028);
+	--color-baseA3: hsla(60, 99%, 3.9%, 0.051);
+	--color-baseA4: hsla(60, 88.9%, 5.9%, 0.075);
+	--color-baseA5: hsla(60, 86%, 6.9%, 0.099);
+	--color-baseA6: hsla(60, 93.2%, 5.2%, 0.122);
+	--color-baseA7: hsla(60, 98.3%, 5.1%, 0.157);
+	--color-baseA8: hsla(51, 94.1%, 6%, 0.244);
+	--color-baseA9: hsla(60, 99.8%, 1.7%, 0.451);
+	--color-baseA10: hsla(60, 90.7%, 1.8%, 0.491);
+	--color-baseA11: hsla(45, 93.7%, 1.5%, 0.577);
+	--color-baseA12: #3f3b33;
+	--color-bgA1: rgba(255, 255, 255, 0.05);
+	--color-bgA2: rgba(255, 255, 255, 0.1);
+	--color-bgA3: rgba(255, 255, 255, 0.15);
+	--color-bgA4: rgba(255, 255, 255, 0.2);
+	--color-bgA5: rgba(255, 255, 255, 0.3);
+	--color-bgA6: rgba(255, 255, 255, 0.4);
+	--color-bgA7: rgba(255, 255, 255, 0.5);
+	--color-bgA8: rgba(255, 255, 255, 0.6);
+	--color-bgA9: rgba(255, 255, 255, 0.7);
+	--color-bgA10: rgba(255, 255, 255, 0.8);
+	--color-bgA11: rgba(255, 255, 255, 0.9);
+	--color-bgA12: rgba(255, 255, 255, 1);
+	--color-primary: #3961a2;
 	--color-secondary: var(--color-orangeA10);
 	--color-danger: #ba3800;
 	--color-overlay: rgba(106, 106, 106, 0.5);
@@ -20,7 +32,7 @@
 	--color-black: black;
 	--color-background: hsl(58, 6.1%, 92.9%);
 	--color-sidebarBackground: hsl(57, 6%, 90.7%);
-	--color-borderHighlight: var(--color-whiteA12);
+	--color-borderHighlight: var(--color-bgA12);
 	--color-popoverBackground: #f8f8f8;
 	--color-blurredBackground: rgba(248, 248, 248, 0.5);
 	--color-gray1: hsl(0, 0%, 99%);
@@ -671,18 +683,7 @@
 	--color-violetA10: hsla(251, 99.6%, 32.5%, 0.691);
 	--color-violetA11: hsla(250, 99.8%, 28.4%, 0.726);
 	--color-violetA12: hsla(254, 99.5%, 11.9%, 0.926);
-	--color-whiteA1: hsla(0, 0%, 100%, 0);
-	--color-whiteA2: hsla(0, 0%, 100%, 0.013);
-	--color-whiteA3: hsla(0, 0%, 100%, 0.034);
-	--color-whiteA4: hsla(0, 0%, 100%, 0.056);
-	--color-whiteA5: hsla(0, 0%, 100%, 0.086);
-	--color-whiteA6: hsla(0, 0%, 100%, 0.124);
-	--color-whiteA7: hsla(0, 0%, 100%, 0.176);
-	--color-whiteA8: hsla(0, 0%, 100%, 0.249);
-	--color-whiteA9: hsla(0, 0%, 100%, 0.386);
-	--color-whiteA10: hsla(0, 0%, 100%, 0.446);
-	--color-whiteA11: hsla(0, 0%, 100%, 0.592);
-	--color-whiteA12: hsla(0, 0%, 100%, 0.923);
+
 	--color-yellow1: hsl(60, 54%, 98.5%);
 	--color-yellow2: hsl(52, 100%, 95.5%);
 	--color-yellow3: hsl(55, 100%, 90.9%);
@@ -711,7 +712,7 @@
 		2px 60px 60px 0 rgba(0, 0, 0, 0.4),
 		inset 0 0 0 0.5px rgba(255, 255, 255, 0.02);
 	--shadows-popover:
-		0 10px 12px 0 rgba(0, 0, 0, 0.24), 0 12px 18px 0 rgba(0, 0, 0, 0.12),
+		0 10px 12px 0 rgba(0, 0, 0, 0.16), 0 12px 18px 0 rgba(0, 0, 0, 0.1),
 		0 0 0 0.5px rgba(0, 0, 0, 0.04),
 		inset 0 0 0 0.5px rgba(255, 255, 255, 0.02);
 	--shadows-toast:

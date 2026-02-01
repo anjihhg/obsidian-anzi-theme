@@ -5,9 +5,9 @@ body {
 	--code-bracket-background: var(--background-modifier-hover);
 	--code-radius: 8px;
 	--code-size: 14px;
-	--code-background: var(--color-monoA2);
+	--code-background: var(--color-baseA2);
 	--code-normal: var(--text-normal);
-	--code-comment: var(--color-monoA9);
+	--code-comment: var(--color-baseA9);
 	--code-function: var(--color-amberA11);
 	--code-important: var(--color-orangeA11);
 	--code-keyword: var(--color-pinkA11);

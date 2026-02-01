@@ -1,0 +1,48 @@
+body {
+	--cg-nt-item-padding-y: 6px;
+	--cg-nt-item-padding-x: 9px;
+	--cg-nt-item-text-color: var(--color-baseA12);
+	--cg-nt-item-bg-color-hover: var(--hover-background);
+	--cg-nt-tbar-border-color: var(--color-baseA3);
+}
+
+.cg-note-toolbar-container .callout-content a,
+span.external-link {
+	gap: 10px;
+	font-weight: 500;
+}
+
+.callout[data-callout="note-toolbar"] {
+	&.cg-note-toolbar-callout {
+		& a,
+		span.external-link {
+			display: flex;
+			gap: 4px;
+			background-color: var(--dimmed-background);
+
+			&:active {
+				background-color: var(--active-background);
+			}
+		}
+	}
+}
+
+.callout[data-callout="note-toolbar"] {
+	&.cg-note-toolbar-callout {
+		& a,
+		& span.external-link {
+			& svg {
+				display: block;
+				margin: 0 -1px;
+			}
+		}
+	}
+}
+
+.callout[data-callout="note-toolbar"] {
+	& .callout-content {
+		& ul {
+			gap: 2px;
+		}
+	}
+}

@@ -1,5 +1,9 @@
 @import "./variables.css";
 @import "./colors.css";
+
+@import "./clickable.css";
+@import "./typography.css";
+
 @import "./callout.css";
 @import "./code.css";
 @import "./embed.css";
@@ -9,25 +13,17 @@
 @import "./tabContainer.css";
 @import "./quote.css";
 @import "./link.css";
-@import "./clickable.css";
 @import "./baseCard.css";
 @import "./prompt.css";
+@import "./popover.css";
 
-/* EMPTY LINEHEIGHT */
-.cm-line:has(> br:only-child) {
-	line-height: 1;
-}
+/* plugin */
+@import "./metaBind.css";
+@import "./toolbar.css";
+@import "./calendar.css";
 
-.cm-highlight {
-	font-size: 99%;
-}
-
-/* HR STYLE */
-.hr hr {
-	height: 1px;
-	border: 0;
-	border-top: 1px dashed var(--background-modifier-border);
-}
+/* app */
+@import "./app.css";
 
 /* LIST STYLE */
 .cm-formatting-list {
@@ -43,7 +39,7 @@
 	transition: all 0.2s ease 0s;
 	background-clip: padding-box;
 	border: 3px solid transparent;
-	background-color: var(--color-monoA5);
+	background-color: var(--color-baseA5);
 	border-radius: 12px;
 }
 
@@ -54,7 +50,7 @@
 }
 
 :hover::-webkit-scrollbar-thumb {
-	background-color: var(--color-monoA6);
+	background-color: var(--color-baseA6);
 }
 
 .cm-s-obsidian .templater-inline .cm-templater-command {

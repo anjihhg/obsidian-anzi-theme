@@ -1,0 +1,69 @@
+.mb-card {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.mb-input-wrapper.mb-input-type-select {
+	display: inline-flex;
+	font-family: var(--font-monospace);
+	gap: 1px;
+}
+
+.mb-select-input-element {
+	min-width: auto;
+	margin: 0;
+	font-size: 0.85em;
+	font-weight: 500;
+	border-radius: 1px;
+	background-color: var(--color-baseA3);
+}
+
+.mb-select-input-element:hover {
+	background-color: var(--hover-background);
+}
+
+.mb-select-input-element.is-selected {
+	color: var(--color-bgA12);
+	background-color: var(--color-baseA12);
+}
+
+.mb-select-input-element.is-selected::before {
+	/* content: "✓"; */
+	color: var(--color-green8);
+}
+
+.mb-select-input-element.is-selected:hover {
+	/* background-color: inherit; */
+	color: var(--color-bgA12);
+	background-color: var(--color-baseA12);
+}
+
+.markdown-source-view.mod-cm6
+	.cm-embed-block:not(.cm-table-widget, .cm-lang-base):hover {
+	box-shadow: unset;
+}
+
+.mb-select-input-element > input[type="checkbox"] {
+	display: none;
+}
+
+.mb-custom-status .mb-select-input-element.is-selected[data-value="Todo"] {
+	background-color: var(--color-baseA12);
+}
+
+.mb-custom-status .mb-select-input-element.is-selected[data-value="Progress"] {
+	background-color: var(--color-yellow11);
+}
+
+.mb-custom-status .mb-select-input-element.is-selected[data-value="Fail"] {
+	background-color: var(--color-red11);
+}
+
+.mb-custom-status .mb-select-input-element.is-selected[data-value="Canceled"] {
+	background-color: var(--color-mauve11);
+}
+
+.mb-custom-status .mb-select-input-element.is-selected[data-value="Done"] {
+	background-color: var(--color-green11);
+}

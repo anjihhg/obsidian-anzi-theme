@@ -1,11 +1,11 @@
 body {
-	--link-color: var(--color-monoA12);
+	--link-color: var(--color-baseA12);
 	--link-color-hover: unset;
-	--link-external-color: var(--color-monoA12);
+	--link-external-color: var(--color-baseA12);
 	--link-external-color-hover: unset;
 	--link-external-decoration-hover: unset;
 
-	--link-unresolved-color: var(--color-red10);
+	--link-unresolved-color: var(--color-red11);
 	--link-unresolved-opacity: 1;
 }
 
@@ -27,9 +27,9 @@ body {
 	text-decoration-line: underline;
 	text-decoration-style: initial;
 	text-underline-offset: 3px;
-	text-decoration-color: var(--color-monoA9) !important;
+	text-decoration-color: var(--color-baseA9) !important;
 	text-decoration-thickness: 1.4px;
-	background-color: var(--color-monoA1);
+	background-color: var(--color-baseA1);
 
 	transition-property: background-color;
 	transition-duration: 0.5s;
@@ -42,21 +42,21 @@ body {
 	text-decoration-line: underline !important;
 	text-decoration-style: initial !important;
 	text-underline-offset: 3px !important;
-	text-decoration-color: var(--color-monoA9) !important;
+	text-decoration-color: var(--color-baseA9) !important;
 	text-decoration-thickness: 1.4px !important;
 }
 
 .cm-url:hover,
 .cm-link:hover,
 .cm-hmd-internal-link:hover {
-	background-color: var(--color-monoA4);
+	background-color: var(--color-baseA4);
 	transition: background-color 0.02s ease 0s;
 }
 
 .cm-url:active,
 .cm-link:active,
 .cm-hmd-internal-link:active {
-	background-color: var(--color-monoA8) !important;
+	background-color: var(--color-baseA8) !important;
 	transition: background-color 0s ease 0s !important;
 }
 

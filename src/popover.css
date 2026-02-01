@@ -1,0 +1,36 @@
+body {
+	--popover-width: 640px;
+	--popover-height: 500px;
+	--popover-max-height: 95vh;
+	--popover-pdf-width: 450px;
+	--popover-pdf-height: 400px;
+	--popover-font-size: var(--font-text-size);
+}
+
+.popover,
+.suggestion-container,
+.cm-tooltip.cm-tooltip-autocomplete {
+	box-shadow: var(--shadows-popover);
+}
+
+.popover.hover-popover.is-editing {
+	outline: none;
+	border: none;
+}
+
+.popover.hover-popover
+	> .markdown-embed
+	> .markdown-embed-content
+	> .markdown-source-view.mod-cm6
+	> .cm-editor
+	> .cm-scroller,
+.popover.hover-popover
+	> .markdown-embed
+	> .markdown-embed-content
+	.markdown-preview-view {
+	padding: 24px !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+	scrollbar-gutter: stable;
+}

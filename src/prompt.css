@@ -1,9 +1,54 @@
+body {
+	--background-modifier-hover: var(--dimmed-background);
+	--search-clear-button-size: 15px;
+	--search-clear-button-color: var(--color-baseA7);
+}
+
 .prompt,
 .modal {
 	border: unset;
-	border-radius: 5px;
+	border-radius: 8px;
+	background-color: var(--color-popoverBackground);
 }
 
 .modal-bg {
-	background-color: var(--color-monoA9);
+	background-color: var(--color-overlay);
+}
+
+.prompt-results {
+	padding: 0;
+	padding-bottom: 12px;
+}
+
+.suggestion-item.is-selected {
+	color: var(--color-black) !important;
+}
+
+.suggestion-item.mod-complex {
+	color: var(--color-baseA11);
+	padding: 0 24px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	transition: background-color 0.2s;
+
+	&:hover {
+		transition: 0s;
+	}
+}
+
+input.prompt-input {
+	border-bottom: none !important;
+	padding: 28px 24px !important;
+	font-size: 1.2em;
+}
+
+.prompt-instructions {
+	border-top: none;
+	display: none;
+}
+
+.suggestion-item,
+.suggestion-empty {
+	margin-bottom: 0;
 }

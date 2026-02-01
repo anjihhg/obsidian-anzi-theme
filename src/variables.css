@@ -1,6 +1,18 @@
 body {
-	--titlebar-background: hsl(57, 6%, 92%);
-	--titlebar-background-focused: hsl(57, 6%, 92%);
+	--menu-shadow: var(--shadows-popover);
+	--background-primary-alt: transparent;
+
+	--dimmed-background: var(--color-baseA3);
+	--hover-background: var(--color-baseA7);
+	--active-background: var(--color-baseA8);
+
+	/* Window */
+	--titlebar-background: var(--color-sidebarBackground);
+	--titlebar-background-focused: var(--color-sidebarBackground);
+	--background-primary: var(--color-background);
+	--background-secondary: var(--color-sidebarBackground);
+	--background-modifier-form-field: var(--color-baseA3);
+	--background-secondary-alt: var(--color-baseA4);
 
 	--system-font:
 		system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -13,7 +25,7 @@ body {
 	--toggle-radius: 1px;
 	--toggle-thumb-radius: 1px;
 	--slider-thumb-radius: 1px;
-	--icon-color: var(--color-base-50);
+	--icon-color: var(--color-baseA8);
 
 	--line-height-normal: 1.6;
 	--line-height-tight: 1.3;
@@ -27,9 +39,9 @@ body {
 	--list-marker-color: var(--text-muted);
 
 	/* Text */
-	--text-normal: var(--color-monoA12);
-	--text-muted: var(--color-monoA11);
-	--text-faint: var(--color-monoA8);
+	--text-normal: var(--color-baseA12);
+	--text-muted: var(--color-baseA11);
+	--text-faint: var(--color-baseA8);
 	--text-on-accent: white;
 	--text-on-accent-inverted: black;
 	--text-error: var(--color-red);
@@ -40,8 +52,8 @@ body {
 	--text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
 	--text-accent: var(--color-accent);
 	--text-accent-hover: var(--color-accent-2);
-	--interactive-normal: var(--color-base-00);
-	--interactive-hover: var(--color-base-10);
+	--interactive-normal: var(--color-baseA1);
+	--interactive-hover: var(--color-baseA2);
 	--interactive-accent-hsl: var(--color-accent-hsl);
 	--interactive-accent: var(--color-accent-1);
 	--interactive-accent-hover: var(--color-accent-2);

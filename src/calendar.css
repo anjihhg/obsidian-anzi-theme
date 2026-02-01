@@ -1,0 +1,34 @@
+.theme-light {
+	--interactive-accent: var(--color-baseA12);
+	--interactive-accent-hover: var(--color-baseA12);
+	--text-on-accent: var(--color-bgA12);
+}
+
+.theme-dark {
+	--interactive-accent: var(--color-baseA12);
+	--interactive-accent-hover: var(--color-baseA12);
+	--text-on-accent: var(--color-bgA12);
+}
+
+.reset-button {
+	line-height: 0;
+	font-size: 0.9m !important;
+	letter-spacing: 0 !important;
+}
+
+.right-nav {
+	align-items: center;
+}
+
+.arrow svg {
+	width: 12px !important;
+	height: 12px !important;
+}
+
+.adjacent-month {
+	opacity: 0.6 !important;
+}
+
+.dot-container .filled {
+	fill: var(--color-primary) !important;
+}
