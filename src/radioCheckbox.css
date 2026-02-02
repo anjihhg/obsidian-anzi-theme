@@ -2,7 +2,7 @@ body {
 	--checkbox-border-color: var(--text-muted);
 	--checkbox-margin-inline-start: 0em;
 	--checkbox-margin-inline-end: 0em;
-	--checkbox-color: var(--color-primary);
+	--checkbox-color: var(--color-accent);
 	--checkbox-color-hover: var(--color-baseA12);
 	--checklist-done-color: var(--color-baseA8);
 	--checklist-done-decoration: none;
@@ -24,6 +24,7 @@ input[type="radio"],
 input[type="checkbox"] {
 	border-width: 1.5px;
 	transition: background-color 0.25s;
+	cursor: pointer;
 }
 
 input[type="radio"]:hover,
@@ -50,6 +51,5 @@ input[type="checkbox"]:checked:hover {
 
 input[type="radio"]:checked:focus,
 input[type="checkbox"]:checked:focus {
-	border-color: transparent;
 	background-color: var(--checkbox-color);
 }

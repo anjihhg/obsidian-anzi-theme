@@ -13,8 +13,6 @@ body {
 
 .metadata-container {
 	border-bottom: 1px solid var(--background-modifier-border);
-	padding-block-end: 1rem;
-	margin-block-end: 1rem;
 }
 
 input.metadata-property-key-input {
@@ -34,29 +32,18 @@ input.metadata-property-key-input {
 	opacity: 0.7;
 	border-radius: var(--metadata-property-radius);
 	color: var(--color-baseA9);
-	margin-top: 1px !important;
+	margin-top: 0px !important;
 	font-size: 80% !important;
 	text-transform: lowercase;
 	font-family: var(--font-monospace) !important;
+	width: 100%;
 }
 
 .metadata-add-button:hover {
 	background-color: var(--color-baseA3);
-	/* box-shadow:
-		inset 0 0 0 0.5px var(--color-baseA5),
-		inset 0 -1px 0 0 var(--color-baseA5); */
 }
 .metadata-add-button:active {
 	background-color: var(--color-baseA5);
-}
-
-.metadata-add-button::after {
-	/* content: "⋯"; */
-}
-
-.metadata-add-button .text-button-icon {
-	/* display: none; */
-	/* transform: scale(0.8); */
 }
 
 .metadata-property-icon {
@@ -76,4 +63,16 @@ input.metadata-property-key-input {
 
 .metadata-properties-heading {
 	display: none;
+}
+
+/* EDITOR에만 적용 */
+.cm-editor {
+	.metadata-add-button {
+		margin-top: 1px !important;
+	}
+
+	.metadata-container {
+		padding-block-end: 0.4rem;
+		margin-block-end: 1rem;
+	}
 }

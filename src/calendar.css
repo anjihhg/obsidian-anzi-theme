@@ -1,34 +1,73 @@
-.theme-light {
-	--interactive-accent: var(--color-baseA12);
-	--interactive-accent-hover: var(--color-baseA12);
-	--text-on-accent: var(--color-bgA12);
-}
+.workspace-leaf-content[data-type="calendar"] {
+	.nav {
+		padding: 0 !important;
+		padding-left: 7px !important;
+		margin-bottom: 4px !important;
+		.title {
+			font-size: 17px;
+		}
+	}
 
-.theme-dark {
-	--interactive-accent: var(--color-baseA12);
-	--interactive-accent-hover: var(--color-baseA12);
-	--text-on-accent: var(--color-bgA12);
-}
+	.view-content {
+		padding-bottom: 12px;
+	}
 
-.reset-button {
-	line-height: 0;
-	font-size: 0.9m !important;
-	letter-spacing: 0 !important;
-}
+	table {
+		table-layout: fixed;
+		font-family: var(--font-monospace);
+		border-spacing: 0 !important;
+	}
 
-.right-nav {
-	align-items: center;
-}
+	thead tr th {
+		letter-spacing: 0;
+		height: 32px;
+		font-weight: 500;
+		color: var(--color-baseA9);
+	}
 
-.arrow svg {
-	width: 12px !important;
-	height: 12px !important;
-}
+	tbody td {
+		padding: 0;
 
-.adjacent-month {
-	opacity: 0.6 !important;
-}
+		& .day {
+			border-radius: 1px;
 
-.dot-container .filled {
-	fill: var(--color-primary) !important;
+			&:hover {
+				transition: 0s;
+			}
+		}
+
+		& .active,
+		& .today {
+			font-weight: 600;
+		}
+	}
+
+	.title .year {
+		color: var(--color-text);
+	}
+
+	.reset-button {
+		line-height: 0;
+		font-size: 0.9m !important;
+		letter-spacing: 0 !important;
+	}
+
+	.right-nav {
+		align-items: center;
+	}
+
+	.arrow svg {
+		width: 12px !important;
+		height: 12px !important;
+	}
+
+	.adjacent-month {
+		opacity: 0.6 !important;
+	}
+	.dot-container .filled {
+		fill: var(--color-accent);
+	}
+	.active .dot-container .filled {
+		fill: var(--text-on-accent) !important;
+	}
 }

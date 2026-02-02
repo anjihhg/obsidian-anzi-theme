@@ -1,0 +1,118 @@
+body {
+	--bases-table-cell-shadow-focus: inset 0 0 0 2px var(--color-accent);
+	--bases-table-cell-shadow-active:
+		0 0 0 1px var(--color-baseA10), inset 0 0 0 1px var(--color-baseA10);
+	--bases-table-cell-radius-focus: 0;
+	--bases-table-row-height: 36px;
+
+	--table-border-color: var(--color-baseA5);
+	--bases-embed-border-color: var(--table-border-color);
+	/* --metadata-input-background-active: blue; */
+}
+
+body:not(.is-mobile) {
+	.workspace-leaf-content[data-type="bases"] .view-content {
+		padding: 24px !important;
+	}
+}
+
+.workspace-leaf-content[data-type="bases"] .view-content {
+	padding: 12px !important;
+}
+
+.bases-table-active-cell,
+.bases-table-selection {
+	border-radius: 0 !important;
+	box-sizing: border-box;
+	padding-bottom: 10px !important;
+}
+
+.bases-thead .bases-td {
+	box-shadow: none;
+}
+
+.workspace-leaf-content[data-type="markdown"] .block-language-base .bases-view,
+.workspace-leaf-content[data-type="markdown"] .bases-embed .bases-view {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.bases-toolbar .text-icon-button {
+	margin: 0;
+}
+
+.bases-view {
+	scrollbar-gutter: unset;
+}
+
+.bases-group-heading {
+	opacity: 0.3;
+	font-family: var(--font-monospace);
+	text-transform: uppercase;
+}
+
+.bases-tbody .bases-tr:hover {
+	background-color: var(--dimmed-background);
+}
+
+.bases-view[data-view-type="cards"] {
+	padding: 12px 0 !important;
+}
+
+.bases-header {
+	padding: 3px;
+}
+
+.bases-tr .bases-td:last-child {
+	/* box-shadow: none; */
+}
+
+.bases-toolbar-new-item-menu {
+	.text-icon-button {
+		background-color: var(--color-accent);
+		gap: 0;
+
+		.text-button-icon svg {
+			stroke: var(--text-on-accent);
+		}
+
+		.text-button-label {
+			color: var(--text-on-accent) !important;
+			font-weight: 600;
+		}
+	}
+}
+
+.bases-table-cell[data-property-type="checkbox"] {
+	justify-content: flex-start;
+}
+
+.bases-table-header-label {
+	padding-inline-start: 5px;
+	overflow: hidden;
+}
+
+.bases-td {
+	box-shadow: calc(var(--bases-table-column-border-width) * -1) 0 0
+		var(--color-baseA2);
+}
+
+.bases-embed {
+	.edit-block-button {
+		display: none !important;
+	}
+}
+
+.bases-table-header-label {
+	.bases-table-header-icon {
+		/* display: none; */
+		opacity: 0.3;
+		transform: scale(0.8);
+		transform-origin: left;
+	}
+
+	font-family: var(--font-monospace);
+	text-transform: uppercase;
+	font-size: 12px;
+}

@@ -1,6 +1,8 @@
 body {
+	--background-modifier-hover: var(--color-baseA3);
 	--menu-shadow: var(--shadows-popover);
 	--background-primary-alt: transparent;
+	--header-height: 38px;
 
 	--dimmed-background: var(--color-baseA3);
 	--hover-background: var(--color-baseA7);
@@ -12,7 +14,7 @@ body {
 	--background-primary: var(--color-background);
 	--background-secondary: var(--color-sidebarBackground);
 	--background-modifier-form-field: var(--color-baseA3);
-	--background-secondary-alt: var(--color-baseA4);
+	--background-secondary-alt: var(--color-sidebarBackground);
 
 	--system-font:
 		system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -22,9 +24,6 @@ body {
 	--radius-l: 1px;
 	--input-radius: 1px;
 	--checkbox-radius: 1px;
-	--toggle-radius: 1px;
-	--toggle-thumb-radius: 1px;
-	--slider-thumb-radius: 1px;
 	--icon-color: var(--color-baseA8);
 
 	--line-height-normal: 1.6;
@@ -42,8 +41,6 @@ body {
 	--text-normal: var(--color-baseA12);
 	--text-muted: var(--color-baseA11);
 	--text-faint: var(--color-baseA8);
-	--text-on-accent: white;
-	--text-on-accent-inverted: black;
 	--text-error: var(--color-red);
 	--text-warning: var(--color-orange);
 	--text-success: var(--color-green);
@@ -52,7 +49,7 @@ body {
 	--text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
 	--text-accent: var(--color-accent);
 	--text-accent-hover: var(--color-accent-2);
-	--interactive-normal: var(--color-baseA1);
+	--interactive-normal: var(--color-background);
 	--interactive-hover: var(--color-baseA2);
 	--interactive-accent-hsl: var(--color-accent-hsl);
 	--interactive-accent: var(--color-accent-1);

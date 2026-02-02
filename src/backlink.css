@@ -1,0 +1,10 @@
+.backlink-pane {
+	.tree-item-self {
+		padding: 0;
+		border-radius: 0;
+	}
+
+	.search-empty-state {
+		padding-inline-start: 0;
+	}
+}

@@ -37,7 +37,9 @@ ins {
 
 /* HR STYLE */
 
-.hr.cm-line hr {
+.hr.cm-line hr,
+.markdown-source-view.mod-cm6 hr {
+	width: 100%;
 	height: 1px;
 	background-color: var(--color-baseA3);
 	border: 0;

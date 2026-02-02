@@ -3,49 +3,59 @@
 
 .theme-light {
 	color-scheme: light;
+
+	--accent-reference: hsl(148, 100%, 26%);
+	--accent-h: 148;
+	--accent-s: 100%;
+	--accent-l: 26%;
+
+	--color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+	--color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+	--color-accent-1: hsl(
+		calc(var(--accent-h) - 3),
+		calc(var(--accent-s) * 1.02),
+		calc(var(--accent-l) * 1.15)
+	);
+	--color-accent-2: hsl(
+		calc(var(--accent-h) - 5),
+		calc(var(--accent-s) * 1.05),
+		calc(var(--accent-l) * 1.29)
+	);
+
+	--text-on-accent: var(--color-background);
+	--text-on-accent-inverted: var(--color-background);
+
 	--highlight-mix-blend-mode: darken;
 	--mono-rgb-0: 255, 255, 255;
 	--mono-rgb-100: 0, 0, 0;
 	--color-red-rgb: 233, 49, 71;
 	--color-red: var(--color-red10);
 	--color-orange-rgb: 236, 117, 0;
-	--color-orange: #ec7500;
+	--color-orange: var(--color-orange10);
 	--color-yellow-rgb: 224, 172, 0;
-	--color-yellow: #e0ac00;
+	--color-yellow: var(--color-yellow10);
 	--color-green-rgb: 8, 185, 78;
-	--color-green: #08b94e;
+	--color-green: var(--color-green10);
 	--color-cyan-rgb: 0, 191, 188;
-	--color-cyan: #00bfbc;
+	--color-cyan: var(--color-cyan10);
 	--color-blue-rgb: 8, 109, 221;
-	--color-blue: #086ddd;
+	--color-blue: var(--color-blue10);
 	--color-purple-rgb: 120, 82, 238;
-	--color-purple: #7852ee;
+	--color-purple: var(--color-purple10);
 	--color-pink-rgb: 213, 57, 132;
-	--color-pink: #d53984;
-	--color-base-00: #ffffff;
-	--color-base-05: #fcfcfc;
-	--color-base-10: #fafafa;
-	--color-base-20: #f6f6f6;
-	--color-base-25: #e3e3e3;
-	--color-base-30: #e0e0e0;
-	--color-base-35: #d4d4d4;
-	--color-base-40: #bdbdbd;
-	--color-base-50: #1d1b177c;
-	--color-base-60: #1d1b178b;
-	--color-base-70: #1d1b17b1;
-	--color-base-100: #1d1b17;
-	--color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-	--color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-	--color-accent-1: hsl(
-		calc(var(--accent-h) - 1),
-		calc(var(--accent-s) * 1.01),
-		calc(var(--accent-l) * 1.075)
-	);
-	--color-accent-2: hsl(
-		calc(var(--accent-h) - 3),
-		calc(var(--accent-s) * 1.02),
-		calc(var(--accent-l) * 1.15)
-	);
+	--color-pink: var(--color-crimson10);
+	--color-base-00: var(--color-baseA1);
+	--color-base-05: var(--color-baseA2);
+	--color-base-10: var(--color-baseA3);
+	--color-base-20: var(--color-baseA4);
+	--color-base-25: var(--color-baseA5);
+	--color-base-30: var(--color-baseA6);
+	--color-base-35: var(--color-baseA7);
+	--color-base-40: var(--color-baseA8);
+	--color-base-50: var(--color-baseA9);
+	--color-base-60: var(--color-baseA10);
+	--color-base-70: var(--color-baseA11);
+	--color-base-100: var(--color-baseA12);
 
 	--background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
 	--background-modifier-cover: rgba(220, 220, 220, 0.4);
@@ -70,37 +80,12 @@
 }
 .theme-dark {
 	color-scheme: dark;
-	--highlight-mix-blend-mode: lighten;
-	--mono-rgb-0: 0, 0, 0;
-	--mono-rgb-100: 255, 255, 255;
-	--color-red-rgb: 251, 70, 76;
-	--color-red: #fb464c;
-	--color-orange-rgb: 233, 151, 63;
-	--color-orange: #e9973f;
-	--color-yellow-rgb: 224, 222, 113;
-	--color-yellow: #e0de71;
-	--color-green-rgb: 68, 207, 110;
-	--color-green: #44cf6e;
-	--color-cyan-rgb: 83, 223, 221;
-	--color-cyan: #53dfdd;
-	--color-blue-rgb: 2, 122, 255;
-	--color-blue: #027aff;
-	--color-purple-rgb: 168, 130, 255;
-	--color-purple: #a882ff;
-	--color-pink-rgb: 250, 153, 205;
-	--color-pink: #fa99cd;
-	--color-base-00: #1e1e1e;
-	--color-base-05: #212121;
-	--color-base-10: #242424;
-	--color-base-20: #262626;
-	--color-base-25: #2a2a2a;
-	--color-base-30: #363636;
-	--color-base-35: #3f3f3f;
-	--color-base-40: #555555;
-	--color-base-50: #666666;
-	--color-base-60: #999999;
-	--color-base-70: #b3b3b3;
-	--color-base-100: #dadada;
+
+	--accent-reference: hsl(54, 85%, 52%);
+	--accent-h: 54;
+	--accent-s: 85%;
+	--accent-l: 52%;
+
 	--color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
 	--color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
 	--color-accent-1: hsl(
@@ -113,6 +98,43 @@
 		calc(var(--accent-s) * 1.05),
 		calc(var(--accent-l) * 1.29)
 	);
+
+	--text-on-accent: var(--color-background);
+	--text-on-accent-inverted: var(--color-background);
+
+	--highlight-mix-blend-mode: lighten;
+	--mono-rgb-0: 0, 0, 0;
+	--mono-rgb-100: 255, 255, 255;
+	--color-red-rgb: 251, 70, 76;
+	--color-red-rgb: 233, 49, 71;
+	--color-red: var(--color-red10);
+	--color-orange-rgb: 236, 117, 0;
+	--color-orange: var(--color-orange10);
+	--color-yellow-rgb: 224, 172, 0;
+	--color-yellow: var(--color-yellow10);
+	--color-green-rgb: 8, 185, 78;
+	--color-green: var(--color-green10);
+	--color-cyan-rgb: 0, 191, 188;
+	--color-cyan: var(--color-cyan10);
+	--color-blue-rgb: 8, 109, 221;
+	--color-blue: var(--color-blue10);
+	--color-purple-rgb: 120, 82, 238;
+	--color-purple: var(--color-purple10);
+	--color-pink-rgb: 213, 57, 132;
+	--color-pink: var(--color-crimson10);
+	--color-base-00: var(--color-baseA1);
+	--color-base-05: var(--color-baseA2);
+	--color-base-10: var(--color-baseA3);
+	--color-base-20: var(--color-baseA4);
+	--color-base-25: var(--color-baseA5);
+	--color-base-30: var(--color-baseA6);
+	--color-base-35: var(--color-baseA7);
+	--color-base-40: var(--color-baseA8);
+	--color-base-50: var(--color-baseA9);
+	--color-base-60: var(--color-baseA10);
+	--color-base-70: var(--color-baseA11);
+	--color-base-100: var(--color-baseA12);
+
 	--blur-background: color-mix(
 			in srgb,
 			var(--interactive-normal) var(--blur-opacity-s),

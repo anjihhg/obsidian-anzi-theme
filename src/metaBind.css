@@ -65,5 +65,5 @@
 }
 
 .mb-custom-status .mb-select-input-element.is-selected[data-value="Done"] {
-	background-color: var(--color-green11);
+	background-color: var(--color-primary);
 }

@@ -1,0 +1,17 @@
+body {
+	--mobile-sidebar-background: var(--color-background);
+	--interactive-normal: var(--color-sidebarBackground);
+}
+
+.workspace-drawer-tab-options-list {
+	background-color: var(--color-background);
+	border-radius: var(--touch-radius-xxs);
+}
+
+.workspace-drawer-tab-select .workspace-tab-header-inner {
+	background-color: var(--color-background);
+}
+
+.workspace-drawer .nav-buttons-container .nav-action-button {
+	background-color: var(--color-background);
+}

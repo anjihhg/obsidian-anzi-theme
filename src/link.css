@@ -17,6 +17,7 @@ body {
 }
 
 .cm-hmd-internal-link::before {
+	content: "📄";
 	padding-right: 0.2em;
 }
 
