@@ -1,5 +1,20 @@
 body {
 	--p-spacing-empty: 0.2em;
+
+	--list-indent: calc(var(--indent-unit) * var(--indent-size));
+	--list-indent-editing: 0.75em;
+	--list-indent-source: 0;
+	--list-spacing: 0.075em;
+	--list-marker-color-hover: var(--text-muted);
+	--list-marker-color-collapsed: var(--text-accent);
+	--list-bullet-border: none;
+	--list-bullet-transform: none;
+	--list-numbered-style: decimal;
+	--list-bullet-end-padding: 1.3rem;
+
+	--list-marker-color: var(--color-baseA12);
+	--list-bullet-radius: 1px;
+	--list-bullet-size: 0.37em;
 }
 
 .cm-sup {
@@ -48,4 +63,38 @@ ins {
 
 .cm-strong {
 	font-weight: 600;
+}
+
+.cm-strikethrough {
+	opacity: 0.5;
+}
+
+.task-list-label {
+	margin-inline-start: 0 !important;
+}
+
+/* LIST STYLE */
+.cm-formatting-list {
+	padding: 0;
+
+	.list-bullet {
+		padding-left: 5px;
+		padding-right: 7px;
+	}
+}
+
+.cm-formatting-list-ul {
+	&[class$="-1"] .list-bullet::after {
+		/* background-color: red; */
+		transform: rotate(45deg);
+	}
+
+	&[class$="-2"] .list-bullet::after {
+		background-color: transparent;
+		box-shadow: inset 0 0 0 1.5px var(--list-marker-color);
+	}
+
+	&[class$="-3"] .list-bullet::after {
+		border-radius: 50%;
+	}
 }

@@ -4,20 +4,8 @@ body {
 	--checkbox-margin-inline-end: 0em;
 	--checkbox-color: var(--color-accent);
 	--checkbox-color-hover: var(--color-baseA12);
-	--checklist-done-color: var(--color-baseA8);
+	--checklist-done-color: var(--color-baseA9);
 	--checklist-done-decoration: none;
-}
-
-.cm-formatting-list,
-.task-list-label {
-	display: inline-block;
-	min-width: 1em;
-	position: relative;
-	left: 0.2em;
-}
-input[type="checkbox"]:checked:after {
-	top: -1.5px;
-	inset-inline-start: -1.5px;
 }
 
 input[type="radio"],

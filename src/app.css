@@ -1,7 +1,7 @@
-body {
+/* body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
+} */
 
 .status-bar-item {
 	font-family: var(--font-monospace);
@@ -9,11 +9,6 @@ body {
 }
 .status-bar-item.plugin-sync {
 	display: none;
-}
-
-/* LIST STYLE */
-.cm-formatting-list {
-	padding: 0;
 }
 
 /* INDENT */
@@ -207,7 +202,7 @@ input[type="number"]:focus-visible {
 }
 
 .markdown-source-view.mod-cm6 .cm-content {
-	padding-bottom: 0 !important;
+	padding-bottom: 24px !important;
 }
 
 .metadata-property {
@@ -218,4 +213,17 @@ input[type="number"]:focus-visible {
 	background-color: var(--metadata-property-background);
 	box-shadow: var(--metadata-property-box-shadow);
 	min-height: var(--input-height);
+}
+
+.multi-select-container {
+	--pill-radius: 0px;
+
+	.multi-select-pill {
+		gap: 0;
+		font-weight: 500;
+	}
+
+	.multi-select-pill-remove-button {
+		margin-right: -3px;
+	}
 }

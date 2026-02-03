@@ -45,5 +45,28 @@ body:not(.is-mobile) {
 		.suggestion-empty {
 			margin-bottom: 0;
 		}
+
+		/* PLUG-IN */
+		.iconize-modal.prompt-results {
+			display: flex;
+			flex-direction: column;
+
+			.suggestion-item {
+				display: flex;
+				flex-direction: row-reverse;
+				align-items: center;
+				min-height: 40px;
+
+				gap: 12px;
+				margin: unset;
+
+				.iconize-icon-preview {
+					font-size: unset;
+				}
+				.iconize-icon-preview svg {
+					margin-bottom: 0;
+				}
+			}
+		}
 	}
 }

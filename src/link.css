@@ -1,11 +1,11 @@
 body {
-	--link-color: var(--color-baseA12);
+	--link-color: var(--color-gold11);
 	--link-color-hover: unset;
-	--link-external-color: var(--color-baseA12);
+	--link-external-color: var(--color-baseA11);
 	--link-external-color-hover: unset;
 	--link-external-decoration-hover: unset;
 
-	--link-unresolved-color: var(--color-red11);
+	--link-unresolved-color: var(--color-danger);
 	--link-unresolved-opacity: 1;
 }
 
@@ -17,9 +17,8 @@ body {
 	text-decoration-line: unset !important;
 }
 
-.internal-link::before,
 .cm-hmd-internal-link::before {
-	content: "📄";
+	/* content: "📄"; */
 	padding-right: 0.2em;
 	text-decoration: unset;
 }
@@ -31,10 +30,11 @@ body {
 	text-decoration: underline !important;
 	text-decoration-line: underline;
 	text-decoration-style: initial;
-	text-underline-offset: 3px;
-	text-decoration-color: var(--color-baseA9) !important;
-	text-decoration-thickness: 1.4px;
+	text-underline-offset: 4px;
+	text-decoration-color: var(--color-baseA7) !important;
+	text-decoration-thickness: 1.4px !important;
 	background-color: var(--color-baseA1);
+	/* font-weight: 500; */
 
 	transition-property: background-color;
 	transition-duration: 0.5s;
@@ -47,9 +47,8 @@ body {
 .cm-hmd-internal-link:hover {
 	text-decoration-line: underline !important;
 	text-decoration-style: initial !important;
-	text-underline-offset: 3px !important;
+	text-underline-offset: 4px !important;
 	text-decoration-color: var(--color-baseA9) !important;
-	text-decoration-thickness: 1.4px !important;
 }
 
 .cm-url:hover,
@@ -75,7 +74,7 @@ body {
 
 .cm-line:not(.cm-active) .cm-url::after,
 .cm-line:not(.cm-active) .cm-link::after {
-	content: "⤴︎";
+	/* content: "⤴︎"; */
 	padding-left: 0.1em;
 	font-size: 0.8em;
 	vertical-align: baseline;
@@ -88,6 +87,10 @@ body {
 	display: none;
 }
 
+.internal-link {
+	text-decoration: none !important;
+}
+
 .is-unresolved .cm-underline {
-	text-decoration-color: var(--color-redA9) !important;
+	/* text-decoration-color: var(--color-redA9) !important; */
 }
