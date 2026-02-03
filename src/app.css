@@ -47,8 +47,11 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 }
 
 body:not(.is-mobile) {
-	--file-line-width: 800px;
+	--file-line-width: 860px;
 	--nav-item-margin-bottom: 1px;
+	.view-header {
+		display: none;
+	}
 
 	.nav-header {
 		display: none;
@@ -286,8 +289,8 @@ input[type="number"]:focus-visible {
 	&.is-active {
 		box-shadow:
 			-1px 0 0 0 var(--color-baseA4),
-			inset -1px 0 0 0 var(--color-baseA4),
-			inset 0 1.5px 0 0 var(--color-accent);
+			inset -1px 0 0 0 var(--color-baseA4);
+		/* inset 0 1.5px 0 0 var(--color-accent); */
 
 		.workspace-tab-header-inner-title {
 			color: var(--color-baseA12) !important;
@@ -344,4 +347,14 @@ input[type="number"]:focus-visible {
 	.tree-item-self {
 		padding: 2px 9px;
 	}
+}
+
+/* pin icon */
+.mod-root .mod-pinned,
+.mod-root .workspace-tab-header-inner-close-button {
+	--icon-size: 12px;
+	--icon-stroke: 3px;
+}
+.mod-root .workspace-tab-header-status-icon {
+	/* color: var(--color-baseA8); */
 }

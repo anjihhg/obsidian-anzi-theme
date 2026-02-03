@@ -2069,7 +2069,15 @@ body {
 }
 body:not(.is-mobile) {
   .workspace-leaf-content[data-type=bases] .view-content {
-    padding: 24px !important;
+    padding: 0px !important;
+    .bases-header {
+      padding-left: 4px;
+      margin-left: 12px;
+      padding-right: 12px;
+    }
+    .bases-view {
+      padding-left: 12px;
+    }
   }
 }
 .workspace-leaf-content[data-type=bases] .view-content {
@@ -2082,7 +2090,6 @@ body:not(.is-mobile) {
   padding-bottom: 10px !important;
 }
 .bases-thead .bases-td {
-  box-shadow: none;
 }
 .workspace-leaf-content[data-type=markdown] .block-language-base .bases-view,
 .workspace-leaf-content[data-type=markdown] .bases-embed .bases-view {
@@ -2137,6 +2144,9 @@ body:not(.is-mobile) {
 }
 .bases-td {
   box-shadow: calc(var(--bases-table-column-border-width) * -1) 0 0 var(--color-baseA2);
+  &:first-child {
+    box-shadow: none;
+  }
 }
 .bases-embed {
   .edit-block-button {
@@ -2488,7 +2498,7 @@ span.external-link {
 /* src/highlight.css */
 .cm-custom-highlight {
   border-radius: 1px;
-  background-color: var(--color-baseA6);
+  background-color: var(--color-yellow5) !important;
   padding: 1px 2px;
 }
 .cm-custom-highlight-red {
@@ -2558,8 +2568,11 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
   box-shadow: inset 0 0 0 2px var(--color-accent);
 }
 body:not(.is-mobile) {
-  --file-line-width: 800px;
+  --file-line-width: 860px;
   --nav-item-margin-bottom: 1px;
+  .view-header {
+    display: none;
+  }
   .nav-header {
     display: none;
   }
@@ -2750,10 +2763,7 @@ input[type=number]:focus-visible {
     color: var(--color-baseA9);
   }
   &.is-active {
-    box-shadow:
-      -1px 0 0 0 var(--color-baseA4),
-      inset -1px 0 0 0 var(--color-baseA4),
-      inset 0 1.5px 0 0 var(--color-accent);
+    box-shadow: -1px 0 0 0 var(--color-baseA4), inset -1px 0 0 0 var(--color-baseA4);
     .workspace-tab-header-inner-title {
       color: var(--color-baseA12) !important;
     }
@@ -2796,6 +2806,13 @@ input[type=number]:focus-visible {
   .tree-item-self {
     padding: 2px 9px;
   }
+}
+.mod-root .mod-pinned,
+.mod-root .workspace-tab-header-inner-close-button {
+  --icon-size: 12px;
+  --icon-stroke: 3px;
+}
+.mod-root .workspace-tab-header-status-icon {
 }
 
 /* src/modal.css */
