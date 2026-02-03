@@ -85,8 +85,7 @@ ins {
 
 .cm-formatting-list-ul {
 	&[class$="-1"] .list-bullet::after {
-		/* background-color: red; */
-		transform: rotate(45deg);
+		border-radius: 1px;
 	}
 
 	&[class$="-2"] .list-bullet::after {
@@ -95,6 +94,6 @@ ins {
 	}
 
 	&[class$="-3"] .list-bullet::after {
-		border-radius: 50%;
+		transform: rotate(45deg);
 	}
 }

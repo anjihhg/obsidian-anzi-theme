@@ -1564,14 +1564,14 @@ ins {
 }
 .cm-formatting-list-ul {
   &[class$="-1"] .list-bullet::after {
-    transform: rotate(45deg);
+    border-radius: 1px;
   }
   &[class$="-2"] .list-bullet::after {
     background-color: transparent;
     box-shadow: inset 0 0 0 1.5px var(--list-marker-color);
   }
   &[class$="-3"] .list-bullet::after {
-    border-radius: 50%;
+    transform: rotate(45deg);
   }
 }
 
