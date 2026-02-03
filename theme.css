@@ -2560,6 +2560,7 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 body:not(.is-mobile) {
   --file-line-width: 800px;
   --nav-item-margin-bottom: 1px;
+  --nav-item-padding: 2px 9px;
   .nav-header {
     display: none;
   }
@@ -2791,6 +2792,10 @@ input[type=number]:focus-visible {
 .workspace-drawer.mod-right {
   border-left: 1px solid var(--color-baseA4);
   border-radius: 0;
+}
+.workspace-leaf-content[data-type=recent-files] {
+  .tree-item-self {
+  }
 }
 
 /* src/modal.css */
