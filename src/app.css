@@ -53,6 +53,8 @@ body:not(.is-mobile) {
 	.nav-header {
 		display: none;
 	}
+
+	/* pane padding 제거 */
 	.nav-files-container,
 	.workspace-leaf-content .view-content,
 	.backlink-pane,
@@ -72,8 +74,11 @@ body:not(.is-mobile) {
 
 				&::before {
 					content: "#";
-					margin-right: 4px;
-					opacity: 0.5;
+					margin-right: 6px;
+					opacity: 0.4;
+					font-weight: 200;
+					font-size: 1.1em;
+					line-height: 1;
 				}
 			}
 		}
@@ -119,6 +124,7 @@ body:not(.is-mobile) {
 		}
 	}
 
+	/* linked mention */
 	.search-info-container,
 	.search-row,
 	.search-results-info,
@@ -285,5 +291,38 @@ input[type="number"]:focus-visible {
 		.workspace-tab-header-inner-title {
 			color: var(--color-baseA12) !important;
 		}
+	}
+}
+
+/* ALL PROPERTIES PANE */
+.workspace-leaf-content[data-type="all-properties"] {
+	.tree-item-self {
+		padding-left: 28px;
+		border-bottom: 1px solid var(--color-baseA3);
+	}
+}
+
+/* FILE PROPERTIES PANE */
+.workspace-leaf-content[data-type="file-properties"] {
+	--metadata-label-width: 8em;
+
+	.metadata-property-key,
+	.metadata-property-value {
+		border-bottom: 1px solid var(--color-baseA3);
+	}
+	.metadata-property-key {
+		padding-left: 5px;
+	}
+
+	.metadata-add-button {
+		padding-left: 9px !important;
+	}
+}
+
+/* TAG PANE */
+.workspace-leaf-content[data-type="tag"] {
+	.tree-item-self {
+		padding-left: 11px !important;
+		border-bottom: 1px solid var(--color-baseA3);
 	}
 }
