@@ -215,6 +215,7 @@ input[type="number"]:focus-visible {
 	min-height: var(--input-height);
 }
 
+/* tag와 공유됨  */
 .multi-select-container {
 	--pill-radius: 0px;
 

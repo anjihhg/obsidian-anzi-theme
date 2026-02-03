@@ -31,14 +31,14 @@ body {
 	line-height: 1;
 }
 
-.multi-select-pill {
-	/* padding-right: -2px; */
-	.multi-select-pill-content {
-	}
+.metadata-property-value[data-property-type="tags"] {
+	.multi-select-pill {
+		.multi-select-pill-content {
+		}
 
-	.multi-select-pill-remove-button {
-		/* display: none; */
-		margin-right: 3px;
+		.multi-select-pill-remove-button {
+			margin-right: 3px !important;
+		}
 	}
 }
 

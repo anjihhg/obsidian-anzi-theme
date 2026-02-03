@@ -2274,11 +2274,13 @@ body {
   cursor: var(--cursor-link);
   line-height: 1;
 }
-.multi-select-pill {
-  .multi-select-pill-content {
-  }
-  .multi-select-pill-remove-button {
-    margin-right: 3px;
+.metadata-property-value[data-property-type=tags] {
+  .multi-select-pill {
+    .multi-select-pill-content {
+    }
+    .multi-select-pill-remove-button {
+      margin-right: 3px !important;
+    }
   }
 }
 .cm-hashtag {
