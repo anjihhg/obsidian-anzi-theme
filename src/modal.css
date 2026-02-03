@@ -19,6 +19,10 @@
 }
 
 body:not(.is-mobile) {
+	.modal-container {
+		align-items: flex-start;
+	}
+
 	.prompt,
 	.modal {
 		border: unset;
@@ -27,8 +31,11 @@ body:not(.is-mobile) {
 		box-shadow: var(--shadows-modal) !important;
 		animation-name: modalShow;
 		animation-fill-mode: both;
-		animation-timing-function: cubic-bezier(0, 1.4, 0.8, 1);
+		animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 		animation-duration: 0.3s;
+		top: 0px;
+		margin-top: 10vh;
+		max-height: 80vh;
 	}
 
 	.modal-bg {
@@ -43,42 +50,45 @@ body:not(.is-mobile) {
 }
 
 .modal-container.mod-dim .modal:not(.mod-settings) {
-	max-width: 380px;
+	/* max-width: 380px; */
 }
 
-.modal-container.mod-dim .modal {
+.modal-container .modal {
 	padding: 0;
 
 	.modal-header,
 	h2,
 	p {
 		margin: 0;
-		padding: 0 16px 0 16px;
+		padding: 0 16px;
 	}
 
 	.modal-title,
 	h2 {
 		font-size: 17px;
-		font-weight: 400;
+		font-weight: 500;
 		line-height: 1.5;
 		padding-top: 12px;
+		padding-bottom: 12px;
 	}
 
 	.modal-content {
 		padding: 0;
+		/* padding: 16px; */
+
 		font-size: 12px;
 
 		p {
-			margin: 4px 0;
 			line-height: 1.4;
-			color: var(--color-baseA10);
+			opacity: 0.7;
+			margin: 0;
 		}
 	}
 
 	.modal-button-container {
 		flex-direction: column;
 		gap: 0;
-		margin-top: 1em;
+		margin-top: 8px;
 
 		& button {
 			display: flex;
@@ -99,11 +109,16 @@ body:not(.is-mobile) {
 		& > * {
 			padding: 8px 16px;
 			font-size: 15px;
-			font-weight: 400;
+			font-weight: 500;
+			width: 100%;
 		}
 
 		.mod-warning {
-			color: var(--color-red9);
+			color: var(--color-danger);
+		}
+
+		.mod-destructive {
+			color: var(--color-danger);
 		}
 
 		.mod-checkbox {
@@ -117,5 +132,71 @@ body:not(.is-mobile) {
 		.mod-cta {
 			color: var(--color-accent);
 		}
+	}
+}
+
+/* 플러그인... 거지 같네 */
+.quickAddModal {
+	.modal-content {
+		input {
+			margin: 12px 16px 0 16px;
+			width: calc(100% - 32px) !important;
+		}
+		input:empty::before {
+			content: "내용을 입력하세요...";
+			color: gray;
+			font-style: italic;
+			cursor: text;
+		}
+
+		div > div:last-child {
+			display: flex;
+			flex-direction: column !important;
+			gap: 0 !important;
+			margin-top: 0;
+
+			& button {
+				padding: 8px 16px;
+				font-size: 15px;
+				font-weight: 400;
+				display: flex;
+				justify-content: flex-start;
+				background-color: transparent;
+				box-shadow: inset 0 0.5px 0 0 var(--color-baseA5);
+				height: 40px;
+				color: var(--color-baseA9);
+
+				&:hover {
+					background-color: var(--dimmed-background);
+				}
+				&:active {
+					background-color: var(--hover-background);
+				}
+			}
+
+			.mod-cta {
+				color: var(--color-accent);
+			}
+		}
+	}
+}
+
+/* 텍스트만 있거나, 혹은 아예 비어있거나 */
+.mod-confirmation .modal-content {
+	&:not(:has(*)) {
+		padding: 0 16px !important;
+		opacity: 0.7;
+	}
+}
+
+.modal:not(.mod-settings) .setting-item:not(.setting-item-heading) {
+	padding: 8px 16px;
+	font-weight: 400;
+
+	.setting-item-name {
+		font-size: 15px;
+	}
+	.setting-item-description {
+		font-size: 12px;
 	}
 }

@@ -31,11 +31,9 @@ body {
 	margin-left: -0.1em;
 	top: -0.1em;
 	padding: 0.1em 0.1em !important;
-	font-style: italic;
 }
 
 .cm-s-obsidian span.cm-inline-code:hover {
-	color: var(--color-amberA12);
 	background-color: var(--color-amberA4);
 }
 

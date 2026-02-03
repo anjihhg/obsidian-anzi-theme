@@ -7,37 +7,43 @@ body:not(.is-mobile) {
 		padding-bottom: 12px;
 	}
 
-	.suggestion-item.is-selected {
-		color: var(--color-black) !important;
-	}
-
-	.suggestion-item.mod-complex {
-		color: var(--color-baseA11);
-		padding: 0 24px;
-		height: 40px;
-		display: flex;
-		align-items: center;
-		transition: 0.2s;
-
-		&:hover,
-		&:focus {
-			transition: 0s;
+	.prompt {
+		.suggestion-item.is-selected {
+			color: var(--color-black) !important;
 		}
-	}
 
-	input.prompt-input {
-		border-bottom: none !important;
-		padding: 28px 24px !important;
-		font-size: 1.2em;
-	}
+		.suggestion-item {
+			color: var(--color-baseA11);
+			padding: 0 24px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+		}
 
-	.prompt-instructions {
-		border-top: none;
-		display: none;
-	}
+		.suggestion-highlight {
+			color: var(--color-accent);
+			font-weight: 500 !important;
+		}
 
-	.suggestion-item,
-	.suggestion-empty {
-		margin-bottom: 0;
+		.suggestion-note {
+			font-size: 11px !important;
+			opacity: 0.3;
+		}
+
+		input.prompt-input {
+			border-bottom: none !important;
+			padding: 28px 24px !important;
+			font-size: 1.2em;
+		}
+
+		.prompt-instructions {
+			border-top: none;
+			display: none;
+		}
+
+		.suggestion-item,
+		.suggestion-empty {
+			margin-bottom: 0;
+		}
 	}
 }

@@ -1,5 +1,8 @@
 body {
-	--background-modifier-hover: var(--color-baseA3);
+	/* --dropdown-background: red !important; */
+
+	/* 탭 막대 활성화 배경색 */
+	--background-modifier-hover: var(--color-baseA2);
 	--menu-shadow: var(--shadows-popover);
 	--background-primary-alt: transparent;
 	--header-height: 38px;

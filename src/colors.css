@@ -4,10 +4,10 @@
 .theme-light {
 	color-scheme: light;
 
-	--accent-reference: hsl(148, 100%, 26%);
-	--accent-h: 148;
-	--accent-s: 100%;
-	--accent-l: 26%;
+	--accent-reference: hsl(22, 81%, 40%);
+	--accent-h: 22;
+	--accent-s: 81%;
+	--accent-l: 40%;
 
 	--color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
 	--color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -29,7 +29,7 @@
 	--mono-rgb-0: 255, 255, 255;
 	--mono-rgb-100: 0, 0, 0;
 	--color-red-rgb: 233, 49, 71;
-	--color-red: var(--color-red10);
+	--color-red: var(--color-danger);
 	--color-orange-rgb: 236, 117, 0;
 	--color-orange: var(--color-orange10);
 	--color-yellow-rgb: 224, 172, 0;
@@ -81,10 +81,10 @@
 .theme-dark {
 	color-scheme: dark;
 
-	--accent-reference: hsl(54, 85%, 52%);
-	--accent-h: 54;
+	--accent-reference: hsl(119, 85%, 54%);
+	--accent-h: 119;
 	--accent-s: 85%;
-	--accent-l: 52%;
+	--accent-l: 54%;
 
 	--color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
 	--color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -107,7 +107,7 @@
 	--mono-rgb-100: 255, 255, 255;
 	--color-red-rgb: 251, 70, 76;
 	--color-red-rgb: 233, 49, 71;
-	--color-red: var(--color-red10);
+	--color-red: var(--color-danger);
 	--color-orange-rgb: 236, 117, 0;
 	--color-orange: var(--color-orange10);
 	--color-yellow-rgb: 224, 172, 0;

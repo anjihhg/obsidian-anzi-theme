@@ -28,7 +28,3 @@ body {
 	font-family: var(--system-font);
 	/* letter-spacing: -0.01em !important; */
 }
-
-.cm-strong {
-	font-weight: 600;
-}

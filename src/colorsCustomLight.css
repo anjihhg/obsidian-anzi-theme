@@ -1,6 +1,6 @@
 .theme-light {
 	color-scheme: light;
-	--color-primary: #007604;
+	/* --color-primary: #007604; */
 	--color-secondary: var(--color-orangeA10);
 	--color-danger: #ba3800;
 	--color-overlay: rgba(106, 106, 106, 0.5);

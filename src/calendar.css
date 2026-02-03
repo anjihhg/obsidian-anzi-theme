@@ -33,12 +33,27 @@
 
 			&:hover {
 				transition: 0s;
+				background-color: var(--hover-background);
+			}
+
+			&:active {
+				color: unset;
+				background-color: var(--active-background);
 			}
 		}
 
 		& .active,
 		& .today {
 			font-weight: 600;
+			color: unset;
+		}
+
+		& .active {
+			background-color: var(--dimmed-background);
+		}
+
+		& .today {
+			color: var(--color-accent);
 		}
 	}
 
@@ -68,6 +83,5 @@
 		fill: var(--color-accent);
 	}
 	.active .dot-container .filled {
-		fill: var(--text-on-accent) !important;
 	}
 }

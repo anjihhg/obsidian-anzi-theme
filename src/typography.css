@@ -45,3 +45,7 @@ ins {
 	border: 0;
 	display: inline-block;
 }
+
+.cm-strong {
+	font-weight: 600;
+}

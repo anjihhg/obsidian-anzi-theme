@@ -1,3 +1,8 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 .status-bar-item {
 	font-family: var(--font-monospace);
 	font-size: 0.8em;
@@ -47,7 +52,7 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 }
 
 body:not(.is-mobile) {
-	--file-line-width: 1024px;
+	--file-line-width: 800px;
 	--nav-item-margin-bottom: 1px;
 
 	.nav-header {
@@ -199,4 +204,18 @@ input[type="number"]:focus-visible {
 		width: 38px;
 		height: 38px;
 	}
+}
+
+.markdown-source-view.mod-cm6 .cm-content {
+	padding-bottom: 0 !important;
+}
+
+.metadata-property {
+	--metadata-property-background: transparent;
+	--metadata-property-box-shadow: none;
+	--dropdown-background: none;
+
+	background-color: var(--metadata-property-background);
+	box-shadow: var(--metadata-property-box-shadow);
+	min-height: var(--input-height);
 }
