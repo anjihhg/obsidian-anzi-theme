@@ -1905,7 +1905,7 @@ input[type=checkbox]:checked:focus {
 body {
   --link-color: var(--color-brown10);
   --link-color-hover: unset;
-  --link-external-color: var(--color-baseA11);
+  --link-external-color: var(--color-baseA12);
   --link-external-color-hover: unset;
   --link-external-decoration-hover: unset;
   --link-unresolved-color: var(--color-danger);
@@ -1961,7 +1961,7 @@ body {
 }
 .cm-url,
 .cm-link {
-  opacity: 0.8;
+  opacity: 0.75;
 }
 .cm-line:not(.cm-active) .cm-url::after,
 .cm-line:not(.cm-active) .cm-link::after {
@@ -2482,6 +2482,43 @@ span.external-link {
     fill: var(--color-accent);
   }
   .active .dot-container .filled {
+  }
+}
+
+/* src/highlight.css */
+.cm-custom-highlight {
+  border-radius: 1px;
+  background-color: var(--color-baseA6);
+  padding: 1px 2px;
+}
+.cm-custom-highlight-red {
+  background-color: var(--color-red5) !important;
+}
+.cm-custom-highlight-green {
+  background-color: var(--color-green5) !important;
+}
+.cm-custom-highlight-orange {
+  background-color: var(--color-orange5) !important;
+}
+.cm-custom-highlight-yellow {
+  background-color: var(--color-yellow5) !important;
+}
+.cm-custom-highlight-cyan {
+  background-color: var(--color-cyan5) !important;
+}
+.cm-custom-highlight-blue {
+  background-color: var(--color-blue5) !important;
+}
+.cm-custom-highlight-purple {
+  background-color: var(--color-purple5) !important;
+}
+.cm-custom-highlight-pink {
+  background-color: var(--color-pink5) !important;
+}
+.cm-custom-highlight-accent {
+  background-color: var(--color-baseA12) !important;
+  .cm-highlight {
+    color: var(--text-on-accent) !important;
   }
 }
 

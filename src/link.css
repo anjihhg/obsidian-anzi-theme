@@ -1,7 +1,7 @@
 body {
 	--link-color: var(--color-brown10);
 	--link-color-hover: unset;
-	--link-external-color: var(--color-baseA11);
+	--link-external-color: var(--color-baseA12);
 	--link-external-color-hover: unset;
 	--link-external-decoration-hover: unset;
 
@@ -69,7 +69,7 @@ body {
 
 .cm-url,
 .cm-link {
-	opacity: 0.8;
+	opacity: 0.75;
 }
 
 .cm-line:not(.cm-active) .cm-url::after,
