@@ -4,7 +4,7 @@ body {
 	/* --dropdown-background: red !important; */ /* 탭 막대 활성화 배경색 */
 	--background-modifier-hover: var(--color-baseA2);
 	--menu-shadow: var(--shadows-popover);
-	--background-primary-alt: var(--color-popoverBackground);
+	--background-primary-alt: transparent;
 	--header-height: 38px;
 
 	--dimmed-background: var(--color-baseA3);
