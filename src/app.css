@@ -89,7 +89,7 @@ body:not(.is-mobile) {
 		}
 	}
 	.menu {
-		background-color: var(--suggestion-background);
+		background-color: var(--color-popoverBackground);
 		border: none;
 		border-radius: 4px;
 		/* background-color: var(--color-sidebarBackground); */
@@ -99,7 +99,7 @@ body:not(.is-mobile) {
 	}
 
 	.suggestion-container {
-		background-color: var(--suggestion-background);
+		background-color: var(--color-popoverBackground);
 		backdrop-filter: var(--suggestion-backdrop-filter);
 		align-self: stretch;
 		overflow: hidden;
@@ -225,5 +225,64 @@ input[type="number"]:focus-visible {
 
 	.multi-select-pill-remove-button {
 		margin-right: -3px;
+	}
+}
+
+/* TAB */
+.workspace .mod-root .workspace-tab-header-container-inner {
+	margin: 0;
+	padding-inline: 0;
+	margin-bottom: -1px;
+}
+
+.workspace .mod-root .workspace-tab-header-inner {
+	padding-left: 10px;
+}
+.workspace .mod-root .workspace-tab-header-new-tab {
+	padding: 0;
+	height: 100%;
+	.clickable-icon {
+		margin: 0;
+		width: 31px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		svg.svg-icon {
+			position: relative;
+			top: 1px;
+			stroke-width: 2.5px !important;
+			stroke: var(--color-gray10);
+		}
+	}
+}
+
+.workspace .mod-root .workspace-tab-header-inner::after {
+	--tab-divider-color: transparent;
+}
+
+.workspace .mod-root .workspace-tab-header {
+	&::before,
+	&::after {
+		content: none;
+		display: none;
+	}
+	padding: 0 !important;
+	border-radius: 0 !important;
+
+	.workspace-tab-header-inner-title {
+		color: var(--color-baseA8);
+	}
+
+	&.is-active {
+		box-shadow:
+			-1px 0 0 0 var(--color-baseA4),
+			inset -1px 0 0 0 var(--color-baseA4),
+			inset 0 1.5px 0 0 var(--color-accent);
+
+		.workspace-tab-header-inner-title {
+			color: var(--color-baseA12) !important;
+		}
 	}
 }

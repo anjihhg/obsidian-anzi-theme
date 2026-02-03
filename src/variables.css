@@ -1,11 +1,10 @@
 body {
 	--icon-m: 15px;
-	/* --dropdown-background: red !important; */
-
-	/* 탭 막대 활성화 배경색 */
+	--modal-background: var(--color-popoverBackground);
+	/* --dropdown-background: red !important; */ /* 탭 막대 활성화 배경색 */
 	--background-modifier-hover: var(--color-baseA2);
 	--menu-shadow: var(--shadows-popover);
-	--background-primary-alt: transparent;
+	--background-primary-alt: var(--color-popoverBackground);
 	--header-height: 38px;
 
 	--dimmed-background: var(--color-baseA3);

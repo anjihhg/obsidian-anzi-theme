@@ -1,9 +1,10 @@
 /* src/variables.css */
 body {
   --icon-m: 15px;
+  --modal-background: var(--color-popoverBackground);
   --background-modifier-hover: var(--color-baseA2);
   --menu-shadow: var(--shadows-popover);
-  --background-primary-alt: transparent;
+  --background-primary-alt: var(--color-popoverBackground);
   --header-height: 38px;
   --dimmed-background: var(--color-baseA3);
   --hover-background: var(--color-baseA7);
@@ -668,10 +669,10 @@ body {
   --color-danger: #ff305c;
   --color-secondary: var(--color-tomato10);
   --color-overlay: rgba(7, 10, 14, 0.7);
-  --color-background: #142132;
-  --color-sidebarBackground: rgb(25 39 58);
+  --color-background: #0e151f;
+  --color-sidebarBackground: rgb(14 17 28);
   --color-borderHighlight: var(--color-bgA7);
-  --color-popoverBackground: #303f52;
+  --color-popoverBackground: #18202d;
   --color-blurredBackground: rgba(57, 71, 89, 0.5);
   --color-baseA1: hsla(0, 0%, 0%, 0);
   --color-baseA2: hsla(240, 76.7%, 91.2%, 0.031);
@@ -1252,7 +1253,7 @@ body {
   --shadows-modal:
     2px 60px 60px 0 rgba(0, 0, 0, 0.4),
     inset 0 0 0 0.5px rgba(255, 255, 255, 0.02),
-    inset 0 0.5px 0 0 rgba(255, 255, 255, 0.2);
+    inset 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
   --shadows-popover:
     0 6px 12px 0 var(--color-bgA5),
     0 10px 18px 0 var(--color-bgA4),
@@ -1983,7 +1984,7 @@ body {
 /* src/baseCard.css */
 body {
   --bases-cards-background: var(--color-baseA2);
-  --bases-cards-cover-background: var(--color-baseA5);
+  --bases-cards-cover-background: var(--color-baseA2);
   --bases-cards-shadow: inset 0 0 0 0.5px var(--color-baseA4), inset 0 -1px 0 0 var(--color-baseA2);
   --bases-cards-shadow-hover: inset 0 0 0 0.5px var(--color-baseA5), inset 0 -1px 0 0 var(--color-baseA3);
   --bases-cards-line-height: 17px;
@@ -2556,13 +2557,13 @@ body:not(.is-mobile) {
     }
   }
   .menu {
-    background-color: var(--suggestion-background);
+    background-color: var(--color-popoverBackground);
     border: none;
     border-radius: 4px;
     box-shadow: var(--shadows-popover), 0 0 0 0.5px var(--color-baseA4);
   }
   .suggestion-container {
-    background-color: var(--suggestion-background);
+    background-color: var(--color-popoverBackground);
     backdrop-filter: var(--suggestion-backdrop-filter);
     align-self: stretch;
     overflow: hidden;
@@ -2668,6 +2669,56 @@ input[type=number]:focus-visible {
     margin-right: -3px;
   }
 }
+.workspace .mod-root .workspace-tab-header-container-inner {
+  margin: 0;
+  padding-inline: 0;
+  margin-bottom: -1px;
+}
+.workspace .mod-root .workspace-tab-header-inner {
+  padding-left: 10px;
+}
+.workspace .mod-root .workspace-tab-header-new-tab {
+  padding: 0;
+  height: 100%;
+  .clickable-icon {
+    margin: 0;
+    width: 31px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg.svg-icon {
+      position: relative;
+      top: 1px;
+      stroke-width: 2.5px !important;
+      stroke: var(--color-gray10);
+    }
+  }
+}
+.workspace .mod-root .workspace-tab-header-inner::after {
+  --tab-divider-color: transparent;
+}
+.workspace .mod-root .workspace-tab-header {
+  &::before,
+  &::after {
+    content: none;
+    display: none;
+  }
+  padding: 0 !important;
+  border-radius: 0 !important;
+  .workspace-tab-header-inner-title {
+    color: var(--color-baseA8);
+  }
+  &.is-active {
+    box-shadow:
+      -1px 0 0 0 var(--color-baseA4),
+      inset -1px 0 0 0 var(--color-baseA4),
+      inset 0 1.5px 0 0 var(--color-accent);
+    .workspace-tab-header-inner-title {
+      color: var(--color-baseA12) !important;
+    }
+  }
+}
 
 /* src/modal.css */
 @keyframes modalShow {
@@ -2696,7 +2747,7 @@ body:not(.is-mobile) {
   .modal {
     border: unset;
     border-radius: 5px;
-    background-color: var(--color-background);
+    background-color: var(--color-popoverBackground);
     box-shadow: var(--shadows-modal) !important;
     animation-name: modalShow;
     animation-fill-mode: both;
@@ -2705,105 +2756,35 @@ body:not(.is-mobile) {
     top: 0px;
     margin-top: 10vh;
     max-height: 80vh;
-  }
-  .modal-bg {
-    background-color: var(--color-overlay);
-    backdrop-filter: blur(1px);
-    animation-name: overlayShow;
-    animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
-    animation-duration: 0.24s;
-  }
-}
-.modal-container.mod-dim .modal:not(.mod-settings) {
-}
-.modal-container .modal {
-  padding: 0;
-  .modal-header,
-  h2,
-  p {
-    margin: 0;
-    padding: 0 16px;
-  }
-  .modal-title,
-  h2 {
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 1.5;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-  .modal-content {
     padding: 0;
-    font-size: 12px;
+    .modal-header,
+    h2,
     p {
-      line-height: 1.4;
-      opacity: 0.7;
       margin: 0;
+      padding: 0 16px;
     }
-  }
-  .modal-button-container {
-    flex-direction: column;
-    gap: 0;
-    margin-top: 8px;
-    & button {
-      display: flex;
-      justify-content: flex-start;
-      background-color: transparent;
-      box-shadow: inset 0 0.5px 0 0 var(--color-baseA5);
-      height: 40px;
-      color: var(--color-baseA9);
-      &:hover {
-        background-color: var(--dimmed-background);
-      }
-      &:active {
-        background-color: var(--hover-background);
-      }
-    }
-    & > * {
-      padding: 8px 16px;
-      font-size: 15px;
+    .modal-title,
+    h2 {
+      font-size: 17px;
       font-weight: 500;
-      width: 100%;
-    }
-    .mod-warning {
-      color: var(--color-danger);
-    }
-    .mod-destructive {
-      color: var(--color-danger);
-    }
-    .mod-checkbox {
+      line-height: 1.5;
+      padding-top: 12px;
       padding-bottom: 12px;
     }
-    .mod-cancel {
-      color: var(--color-baseA9);
+    .modal-content {
+      padding: 0;
+      font-size: 12px;
+      p {
+        line-height: 1.4;
+        opacity: 0.7;
+        margin: 0;
+      }
     }
-    .mod-cta {
-      color: var(--color-accent);
-    }
-  }
-}
-.quickAddModal {
-  .modal-content {
-    input {
-      margin: 12px 16px 0 16px;
-      width: calc(100% - 32px) !important;
-    }
-    input:empty::before {
-      content: "\b0b4\c6a9\c744  \c785\b825\d558\c138\c694...";
-      color: gray;
-      font-style: italic;
-      cursor: text;
-    }
-    div > div:last-child {
-      display: flex;
-      flex-direction: column !important;
-      gap: 0 !important;
-      margin-top: 0;
+    .modal-button-container {
+      flex-direction: column;
+      gap: 0;
+      margin-top: 8px;
       & button {
-        padding: 8px 16px;
-        font-size: 15px;
-        font-weight: 400;
         display: flex;
         justify-content: flex-start;
         background-color: transparent;
@@ -2817,10 +2798,36 @@ body:not(.is-mobile) {
           background-color: var(--hover-background);
         }
       }
+      & > * {
+        padding: 8px 16px;
+        font-size: 15px;
+        font-weight: 500;
+        width: 100%;
+      }
+      .mod-warning {
+        color: var(--color-danger);
+      }
+      .mod-destructive {
+        color: var(--color-danger);
+      }
+      .mod-checkbox {
+        padding-bottom: 12px;
+      }
+      .mod-cancel {
+        color: var(--color-baseA9);
+      }
       .mod-cta {
         color: var(--color-accent);
       }
     }
+  }
+  .modal-bg {
+    background-color: var(--color-overlay);
+    backdrop-filter: blur(1px);
+    animation-name: overlayShow;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
+    animation-duration: 0.24s;
   }
 }
 .mod-confirmation .modal-content {
@@ -2837,6 +2844,28 @@ body:not(.is-mobile) {
   }
   .setting-item-description {
     font-size: 12px;
+  }
+}
+.templateChoiceBuilder {
+  .modal-content {
+    overflow-x: hidden;
+  }
+  .chooseFolderWhenCreatingNoteContainer,
+  .folderSelectionContainer,
+  .modal-content > input,
+  .modal-content .qa-preview-row {
+    margin: 8px 16px !important;
+    max-width: cal(100% - 32px);
+  }
+  .quickAddFolderListGrid {
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column;
+    margin: 0 !important;
+    margin-bottom: 12px !important;
+    .quickAddCommandListItem {
+      padding: 4px 0;
+    }
   }
 }
 
