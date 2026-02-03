@@ -67,7 +67,7 @@ body {
   --color-white: white;
   --color-black: black;
   --color-background: hsl(58, 6.1%, 92.9%);
-  --color-sidebarBackground: hsl(57, 6%, 90.7%);
+  --color-sidebarBackground: hsl(57, 6%, 89%);
   --color-borderHighlight: var(--color-bgA12);
   --color-popoverBackground: #f8f8f8;
   --color-blurredBackground: rgba(248, 248, 248, 0.5);
@@ -670,7 +670,7 @@ body {
   --color-secondary: var(--color-tomato10);
   --color-overlay: rgba(7, 10, 14, 0.7);
   --color-background: #0e151f;
-  --color-sidebarBackground: rgb(14 17 28);
+  --color-sidebarBackground: rgb(11, 14, 25);
   --color-borderHighlight: var(--color-bgA7);
   --color-popoverBackground: #18202d;
   --color-blurredBackground: rgba(57, 71, 89, 0.5);
@@ -2682,7 +2682,7 @@ input[type=number]:focus-visible {
   height: 100%;
   .clickable-icon {
     margin: 0;
-    width: 31px;
+    width: 36px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -2707,7 +2707,7 @@ input[type=number]:focus-visible {
   padding: 0 !important;
   border-radius: 0 !important;
   .workspace-tab-header-inner-title {
-    color: var(--color-baseA8);
+    color: var(--color-baseA9);
   }
   &.is-active {
     box-shadow:

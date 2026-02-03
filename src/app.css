@@ -243,7 +243,7 @@ input[type="number"]:focus-visible {
 	height: 100%;
 	.clickable-icon {
 		margin: 0;
-		width: 31px;
+		width: 36px;
 		height: 100%;
 		display: flex;
 		align-items: center;
@@ -272,7 +272,7 @@ input[type="number"]:focus-visible {
 	border-radius: 0 !important;
 
 	.workspace-tab-header-inner-title {
-		color: var(--color-baseA8);
+		color: var(--color-baseA9);
 	}
 
 	&.is-active {
