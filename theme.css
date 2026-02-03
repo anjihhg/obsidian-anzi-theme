@@ -2988,5 +2988,12 @@ body {
 .workspace-drawer .nav-buttons-container .nav-action-button {
   background-color: var(--color-background);
 }
+.is-phone .modal.mod-settings {
+  .settings-search-input {
+    input {
+      background-color: transparent !important;
+    }
+  }
+}
 
 /* src/theme.css */
