@@ -1,7 +1,7 @@
 body {
 	--tag-color: var(--color-text);
 	/* --tag-color-hover: blue; */
-	--tag-background: var(--color-baseA5);
+	--tag-background: var(--color-baseA3);
 	--tag-background-hover: var(--color-baseA7);
 	--tag-background-active: var(--color-baseA9);
 	--tag-radius: 1 px;

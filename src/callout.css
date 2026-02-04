@@ -29,9 +29,6 @@ body {
 }
 
 .cm-callout {
-	width: calc(100% + 6px);
-	position: relative;
-	left: -3px;
 }
 .callout {
 	/* font-size: 0.9em; */

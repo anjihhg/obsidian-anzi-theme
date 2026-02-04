@@ -11,6 +11,8 @@ body {
 	--hover-background: var(--color-baseA7);
 	--active-background: var(--color-baseA8);
 
+	--file-margins: 3.2vw 4vw;
+
 	/* Window */
 	--titlebar-background: var(--color-sidebarBackground);
 	--titlebar-background-focused: var(--color-sidebarBackground);

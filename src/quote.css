@@ -1,38 +1,3 @@
-/* 
-.cm-s-obsidian span.cm-quote {
-	color: var(--blockquote-color);
-}
-.cm-s-obsidian span.cm-formatting-quote {
-	color: var(--text-faint);
-}
-.cm-s-obsidian .hmd-inactive-line span.cm-formatting-quote {
-	color: transparent;
-}
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
-.markdown-source-view.mod-cm6 .cm-blockquote-border:before {
-	content: "\200b";
-	display: block;
-	width: 1px;
-	border-inline-start: var(--blockquote-border-thickness) solid
-		var(--blockquote-border-color);
-	color: transparent;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	pointer-events: none;
-}
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
-	font-style: var(--blockquote-style);
-	background-color: var(--blockquote-background-color);
-}
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before {
-	inset-inline-start: 0;
-}
-.markdown-source-view.mod-cm6 .cm-blockquote-border {
-	display: inline-block;
-} 
-*/
-
 /* 꺽쇄 표시, callout에도 영향*/
 .cm-s-obsidian span.cm-formatting-quote {
 	/* color: transparent; */

@@ -9,6 +9,7 @@ body {
   --dimmed-background: var(--color-baseA3);
   --hover-background: var(--color-baseA7);
   --active-background: var(--color-baseA8);
+  --file-margins: 3.2vw 4vw;
   --titlebar-background: var(--color-sidebarBackground);
   --titlebar-background-focused: var(--color-sidebarBackground);
   --background-primary: var(--color-background);
@@ -1607,9 +1608,6 @@ body {
   --callout-title-weight: 500;
 }
 .cm-callout {
-  width: calc(100% + 6px);
-  position: relative;
-  left: -3px;
 }
 .callout {
 }
@@ -2254,7 +2252,7 @@ body:not(.is-mobile) {
 /* src/tag.css */
 body {
   --tag-color: var(--color-text);
-  --tag-background: var(--color-baseA5);
+  --tag-background: var(--color-baseA3);
   --tag-background-hover: var(--color-baseA7);
   --tag-background-active: var(--color-baseA9);
   --tag-radius: 1 px;
