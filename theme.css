@@ -2815,7 +2815,7 @@ input[type=number]:focus-visible {
 .mod-root .workspace-tab-header-status-icon {
 }
 
-/* src/modal.css */
+/* src/modal_v2.css */
 @keyframes modalShow {
   from {
     opacity: 0;
@@ -2835,6 +2835,13 @@ input[type=number]:focus-visible {
   }
 }
 body:not(.is-mobile) {
+  --custom-modal-title-font-size: 17px;
+  --custom-modal-title-font-weight: 500;
+  --custom-modal-title-line-height: 1.5;
+  --custom-modal-title-padding-top: 12px;
+  --custom-modal-item-padding-x: 16px;
+  --custom-modal-item-padding-y: 8px;
+  --custom-modal-item-padding: var(--custom-modal-item-padding-y) var(--custom-modal-item-padding-x);
   .modal-container {
     align-items: flex-start;
   }
@@ -2852,33 +2859,71 @@ body:not(.is-mobile) {
     margin-top: 10vh;
     max-height: 80vh;
     padding: 0;
-    .modal-header,
+    .modal-close-button {
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      top: 0;
+      right: 0;
+      &:active {
+        background-color: var(--hover-background);
+      }
+    }
+  }
+  .modal-bg {
+    background-color: var(--color-overlay);
+    backdrop-filter: blur(1px);
+    animation-name: overlayShow;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
+    animation-duration: 0.24s;
+  }
+  .modal:not(.mod-sidebar-layout) {
     h2,
+    .modal-header,
     p {
       margin: 0;
-      padding: 0 16px;
+    }
+    & div {
+      margin: 0;
+      padding-inline: 0;
+    }
+    & * {
+      font-weight: 400 !important;
+    }
+    .modal-title:empty {
+      display: none;
     }
     .modal-title,
-    h2 {
+    h2:not(.modal-content h2) {
       font-size: 17px;
       font-weight: 500;
       line-height: 1.5;
-      padding-top: 12px;
-      padding-bottom: 12px;
+      padding-inline: var(--custom-modal-item-padding-x);
+    }
+    .modal-title,
+    h2 {
+      padding-top: calc(var(--custom-modal-item-padding-y) * 1.2);
+      padding-bottom: calc(var(--custom-modal-item-padding-y) * 1);
+    }
+    .modal-header:empty {
+      display: none;
     }
     .modal-content {
-      padding: 0;
       font-size: 12px;
-      p {
-        line-height: 1.4;
-        opacity: 0.7;
-        margin: 0;
+      line-height: 1.4;
+      margin: 0;
+      & > *:not(.modal-button-container) {
+        padding-inline: var(--custom-modal-item-padding-x);
+      }
+      &:not(:has(*)) {
+        padding-inline: var(--custom-modal-item-padding-x);
       }
     }
     .modal-button-container {
       flex-direction: column;
       gap: 0;
-      margin-top: 8px;
+      padding-top: calc(var(--custom-modal-item-padding-y) * 1.5);
       & button {
         display: flex;
         justify-content: flex-start;
@@ -2894,7 +2939,7 @@ body:not(.is-mobile) {
         }
       }
       & > * {
-        padding: 8px 16px;
+        padding: var(--custom-modal-item-padding);
         font-size: 15px;
         font-weight: 500;
         width: 100%;
@@ -2906,7 +2951,7 @@ body:not(.is-mobile) {
         color: var(--color-danger);
       }
       .mod-checkbox {
-        padding-bottom: 12px;
+        padding-block: var(--custom-modal-item-padding-y);
       }
       .mod-cancel {
         color: var(--color-baseA9);
@@ -2914,52 +2959,6 @@ body:not(.is-mobile) {
       .mod-cta {
         color: var(--color-accent);
       }
-    }
-  }
-  .modal-bg {
-    background-color: var(--color-overlay);
-    backdrop-filter: blur(1px);
-    animation-name: overlayShow;
-    animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
-    animation-duration: 0.24s;
-  }
-}
-.mod-confirmation .modal-content {
-  &:not(:has(*)) {
-    padding: 0 16px !important;
-    opacity: 0.7;
-  }
-}
-.modal:not(.mod-settings) .setting-item:not(.setting-item-heading) {
-  padding: 8px 16px;
-  font-weight: 400;
-  .setting-item-name {
-    font-size: 15px;
-  }
-  .setting-item-description {
-    font-size: 12px;
-  }
-}
-.templateChoiceBuilder {
-  .modal-content {
-    overflow-x: hidden;
-  }
-  .chooseFolderWhenCreatingNoteContainer,
-  .folderSelectionContainer,
-  .modal-content > input,
-  .modal-content .qa-preview-row {
-    margin: 8px 16px !important;
-    max-width: cal(100% - 32px);
-  }
-  .quickAddFolderListGrid {
-    max-width: 100% !important;
-    display: flex !important;
-    flex-direction: column;
-    margin: 0 !important;
-    margin-bottom: 12px !important;
-    .quickAddCommandListItem {
-      padding: 4px 0;
     }
   }
 }
