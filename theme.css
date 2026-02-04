@@ -1823,7 +1823,6 @@ input.metadata-property-key-input {
   transition-duration: 0s;
 }
 .metadata-properties-heading {
-  display: none;
 }
 .cm-editor {
   .metadata-add-button {
@@ -1969,7 +1968,6 @@ body {
   opacity: 0.5;
 }
 .external-link {
-  display: none;
 }
 .internal-link {
   text-decoration: none !important;
@@ -2356,7 +2354,6 @@ body {
   box-shadow: unset;
 }
 .mb-select-input-element > input[type=checkbox] {
-  display: none;
 }
 .mb-custom-status .mb-select-input-element.is-selected[data-value=Todo] {
   background-color: var(--color-baseA12);
@@ -2811,6 +2808,16 @@ input[type=number]:focus-visible {
   --icon-stroke: 3px;
 }
 .mod-root .workspace-tab-header-status-icon {
+}
+.file-embed.mod-empty-attachment {
+  background-color: var(--color-redA3);
+  color: var(--color-redA11);
+  box-shadow: inset 0 0 0 1px var(--color-redA3);
+}
+.file-embed.mod-generic {
+  background-color: var(--color-amberA3) !important;
+  color: var(--color-amberA11) !important;
+  box-shadow: inset 0 0 0 1px var(--color-amberA3) !important;
 }
 
 /* src/modal_v2.css */

@@ -84,7 +84,7 @@ body {
 }
 
 .external-link {
-	display: none;
+	/* display: none; */
 }
 
 .internal-link {

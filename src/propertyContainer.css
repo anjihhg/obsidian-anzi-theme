@@ -62,7 +62,7 @@ input.metadata-property-key-input {
 }
 
 .metadata-properties-heading {
-	display: none;
+	/* display: none; */
 }
 
 /* EDITOR에만 적용 */

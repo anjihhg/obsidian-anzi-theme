@@ -45,7 +45,7 @@
 }
 
 .mb-select-input-element > input[type="checkbox"] {
-	display: none;
+	/* display: none; */
 }
 
 .mb-custom-status .mb-select-input-element.is-selected[data-value="Todo"] {
