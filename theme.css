@@ -1604,21 +1604,33 @@ body {
     158,
     158,
     158;
-  --callout-padding: 13px;
+  --callout-padding: min(2.5vw, 22px);
+  --callout-padding-y: min(1.6vw, 16px);
   --callout-title-weight: 500;
 }
 .cm-callout {
 }
 .callout {
+  padding-block: var(--callout-padding-y);
 }
 .callout-icon {
   display: none;
 }
 .callout-title {
   color: var(--color-baseA12);
+  .callout-title-inner,
+  .callout-title-inner * {
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-bottom: max(0.2em, 4px) !important;
+  }
+  .callout-title-inner *:empty {
+    display: none;
+  }
 }
 .callout-content {
   overflow: unset;
+  opacity: 0.8;
 }
 .markdown-rendered p {
   margin-block-start: unset;
@@ -1894,7 +1906,6 @@ input[type=checkbox]:checked:focus {
   pointer-events: none;
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
-  margin: 24px;
 }
 
 /* src/link.css */

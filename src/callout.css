@@ -24,17 +24,15 @@ body {
 	--callout-warning: var(--color-orange-rgb);
 	--callout-quote: 158, 158, 158;
 
-	--callout-padding: 13px;
+	--callout-padding: min(2.5vw, 22px);
+	--callout-padding-y: min(1.6vw, 16px);
 	--callout-title-weight: 500;
 }
 
 .cm-callout {
 }
 .callout {
-	/* font-size: 0.9em; */
-	/* box-shadow:
-		inset 0 0 0 0.5px var(--color-baseA3),
-		inset 0 -1px 0 0 var(--color-baseA5); */
+	padding-block: var(--callout-padding-y);
 }
 
 .callout-icon {
@@ -43,10 +41,21 @@ body {
 
 .callout-title {
 	color: var(--color-baseA12);
+
+	.callout-title-inner, .callout-title-inner * {
+		padding: 0 !important;
+		margin: 0 !important;
+		padding-bottom: max(0.2em, 4px) !important;
+	}
+	
+	.callout-title-inner *:empty  {
+		display: none;
+	}
 }
 
 .callout-content {
 	overflow: unset;
+	opacity: 0.8;
 }
 
 .markdown-rendered p {
