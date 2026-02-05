@@ -15,6 +15,8 @@ body {
 .internal-link,
 .cm-hmd-internal-link {
 	text-decoration-line: unset !important;
+	text-decoration-color: var(--color-baseA5);
+	transition: 0.15s;
 }
 
 .cm-hmd-internal-link::before {
@@ -35,10 +37,6 @@ body {
 	text-decoration-thickness: 1.4px !important;
 	background-color: var(--color-baseA1);
 	/* font-weight: 500; */
-
-	transition-property: background-color;
-	transition-duration: 0.5s;
-	transition-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
 }
 
 .cm-url:hover,
@@ -48,7 +46,7 @@ body {
 	text-decoration-line: underline !important;
 	text-decoration-style: initial !important;
 	text-underline-offset: 4px !important;
-	text-decoration-color: var(--color-baseA9) !important;
+	text-decoration-color: var(--color-baseA9);
 }
 
 .cm-url:hover,
@@ -56,7 +54,6 @@ body {
 .internal-link:hover,
 .cm-hmd-internal-link:hover {
 	background-color: var(--color-baseA4);
-	transition: background-color 0.02s ease 0s;
 }
 
 .cm-url:active,
@@ -64,12 +61,12 @@ body {
 .internal-link:active,
 .cm-hmd-internal-link:active {
 	background-color: var(--color-baseA8) !important;
-	transition: background-color 0s ease 0s !important;
+	transition: 0s;
 }
 
 .cm-url,
 .cm-link {
-	opacity: 0.75;
+	opacity: 0.6;
 }
 
 .cm-line:not(.cm-active) .cm-url::after,
@@ -84,13 +81,28 @@ body {
 }
 
 .external-link {
-	/* display: none; */
+	background-image: unset;
+	padding-inline-end: 0;
 }
 
 .internal-link {
 	text-decoration: none !important;
+	text-decoration-color: red;
 }
 
 .is-unresolved .cm-underline {
 	/* text-decoration-color: var(--color-redA9) !important; */
+}
+
+.metadata-link-inner {
+	text-decoration-line: unset;
+	opacity: 0.8;
+	transition: 0.2s;
+	text-decoration-color: var(--color-baseA5);
+	text-underline-offset: 3px;
+
+	&:hover {
+		text-decoration-line: underline;
+		text-decoration-color: var(--color-baseA7);
+	}
 }
