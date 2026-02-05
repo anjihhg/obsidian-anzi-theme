@@ -1699,6 +1699,7 @@ body {
 }
 .cm-s-obsidian .HyperMD-codeblock {
   font-size: 80%;
+  line-height: 1.3em;
 }
 
 /* src/embed.css */
@@ -2101,8 +2102,16 @@ body:not(.is-mobile) {
 }
 .bases-group-heading {
   opacity: 0.3;
+  padding-left: 6px !important;
+  margin: 0;
   font-family: var(--font-monospace);
   text-transform: uppercase;
+  display: flex;
+  position: sticky;
+  align-items: center;
+  line-height: 0;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 .bases-tbody .bases-tr:hover {
   background-color: var(--dimmed-background);
