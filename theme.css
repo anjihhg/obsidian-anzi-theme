@@ -2088,8 +2088,8 @@ body {
   }
 }
 body:not(.is-mobile) {
-  .workspace-leaf-content[data-type=bases] .view-content {
-    padding: 0px !important;
+  .workspace-leaf-content[data-type=bases]:has(.bases-view[data-view-type=table]) .view-content {
+    padding: 0px;
     .bases-header {
       padding-left: 4px;
       margin-left: 12px;
@@ -2099,9 +2099,17 @@ body:not(.is-mobile) {
       padding-left: 12px;
     }
   }
-}
-.workspace-leaf-content[data-type=bases] .view-content {
-  padding: 12px !important;
+  .workspace-leaf-content[data-type=bases]:has(.bases-view[data-view-type=cards]) .view-content {
+    .bases-header {
+      padding-left: 4px;
+      margin-left: 12px;
+      padding-right: 12px;
+    }
+    .bases-view {
+      padding-left: 12px !important;
+      padding-right: 4px !important;
+    }
+  }
 }
 .bases-table-active-cell,
 .bases-table-selection {
