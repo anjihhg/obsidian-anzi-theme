@@ -24,12 +24,15 @@
 @import "./calendar.css";
 @import "./highlight.css";
 @import "./quickAdd.css";
+@import "./titleTag.css";
 
 /* app */
 @import "./app.css";
 /* @import "./modal.css"; */
 @import "./modal_v2.css";
 @import "./backlink.css";
+@import "./basesFormula.css";
+
 
 /* mobile */
 @import "./mobile.css";

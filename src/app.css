@@ -1,3 +1,7 @@
+.markdown-source-view.mod-cm6 .cm-scroller {
+	overflow-x: hidden;
+}
+
 .markdown-source-view.mod-cm6 img {
 	margin: 2px 0;
 }

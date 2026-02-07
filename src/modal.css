@@ -118,15 +118,16 @@ body:not(.is-mobile) {
 		}
 	}
 
-	.modal-bg {
-		background-color: var(--color-overlay);
-		backdrop-filter: blur(1px);
+}
 
-		animation-name: overlayShow;
-		animation-fill-mode: both;
-		animation-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
-		animation-duration: 0.24s;
-	}
+.modal-bg {
+	background-color: var(--color-overlay) !important;
+	opacity: 1;
+	backdrop-filter: blur(1px);
+	animation-name: overlayShow;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
+	animation-duration: 0.24s;
 }
 
 /* 플러그인... 거지 같네 */
