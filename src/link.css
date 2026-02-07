@@ -1,5 +1,5 @@
 body {
-	--link-color: var(--color-brown10);
+	--link-color: var(--link-color);
 	--link-color-hover: unset;
 	--link-external-color: var(--color-baseA12);
 	--link-external-color-hover: unset;

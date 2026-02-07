@@ -4,11 +4,6 @@
 .theme-light {
 	color-scheme: light;
 
-	--accent-reference: hsl(22, 81%, 40%);
-	--accent-h: 22;
-	--accent-s: 81%;
-	--accent-l: 40%;
-
 	--color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
 	--color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
 	--color-accent-1: hsl(
@@ -80,12 +75,6 @@
 }
 .theme-dark {
 	color-scheme: dark;
-
-	--accent-reference: hsl(119, 85%, 54%);
-	--accent-h: 119;
-	--accent-s: 85%;
-	--accent-l: 54%;
-
 	--color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
 	--color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
 	--color-accent-1: hsl(

@@ -1,5 +1,10 @@
 .theme-light {
 	color-scheme: light;
+	--accent-reference: hsl(22, 81%, 40%);
+	--accent-h: 22;
+	--accent-s: 81%;
+	--accent-l: 40%;
+
 	/* --color-primary: #007604; */
 	--color-secondary: var(--color-orangeA10);
 	--color-danger: #ba3800;
@@ -9,6 +14,7 @@
 	--color-background: hsl(58, 6.1%, 92.9%);
 	--color-sidebarBackground: hsl(57, 6%, 89%);
 	--color-borderHighlight: var(--color-bgA12);
+	--color-highlight: #f2e07d;
 	--color-popoverBackground: #f8f8f8;
 	--color-blurredBackground: rgba(248, 248, 248, 0.5);
 

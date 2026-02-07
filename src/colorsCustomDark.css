@@ -1,15 +1,37 @@
 .theme-dark {
 	color-scheme: dark;
+	
+	
 	--color-white: black;
 	--color-black: white;
-	--color-primary: #2aed27;
 	--color-danger: #ff305c;
 	--color-secondary: var(--color-tomato10);
 	--color-overlay: rgba(7, 10, 14, 0.7);
+	
+	/* !!!DISABLED!!! ANZI */
+	--accent-reference: hsl(119, 85%, 54%);
+	--accent-h: 119;
+	--accent-s: 85%;
+	--accent-l: 54%;
 	--color-background: #0e151f;
 	--color-sidebarBackground: rgb(11, 14, 25);
-	--color-borderHighlight: var(--color-bgA7);
 	--color-popoverBackground: #18202d;
+	--color-highlight: #48352f;
+	--link-color: var(--color-brown10);
+
+	/* !!!ACTIVE!!! ANTIGRAVITY */
+	--accent-reference: hsl(224, 42%, 50%);
+	--accent-h: 224;
+	--accent-s: 42%;
+	--accent-l: 50%;
+	--color-background: #1a1b26;
+	--color-sidebarBackground: rgb(22 22 30);
+	--color-popoverBackground: #20212f;
+	--color-highlight: #41363a;
+	--link-color: #e2d0b3;
+	--link-color: #e2bfb3;
+	
+	--color-borderHighlight: var(--color-bgA7);
 	--color-blurredBackground: rgba(57, 71, 89, 0.5);
 
 	--color-baseA1: hsla(0, 0%, 0%, 0);
