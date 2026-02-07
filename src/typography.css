@@ -61,6 +61,12 @@ ins {
 	display: inline-block;
 }
 
+.hr.cm-line {
+  padding: 0 !important;
+  line-height: 1;
+}
+
+
 .cm-strong {
 	font-weight: 600;
 }
