@@ -2970,8 +2970,6 @@ input[type=number]:focus-visible {
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 .workspace-drawer {
-  transition-duration: 0.5s !important;
-  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
   box-shadow: var(--shadows-modal) !important;
 }
 
