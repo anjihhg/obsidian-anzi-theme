@@ -1779,6 +1779,7 @@ body {
   padding-bottom: 0.15em;
   padding-top: 0.15em;
   font-family: var(--system-font);
+  margin-block: .14em !important;
 }
 
 /* src/propertyContainer.css */

@@ -26,5 +26,30 @@ body {
 	padding-bottom: 0.15em;
 	padding-top: 0.15em;
 	font-family: var(--system-font);
+	margin-block: .14em !important;
 	/* letter-spacing: -0.01em !important; */
 }
+
+/* .cm-s-obsidian .cm-line.HyperMD-header.HyperMD-header-1 {
+	margin-block: .1em !important;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header.HyperMD-header-2 {
+	margin-block: .15em !important;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header.HyperMD-header-3 {
+	margin-block: .2em !important;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header.HyperMD-header-4 {
+	margin-block: .1em !important;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header.HyperMD-header-5 {
+	margin-block: .1em !important;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header.HyperMD-header-6 {
+	margin-block: .12em !important;
+} */
