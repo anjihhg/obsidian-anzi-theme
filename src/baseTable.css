@@ -71,11 +71,9 @@ body {
 }
 
 .bases-thead .bases-td {
-	/* box-shadow: inset 0 -1px 0 0 var(--color-baseA3) !important; */
+	box-shadow: unset;
+	/* box-shadow: inset -0.5px 0 0 0 var(--color-baseA3) !important; */
 	/* background-color: var(--color-baseA2); */
-	& {
-		box-shadow: inset -1px 0 0 0 var(--color-baseA3);
-	}
 }
 
 .workspace-leaf-content[data-type="markdown"] .block-language-base .bases-view,

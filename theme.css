@@ -2140,9 +2140,7 @@ body {
   width: 100% !important;
 }
 .bases-thead .bases-td {
-  & {
-    box-shadow: inset -1px 0 0 0 var(--color-baseA3);
-  }
+  box-shadow: unset;
 }
 .workspace-leaf-content[data-type=markdown] .block-language-base .bases-view,
 .workspace-leaf-content[data-type=markdown] .bases-embed .bases-view {
