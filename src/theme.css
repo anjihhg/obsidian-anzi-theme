@@ -23,6 +23,7 @@
 @import "./toolbar.css";
 @import "./calendar.css";
 @import "./highlight.css";
+@import "./quickAdd.css";
 
 /* app */
 @import "./app.css";

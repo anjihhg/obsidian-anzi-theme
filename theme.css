@@ -2144,8 +2144,10 @@ body:not(.is-mobile) {
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
-.bases-tbody .bases-tr:hover {
-  background-color: var(--dimmed-background);
+@media (hover: hover) {
+  .bases-tbody .bases-tr:hover {
+    background-color: var(--dimmed-background);
+  }
 }
 .bases-view[data-view-type=cards] {
   padding: 12px 0 !important;
@@ -2583,7 +2585,58 @@ span.external-link {
   }
 }
 
+/* src/quickAdd.css */
+.quickAddModal.qaInputPrompt {
+  .modal-content > div {
+    div:has(button) {
+      display: flex;
+      flex-direction: column !important;
+      gap: 0 !important;
+      margin-left: -16px;
+      margin-right: -16px;
+      & button {
+        display: flex;
+        justify-content: flex-start;
+        background-color: transparent;
+        box-shadow: inset 0 0.5px 0 0 var(--color-baseA5);
+        height: 40px;
+        color: var(--color-baseA9);
+        &:hover {
+          background-color: var(--dimmed-background);
+        }
+        &:active {
+          background-color: var(--hover-background);
+        }
+      }
+      & > * {
+        padding: 8px 16px;
+        font-size: 15px;
+        font-weight: 500;
+        width: 100%;
+      }
+      .mod-warning {
+        color: var(--color-danger);
+      }
+      .mod-destructive {
+        color: var(--color-danger);
+      }
+      .mod-checkbox {
+        padding-bottom: 12px;
+      }
+      .mod-cancel {
+        color: var(--color-baseA9);
+      }
+      .mod-cta {
+        color: var(--color-accent);
+      }
+    }
+  }
+}
+
 /* src/app.css */
+.markdown-source-view.mod-cm6 img {
+  margin: 2px 0;
+}
 .status-bar-item {
   font-family: var(--font-monospace);
   font-size: 0.8em;
@@ -2616,7 +2669,7 @@ body:not(.is-mobile) ::-webkit-scrollbar-corner {
   background: transparent;
 }
 body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
-  box-shadow: inset 0 0 0 2px var(--color-accent);
+  box-shadow: inset 0 0 0 1px var(--color-accent);
 }
 body:not(.is-mobile) {
   --file-line-width: 860px;
@@ -2874,6 +2927,9 @@ input[type=number]:focus-visible {
   background-color: var(--color-amberA3) !important;
   color: var(--color-amberA11) !important;
   box-shadow: inset 0 0 0 1px var(--color-amberA3) !important;
+}
+[data-path$=".base"] {
+  color: var(--color-brownA9);
 }
 
 /* src/modal_v2.css */

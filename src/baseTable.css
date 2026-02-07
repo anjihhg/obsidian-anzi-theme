@@ -90,8 +90,10 @@ body:not(.is-mobile) {
 	justify-content: flex-end;
 }
 
-.bases-tbody .bases-tr:hover {
-	background-color: var(--dimmed-background);
+@media (hover: hover) {
+	.bases-tbody .bases-tr:hover {
+		background-color: var(--dimmed-background);
+	}
 }
 
 .bases-view[data-view-type="cards"] {
