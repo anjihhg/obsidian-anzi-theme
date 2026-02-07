@@ -255,6 +255,7 @@ input[type="number"]:focus-visible {
 .workspace .mod-root .workspace-tab-header-new-tab {
 	padding: 0;
 	height: 100%;
+	margin-left: 0;
 	.clickable-icon {
 		margin: 0;
 		width: 36px;
@@ -353,10 +354,18 @@ input[type="number"]:focus-visible {
 }
 
 /* pin icon */
-.mod-root .mod-pinned,
-.mod-root .workspace-tab-header-inner-close-button {
+.mod-root .mod-pinned {
 	--icon-size: 12px;
 	--icon-stroke: 3px;
+
+	&::after {
+		content: "∷";
+		color: var(--color-accent);
+	}
+
+	svg {
+		display: none;
+	}
 }
 .mod-root .workspace-tab-header-status-icon {
 	/* color: var(--color-baseA8); */

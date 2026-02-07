@@ -10,6 +10,11 @@
 
 body:not(.is-mobile) {
 
+	.sidebar-toggle-button {
+		/* height: 100%; */
+		align-items: center;
+	}
+
 	.clickable-icon {
 		height: var(--input-height);
 	}
