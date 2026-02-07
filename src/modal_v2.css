@@ -18,6 +18,17 @@
 	}
 }
 
+.prompt,
+.modal {
+	background-color: var(--color-popoverBackground);
+	box-shadow: var(--shadows-modal) !important;
+	animation-name: modalShow;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0,1.4,.8,1);
+	animation-duration: 0.3s;
+	
+}
+
 body:not(.is-mobile) {
 	--custom-modal-title-font-size: 17px;
 	--custom-modal-title-font-weight: 500;
@@ -40,7 +51,7 @@ body:not(.is-mobile) {
 		box-shadow: var(--shadows-modal) !important;
 		animation-name: modalShow;
 		animation-fill-mode: both;
-		animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+		animation-timing-function: cubic-bezier(0,1.4,.8,1);
 		animation-duration: 0.3s;
 		top: 0px;
 		margin-top: 10vh;
@@ -58,16 +69,6 @@ body:not(.is-mobile) {
 				background-color: var(--hover-background);
 			}
 		}
-	}
-
-	.modal-bg {
-		background-color: var(--color-overlay);
-		backdrop-filter: blur(1px);
-
-		animation-name: overlayShow;
-		animation-fill-mode: both;
-		animation-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
-		animation-duration: 0.24s;
 	}
 
 	.modal:not(.mod-sidebar-layout) {
@@ -175,4 +176,14 @@ body:not(.is-mobile) {
 			}
 		}
 	}
+}
+
+.modal-bg {
+	background-color: var(--color-overlay);
+	backdrop-filter: blur(1px);
+
+	animation-name: overlayShow;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
+	animation-duration: 0.24s;
 }

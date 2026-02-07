@@ -1495,8 +1495,10 @@ body {
 [class*=clickable],
 [class*=tappable] {
 }
-.clickable-icon {
-  height: var(--input-height);
+body:not(.is-mobile) {
+  .clickable-icon {
+    height: var(--input-height);
+  }
 }
 
 /* src/typography.css */
@@ -2961,6 +2963,17 @@ input[type=number]:focus-visible {
 [data-path$=".base"] {
   color: var(--color-brownA9);
 }
+.workspace-drawer-backdrop {
+  background-color: var(--color-overlay);
+  backdrop-filter: blur(1px);
+  transition-duration: 0.5s !important;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.workspace-drawer {
+  transition-duration: 0.5s !important;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: var(--shadows-modal) !important;
+}
 
 /* src/modal_v2.css */
 @keyframes modalShow {
@@ -2981,6 +2994,15 @@ input[type=number]:focus-visible {
     opacity: 1;
   }
 }
+.prompt,
+.modal {
+  background-color: var(--color-popoverBackground);
+  box-shadow: var(--shadows-modal) !important;
+  animation-name: modalShow;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 1.4, .8, 1);
+  animation-duration: 0.3s;
+}
 body:not(.is-mobile) {
   --custom-modal-title-font-size: 17px;
   --custom-modal-title-font-weight: 500;
@@ -3000,7 +3022,7 @@ body:not(.is-mobile) {
     box-shadow: var(--shadows-modal) !important;
     animation-name: modalShow;
     animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-timing-function: cubic-bezier(0, 1.4, .8, 1);
     animation-duration: 0.3s;
     top: 0px;
     margin-top: 10vh;
@@ -3016,14 +3038,6 @@ body:not(.is-mobile) {
         background-color: var(--hover-background);
       }
     }
-  }
-  .modal-bg {
-    background-color: var(--color-overlay);
-    backdrop-filter: blur(1px);
-    animation-name: overlayShow;
-    animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
-    animation-duration: 0.24s;
   }
   .modal:not(.mod-sidebar-layout) {
     h2,
@@ -3108,6 +3122,14 @@ body:not(.is-mobile) {
       }
     }
   }
+}
+.modal-bg {
+  background-color: var(--color-overlay);
+  backdrop-filter: blur(1px);
+  animation-name: overlayShow;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
+  animation-duration: 0.24s;
 }
 
 /* src/backlink.css */

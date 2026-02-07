@@ -378,3 +378,16 @@ input[type="number"]:focus-visible {
 	color: var(--color-brownA9);
 }
 
+.workspace-drawer-backdrop {
+	background-color: var(--color-overlay);
+	backdrop-filter: blur(1px);
+
+	transition-duration: 0.5s !important;
+	transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.workspace-drawer {
+	transition-duration: 0.5s !important;
+	transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+	box-shadow: var(--shadows-modal) !important; 
+}
