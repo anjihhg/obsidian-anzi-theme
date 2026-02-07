@@ -2102,13 +2102,12 @@ body {
 body {
   .workspace-leaf-content[data-type=bases]:has(.bases-view[data-view-type=table]) .view-content {
     padding: 0px;
+    padding-left: 12px;
     .bases-header {
       padding-left: 4px;
-      margin-left: 12px;
       padding-right: 12px;
     }
     .bases-view {
-      padding-left: 12px;
     }
   }
   .workspace-leaf-content[data-type=bases]:has(.bases-view[data-view-type=cards]) .view-content {
@@ -2152,7 +2151,7 @@ body {
   margin: 0;
 }
 .bases-view {
-  scrollbar-gutter: unset;
+  scrollbar-gutter: inherit;
 }
 .bases-group-heading {
   opacity: 0.3;
