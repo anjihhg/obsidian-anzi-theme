@@ -36,7 +36,7 @@ body {
 	text-decoration-color: var(--color-baseA7) !important;
 	text-decoration-thickness: 1.4px !important;
 	background-color: var(--color-baseA1);
-	/* font-weight: 500; */
+	font-weight: 500;
 }
 
 .cm-url:hover,

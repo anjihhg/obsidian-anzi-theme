@@ -32,6 +32,10 @@ body {
 		}
 
 		.bases-view {
+			.internal-link {
+				letter-spacing: -0.015em;
+				font-weight: 500;
+			}
 			/* padding-left: 12px; */
 		}
 	}
@@ -208,13 +212,12 @@ body {
 	&::after {
 		content: "";
 		position: absolute;
-		background-color: var(--color-bgA3);
+		background-color: var(--color-coverBackground);
 		width: 100%;
 		height: 100%;
 		left: 0;
 		top: 0;
 		z-index: 10;
 		pointer-events: none;
-		mix-blend-mode: color-burn;
 	}
 }

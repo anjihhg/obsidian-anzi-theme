@@ -1,13 +1,8 @@
+body.theme-dark {
+	--link-weight: 500;
+}
 .theme-dark {
 	color-scheme: dark;
-	
-	
-	--color-white: black;
-	--color-black: white;
-	--color-danger: #ff305c;
-	--color-secondary: var(--color-tomato10);
-	--color-overlay: rgba(7, 10, 14, 0.7);
-	
 	/* !!!DISABLED!!! ANZI */
 	--accent-reference: hsl(119, 85%, 54%);
 	--accent-h: 119;
@@ -34,8 +29,15 @@
 	--link-color: #e2d0b3;
 	--link-color: #e2bfb3;
 	
+	--color-coverBackground: var(--color-bgA3);
 	--color-borderHighlight: var(--color-bgA7);
 	--color-blurredBackground: rgba(57, 71, 89, 0.5);
+
+	--color-white: black;
+	--color-black: white;
+	--color-danger: #ff305c;
+	--color-secondary: var(--color-tomato10);
+	--color-overlay: rgba(7, 10, 14, 0.7);
 
 	--color-baseA1: hsla(0, 0%, 0%, 0);
 	--color-baseA2: hsla(240, 76.7%, 91.2%, 0.031);
