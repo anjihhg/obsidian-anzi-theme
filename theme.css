@@ -2708,7 +2708,7 @@ button {
   overflow-x: hidden;
 }
 .markdown-source-view.mod-cm6 img {
-  margin: 2px 0;
+  padding: 2px 0 !important;
 }
 .status-bar-item {
   font-family: var(--font-monospace);
@@ -3070,7 +3070,8 @@ body:not(.is-mobile) {
     animation-fill-mode: both;
     animation-timing-function: cubic-bezier(0, 1.4, .8, 1);
     animation-duration: 0.3s;
-    top: 0px;
+    top: 0px !important;
+    left: auto !important;
     margin-top: 10vh;
     max-height: 80vh;
     padding: 0;
