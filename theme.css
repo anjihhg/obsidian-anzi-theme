@@ -2700,18 +2700,6 @@ span.external-link {
 }
 
 /* src/titleTag.css */
-.inline-title[data-type-value]::before {
-  letter-spacing: -0.05em;
-  border-radius: 1px;
-  font-weight: 500;
-  padding-block: 3px;
-  padding-inline: 6px;
-  text-transform: capitalize;
-}
-.inline-title {
-  &[data-type-value=log]::before {
-  }
-}
 
 /* src/app.css */
 button {
