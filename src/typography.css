@@ -69,6 +69,10 @@ ins {
 
 .cm-strong {
 	font-weight: 600 !important;
+
+	& * {
+		font-weight: 600 !important;
+	}
 }
 
 .cm-strikethrough {
