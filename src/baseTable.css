@@ -68,7 +68,8 @@ body {
 }
 
 .bases-thead {
-	width: 100% !important;
+	/* 이거 100% 주면 스크롤시 라인이 사라짐 */
+	/* width: 100% !important; */
 }
 
 .bases-thead .bases-td {
