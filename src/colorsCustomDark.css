@@ -13,6 +13,7 @@
 	--accent-h: 119;
 	--accent-s: 85%;
 	--accent-l: 54%;
+	--checkbox-color: var(--color-accent);
 	--color-background: #0e151f;
 	--color-sidebarBackground: rgb(11, 14, 25);
 	--color-popoverBackground: #18202d;
@@ -21,9 +22,11 @@
 
 	/* !!!ACTIVE!!! ANTIGRAVITY */
 	--accent-reference: hsl(224, 42%, 50%);
+	--accent-reference: hsl(224, 42%, 50%);
 	--accent-h: 224;
 	--accent-s: 42%;
 	--accent-l: 50%;
+	--checkbox-color: var(--color-green);
 	--color-background: #1a1b26;
 	--color-sidebarBackground: rgb(22 22 30);
 	--color-popoverBackground: #20212f;

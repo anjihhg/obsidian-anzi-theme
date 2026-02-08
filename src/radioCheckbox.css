@@ -2,7 +2,6 @@ body {
 	--checkbox-border-color: var(--text-muted);
 	--checkbox-margin-inline-start: 0em;
 	--checkbox-margin-inline-end: 0em;
-	--checkbox-color: var(--color-accent);
 	--checkbox-color-hover: var(--color-baseA12);
 	--checklist-done-color: var(--color-baseA9);
 	--checklist-done-decoration: none;

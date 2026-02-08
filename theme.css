@@ -66,6 +66,7 @@ body {
   --accent-h: 22;
   --accent-s: 81%;
   --accent-l: 40%;
+  --checkbox-color: var(--color-accent);
   --color-secondary: var(--color-orangeA10);
   --color-danger: #ba3800;
   --color-overlay: rgba(106, 106, 106, 0.5);
@@ -678,15 +679,18 @@ body {
   --accent-h: 119;
   --accent-s: 85%;
   --accent-l: 54%;
+  --checkbox-color: var(--color-accent);
   --color-background: #0e151f;
   --color-sidebarBackground: rgb(11, 14, 25);
   --color-popoverBackground: #18202d;
   --color-highlight: #48352f;
   --link-color: var(--color-brown10);
   --accent-reference: hsl(224, 42%, 50%);
+  --accent-reference: hsl(224, 42%, 50%);
   --accent-h: 224;
   --accent-s: 42%;
   --accent-l: 50%;
+  --checkbox-color: var(--color-green);
   --color-background: #1a1b26;
   --color-sidebarBackground: rgb(22 22 30);
   --color-popoverBackground: #20212f;
@@ -1875,7 +1879,6 @@ body {
   --checkbox-border-color: var(--text-muted);
   --checkbox-margin-inline-start: 0em;
   --checkbox-margin-inline-end: 0em;
-  --checkbox-color: var(--color-accent);
   --checkbox-color-hover: var(--color-baseA12);
   --checklist-done-color: var(--color-baseA9);
   --checklist-done-decoration: none;

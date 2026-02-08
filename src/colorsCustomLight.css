@@ -4,6 +4,7 @@
 	--accent-h: 22;
 	--accent-s: 81%;
 	--accent-l: 40%;
+	--checkbox-color: var(--color-accent);
 
 	/* --color-primary: #007604; */
 	--color-secondary: var(--color-orangeA10);
