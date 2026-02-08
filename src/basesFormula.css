@@ -32,25 +32,25 @@
        font-weight: 500; 
     }
     &.red {
-        color: var(--color-red);
+        color: var(--color-red11);
     }
     &.green {
-        color: var(--color-green);
+        color: var(--color-green11);
     }
     &.yellow {
-        color: var(--color-amber9);
+        color: var(--color-yellow11);
     }
     &.orange {
         color: var(--color-orange);
     }
     &.blue {
-        color: var(--color-blue);
-    }
-    &.green {
-        color: var(--color-green);
+        color: var(--color-accent-1);
     }
     &.purple {
         color: var(--color-purple);
+    }
+    &.gray {
+        color: var(--color-baseA11);
     }
     &.weak {
         color: var(--color-baseA12);
@@ -76,10 +76,6 @@
     &.weak.blue {
         color: var(--color-baseA12);
         background-color: var(--color-blueA6);
-    }
-    &.weak.green {
-        color: var(--color-baseA12);
-        background-color: var(--color-greenA6);
     }
     &.weak.purple {
         color: var(--color-baseA12);
@@ -110,10 +106,6 @@
     &.solid.blue {
         color: var(--text-on-accent);
         background-color: var(--color-blue10);
-    }
-    &.solid.green {
-        color: var(--text-on-accent);
-        background-color: var(--color-green10);
     }
     &.solid.purple {
         color: var(--text-on-accent);

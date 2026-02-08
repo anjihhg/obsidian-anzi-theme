@@ -27,6 +27,7 @@ body.theme-dark {
 	--color-popoverBackground: #20212f;
 	--color-highlight: #41363a;
 	--link-color: #e2d0b3;
+	--link-color: var(--color-baseA12);
 	--link-color: #e2bfb3;
 	
 	--color-coverBackground: var(--color-bgA3);
