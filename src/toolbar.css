@@ -4,6 +4,8 @@ body {
 	--cg-nt-item-text-color: var(--color-baseA12);
 	--cg-nt-item-bg-color-hover: var(--hover-background);
 	--cg-nt-tbar-border-color: var(--color-baseA3);
+	--cg-nt-tbar-inactive-opacity-desktop: 1;
+	--cg-nt-tbar-top-sticky-pos-desktop: calc(-3.2vw - 1px);
 }
 
 .cg-note-toolbar-container .callout-content a,

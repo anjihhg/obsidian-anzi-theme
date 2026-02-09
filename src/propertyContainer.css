@@ -11,8 +11,10 @@ body {
 	--background-modifier-border: var(--color-baseA3);
 }
 
-.metadata-container {
-	border-bottom: 1px solid var(--background-modifier-border);
+.cm-sizer:not(:has(.cg-note-toolbar-container)) {
+	.metadata-container {
+		border-bottom: 1px solid var(--background-modifier-border);
+	}
 }
 
 input.metadata-property-key-input {

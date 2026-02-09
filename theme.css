@@ -1831,8 +1831,10 @@ body {
   --metadata-input-padding: 4px 6px;
   --background-modifier-border: var(--color-baseA3);
 }
-.metadata-container {
-  border-bottom: 1px solid var(--background-modifier-border);
+.cm-sizer:not(:has(.cg-note-toolbar-container)) {
+  .metadata-container {
+    border-bottom: 1px solid var(--background-modifier-border);
+  }
 }
 input.metadata-property-key-input {
   font-family: var(--font-monospace);
@@ -2141,6 +2143,17 @@ body {
     }
   }
   .workspace-leaf-content[data-type=bases]:has(.bases-view[data-view-type=cards]) .view-content {
+    .bases-header {
+      padding-left: 4px;
+      margin-left: 12px;
+      padding-right: 12px;
+    }
+    .bases-view {
+      padding-left: 12px !important;
+      padding-right: 4px !important;
+    }
+  }
+  .workspace-leaf-content[data-type=bases]:has(.bases-view[data-view-type=list]) .view-content {
     .bases-header {
       padding-left: 4px;
       margin-left: 12px;
@@ -2502,6 +2515,8 @@ body {
   --cg-nt-item-text-color: var(--color-baseA12);
   --cg-nt-item-bg-color-hover: var(--hover-background);
   --cg-nt-tbar-border-color: var(--color-baseA3);
+  --cg-nt-tbar-inactive-opacity-desktop: 1;
+  --cg-nt-tbar-top-sticky-pos-desktop: calc(-3.2vw - 1px);
 }
 .cg-note-toolbar-container .callout-content a,
 span.external-link {
