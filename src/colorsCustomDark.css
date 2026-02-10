@@ -16,11 +16,15 @@ body.theme-dark {
 	--link-color: var(--color-brown10);
 
 	/* !!!ACTIVE!!! ANTIGRAVITY */
-	--accent-reference: hsl(224, 42%, 50%);
+	/* --accent-reference: hsl(224, 42%, 50%);
 	--accent-reference: hsl(224, 42%, 50%);
 	--accent-h: 224;
 	--accent-s: 42%;
-	--accent-l: 50%;
+	--accent-l: 50%; */
+	--accent-reference: hsl(119, 85%, 54%);
+	--accent-h: 119;
+	--accent-s: 85%;
+	--accent-l: 54%;
 	--checkbox-color: var(--color-green);
 	--color-background: #1a1b26;
 	--color-sidebarBackground: rgb(22 22 30);

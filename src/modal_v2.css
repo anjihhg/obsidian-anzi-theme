@@ -86,7 +86,7 @@ body:not(.is-mobile) {
 		}
 
 		& * {
-			font-weight: 400 !important;
+			font-weight: 400;
 		}
 
 		.modal-title:empty {

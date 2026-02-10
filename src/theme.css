@@ -18,13 +18,6 @@
 @import "./popover.css";
 @import "./tag.css";
 
-/* plugin */
-@import "./metaBind.css";
-@import "./toolbar.css";
-@import "./calendar.css";
-@import "./highlight.css";
-@import "./quickAdd.css";
-
 /* app */
 @import "./app.css";
 /* @import "./modal.css"; */
@@ -32,6 +25,13 @@
 @import "./backlink.css";
 @import "./basesFormula.css";
 
-
 /* mobile */
 @import "./mobile.css";
+
+/* plugin */
+@import "./metaBind.css";
+@import "./toolbar.css";
+@import "./calendar.css";
+@import "./highlight.css";
+@import "./quickAdd.css";
+@import "./metaMaker.css";

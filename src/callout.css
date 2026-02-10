@@ -55,7 +55,7 @@ body {
 
 .callout-content {
 	overflow: unset;
-	opacity: 0.8;
+	opacity: 1;
 }
 
 .markdown-rendered p {
