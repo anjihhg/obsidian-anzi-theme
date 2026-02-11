@@ -2773,6 +2773,25 @@ input[type=number]:focus-visible {
 .workspace-drawer {
   box-shadow: var(--shadows-modal) !important;
 }
+.modal-sidebar.file-recovery-list {
+  padding: 0 !important;
+  padding-top: 12px !important;
+  & .setting-item {
+    padding-inline: 12px !important;
+  }
+}
+.file-recovery-list-item-container {
+  gap: 0;
+}
+.file-recovery-list-item-header {
+  padding: 0;
+  margin: 0 !important;
+  transition: 0s;
+  cursor: pointer !important;
+}
+.file-recovery-list-item-details {
+  padding: 12px;
+}
 
 /* src/modal_v2.css */
 @keyframes modalShow {
@@ -3398,6 +3417,28 @@ span.external-link {
 
 /* src/metaMaker.css */
 .meta-maker {
+  .meta-maker-section-header {
+    .meta-maker-section-label {
+      display: flex;
+      align-items: center;
+      padding-block: 12px 8px;
+      gap: 6px;
+      width: 100%;
+      cursor: pointer;
+      h4 {
+        font-size: 14.4px;
+        position: relative;
+        font-weight: 500 !important;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .meta-maker-no-results-wrapper {
+    padding-block: 8px;
+    padding-left: 8px !important;
+  }
   .modal-header {
     border-bottom: 1px solid var(--color-baseA5);
   }
@@ -3430,15 +3471,6 @@ span.external-link {
     overflow: hidden;
     box-shadow: inset 0 0 0 1px var(--color-baseA4);
     background-color: var(--color-baseA3);
-    & label:first-child {
-      &:has(input[type=radio]) {
-        color: var(--color-red);
-        &.is-checked {
-          background-color: var(--color-redA4);
-          box-shadow: inset 0 0 0 1px var(--color-redA4), inset 3px 0 0 0 var(--color-red);
-        }
-      }
-    }
     .meta-maker-alias-item-wrapper {
       display: flex;
       align-items: center;
@@ -3501,18 +3533,21 @@ span.external-link {
     box-sizing: border-box;
     width: auto;
     height: 120px;
-    opacity: 0.5;
+    opacity: 0.8;
   }
   .meta-maker-cover-item img {
     width: auto;
     height: 100%;
   }
-  .meta-maker-cover-item:hover,
-  .meta-maker-cover-item.selected {
+  .meta-maker-cover-item:hover {
+    transform: scale(1.8);
+    z-index: 1;
+    border: 2px solid var(--color-popoverBackground);
     opacity: 1;
   }
   .meta-maker-cover-item.selected {
-    border-color: var(--color-greenA10);
+    border-color: var(--color-green);
+    opacity: 1;
   }
   .meta-maker-form-section {
     display: flex;
@@ -3524,10 +3559,11 @@ span.external-link {
     color: var(--text-muted);
   }
   .meta-maker-input {
+    margin-bottom: 0 !important;
   }
   .meta-maker-textarea {
     resize: vertical;
-    min-height: 64px;
+    height: 48px !important;
     width: 100%;
   }
   .meta-maker-actions {
