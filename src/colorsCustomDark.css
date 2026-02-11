@@ -1,9 +1,9 @@
 body.theme-dark {
 	--link-weight: 500;
 }
+
+/* Anzi INIT */
 .theme-dark {
-	color-scheme: dark;
-	/* !!!DISABLED!!! ANZI */
 	--accent-reference: hsl(119, 85%, 54%);
 	--accent-h: 119;
 	--accent-s: 85%;
@@ -14,13 +14,10 @@ body.theme-dark {
 	--color-popoverBackground: #18202d;
 	--color-highlight: #48352f;
 	--link-color: var(--color-brown10);
+}
 
-	/* !!!ACTIVE!!! ANTIGRAVITY */
-	/* --accent-reference: hsl(224, 42%, 50%);
-	--accent-reference: hsl(224, 42%, 50%);
-	--accent-h: 224;
-	--accent-s: 42%;
-	--accent-l: 50%; */
+/* ANTIGRAVITY Edition */
+.theme-dark {
 	--accent-reference: hsl(119, 85%, 54%);
 	--accent-h: 119;
 	--accent-s: 85%;
@@ -30,9 +27,27 @@ body.theme-dark {
 	--color-sidebarBackground: rgb(22 22 30);
 	--color-popoverBackground: #20212f;
 	--color-highlight: #41363a;
-	--link-color: #e2d0b3;
-	--link-color: var(--color-baseA12);
 	--link-color: #e2bfb3;
+}
+
+/* LP Edition */
+.theme-dark {
+    --accent-h: 119;
+    --accent-s: 85%;
+    --accent-l: 54%;
+    --checkbox-color: hsl(125.15deg 100% 39.6%);
+    --color-background: #233048;
+    --color-sidebarBackground: rgb(30 41 61);
+    --color-popoverBackground: #20212f;
+    --color-highlight: #ffdb0030;
+    --link-color: #fff1d5;
+}
+
+
+
+
+.theme-dark {
+	color-scheme: dark;
 	
 	--color-coverBackground: var(--color-bgA3);
 	--color-borderHighlight: var(--color-bgA7);
