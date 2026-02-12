@@ -2,6 +2,7 @@ body.theme-dark {
 	--link-weight: 500;
 }
 
+
 /* Anzi INIT */
 .theme-dark {
 	--accent-reference: hsl(119, 85%, 54%);
@@ -38,12 +39,10 @@ body.theme-dark {
     --checkbox-color: hsl(125.15deg 100% 39.6%);
     --color-background: #233048;
     --color-sidebarBackground: rgb(30 41 61);
-    --color-popoverBackground: #20212f;
+    --color-popoverBackground: #2d3d59;
     --color-highlight: #ffdb0030;
     --link-color: #fff1d5;
 }
-
-
 
 
 .theme-dark {
