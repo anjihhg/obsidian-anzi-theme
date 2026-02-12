@@ -67,7 +67,7 @@ body {
   --accent-s: 85%;
   --accent-l: 23%;
   --checkbox-color: hsl(144, 80%, 22%);
-  --link-color: var(--color-baseA12);
+  --link-color: var(--color-bronze12);
   --color-coverBackground: var(--color-baseA2);
   --color-background: hsl(58, 6.1%, 92.9%);
   --color-sidebarBackground: hsl(57, 6%, 89%);
@@ -2490,7 +2490,7 @@ button {
   transition: all 0.2s ease 0s;
   background-clip: padding-box;
   border: 3px solid transparent;
-  background-color: var(--color-baseA5);
+  background-color: var(--color-baseA3);
   border-radius: 12px;
 }
 ::-webkit-scrollbar {
@@ -2499,7 +2499,7 @@ button {
   background-color: transparent;
 }
 :hover::-webkit-scrollbar-thumb {
-  background-color: var(--color-baseA6);
+  background-color: var(--color-baseA5);
 }
 .cm-s-obsidian .templater-inline .cm-templater-command {
   background-color: transparent;

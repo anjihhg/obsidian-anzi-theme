@@ -27,7 +27,7 @@ button {
 	transition: all 0.2s ease 0s;
 	background-clip: padding-box;
 	border: 3px solid transparent;
-	background-color: var(--color-baseA5);
+	background-color: var(--color-baseA3);
 	border-radius: 12px;
 }
 
@@ -38,7 +38,7 @@ button {
 }
 
 :hover::-webkit-scrollbar-thumb {
-	background-color: var(--color-baseA6);
+	background-color: var(--color-baseA5);
 }
 
 .cm-s-obsidian .templater-inline .cm-templater-command {
