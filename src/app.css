@@ -218,9 +218,9 @@ input[type="number"]:focus-visible {
 }
 
 /* 에디터 하단 패딩 */
-.markdown-source-view.mod-cm6 .cm-content {
+/* .markdown-source-view.mod-cm6 .cm-content {
 	padding-bottom: 100px !important;
-}
+} */
 
 .metadata-property {
 	--metadata-property-background: transparent;

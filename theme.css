@@ -2644,9 +2644,6 @@ input[type=number]:focus-visible {
     height: 38px;
   }
 }
-.markdown-source-view.mod-cm6 .cm-content {
-  padding-bottom: 100px !important;
-}
 .metadata-property {
   --metadata-property-background: transparent;
   --metadata-property-box-shadow: none;
