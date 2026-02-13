@@ -1,0 +1,47 @@
+/* 이건 안되겠다.  */
+
+.bases-view[data-view-type="list"] {
+    color: red !important;
+    
+    .bases-list-container {
+        .bases-list-group {
+            .bases-list-group-list {
+                .bases-list-item {
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    border-bottom: 1px solid var(--color-baseA5);
+
+                    .bases-list-item-properties {
+                        &.nested {
+                            /* nested line */
+                            &::before {
+                                display: none;
+                            }
+
+                            color: var(--color-baseA10);
+                            padding: 0;
+
+                            .bases-list-property {
+                                .list-bullet {
+                                    display: none;
+                                }
+
+                                .bases-rendered-value {
+                                    
+                                }
+                            }
+                        }
+                        .bases-list-property {
+                            .bases-rendered-value {
+                                .internal-link {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
