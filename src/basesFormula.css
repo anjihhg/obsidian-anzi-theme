@@ -1,12 +1,20 @@
 .anzi {
+    display: inline-flex;
+    width: auto;
+    &.ttc {
+        text-transform: capitalize;
+    }
+    &.ttu {
+        text-transform: uppercase;
+    }
     &.tag{
-        padding: 1px 4px;
+        padding: 1px 2px;
         border-radius: 2px;
         min-width: 14px;
         line-height: 1.3em;
         text-align: center;
         letter-spacing: -0.03em;
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
     &.right { 
         margin-left: auto;
@@ -50,7 +58,16 @@
         color: var(--color-purple);
     }
     &.gray {
-        color: var(--color-baseA11);
+        color: var(--color-gray);
+    }
+    &.bronze {
+        color: var(--color-bronze11);
+    }
+    &.brown {
+        color: var(--color-brown11);
+    }
+    &.plum {
+        color: var(--color-mint11);
     }
     &.weak {
         color: var(--color-baseA12);
@@ -114,7 +131,8 @@
 }
 
 .anzi-wrapper {
-    display: flex;
+    display: inline-flex;
+    width: auto;
     align-items: center;
     font-family: var(--font-monospace);
     font-size: 0.8em;
@@ -140,7 +158,6 @@
     }
 
     .footer-bases {
-        
         &.c {
             color: var(--color-accent);
             background-color: r(--color-baseA4);
