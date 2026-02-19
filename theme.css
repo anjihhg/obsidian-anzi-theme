@@ -2054,22 +2054,33 @@ body {
 body {
   --bases-cards-background: var(--color-background);
   --bases-cards-cover-background: var(--color-baseA2);
-  --bases-cards-shadow: 0 0 0 1px var(--color-baseA5);
-  --bases-cards-shadow-hover: 0 0 0 1px var(--color-baseA7);
+  --bases-cards-shadow: 0 2px 4px 0 var(--color-baseA2);
+  --bases-cards-shadow-hover: none;
   --bases-cards-line-height: 17px;
   --color-meta: var(--color-baseA10);
   --cards-base-padding: 10px;
 }
 .bases-view[data-view-type=cards] {
-  background-color: var(--color-baseA5);
+  background-color: var(--color-baseA2);
 }
 .bases-cards-item {
   display: flex;
   flex-direction: column;
   gap: 0;
-  border-radius: 1px;
+  border-radius: 4px;
   transition: box-shadow, background-color 0.3s;
   padding: 0;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    left: 0;
+    top: 0;
+    position: absolute;
+    box-shadow: inset 0 0 0 1px var(--color-baseA6), inset 0 1.5px 0 0 var(--color-bgA8);
+    z-index: 1;
+  }
   .bases-cards-label {
     display: none;
   }
@@ -2079,8 +2090,9 @@ body {
     left: unset;
     margin-top: auto;
     order: 99;
-    box-shadow: inset 0 0.5px 0 0 var(--color-baseA4);
+    box-shadow: inset 0 1px 0 0 var(--color-baseA5);
     background-position: center;
+    transform: scale(1.05);
     &::after {
       content: "";
       width: 100%;
@@ -2125,8 +2137,6 @@ body {
 }
 @media (hover: hover) {
   .bases-cards-item:hover {
-    transition: 0s;
-    box-shadow: var(--bases-cards-shadow-hover);
     background-color: var(--color-baseA1);
     .bases-cards-cover {
       &::after {
@@ -2136,7 +2146,7 @@ body {
   }
 }
 .bases-cards-item:active {
-  transition: box-shadow, background-color var(--anim-duration-fast);
+  transition: 0s;
   box-shadow: var(--bases-cards-shadow-hover);
   background-color: var(--color-baseA5);
   .bases-cards-cover {

@@ -2,7 +2,7 @@ import esbuild from "esbuild";
 import fs from "fs";
 import path from "path";
 
-const targetDir = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/anzi-obs/.obsidian/themes/Anzi";
+const targetDir = path.join(process.env.HOME, "Library/Mobile Documents/iCloud~md~obsidian/Documents/anzi-obs/.obsidian/themes/Anzi");
 const outFile = "theme.css";
 const targetFile = path.join(targetDir, outFile);
 
