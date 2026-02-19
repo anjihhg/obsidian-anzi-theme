@@ -2154,10 +2154,6 @@ body {
       background-color: var(--color-baseA9);
     }
   }
-  &::after {
-    box-shadow: inset -1px -1px 0 0px var(--color-bgA8), inset 1px 1px 0 0px var(--color-baseA8);
-    z-index: 1;
-  }
 }
 .bases-cards-label {
   display: none;
