@@ -58,7 +58,7 @@
         color: var(--color-purple);
     }
     &.gray {
-        color: var(--color-gray);
+        color: var(--color-gray10);
     }
     &.bronze {
         color: var(--color-bronze11);
@@ -66,7 +66,7 @@
     &.brown {
         color: var(--color-brown11);
     }
-    &.plum {
+    &.mint {
         color: var(--color-mint11);
     }
     &.weak {
@@ -98,11 +98,27 @@
         color: var(--color-baseA12);
         background-color: var(--color-purpleA6);
     }
+    &.solid.bronze {
+        color: var(--color-baseA12);
+        background-color: var(--color-bronze6);
+    }
+    &.solid.brown {
+        color: var(--color-baseA12);
+        background-color: var(--color-brown6);
+    }
+    &.solid.mint {
+        color: var(--color-baseA12);
+        background-color: var(--color-mint6);
+    }
     &.solid {
         color: var(--text-on-accent);
         background-color: var(--color-baseA12);
         box-shadow: inset 0 0 0 0.5px var(--color-baseA6);
         font-weight: 500;
+    }
+    &.solid.gray {
+        color: var(--text-on-accent);
+        background-color: var(--color-gray10);
     }
     &.solid.red {
         color: var(--text-on-accent);
@@ -127,6 +143,18 @@
     &.solid.purple {
         color: var(--text-on-accent);
         background-color: var(--color-purple10);
+    }
+    &.solid.bronze {
+        color: var(--text-on-accent);
+        background-color: var(--color-bronze11);
+    }
+    &.solid.brown {
+        color: var(--text-on-accent);
+        background-color: var(--color-brown11);
+    }
+    &.solid.mint {
+        color: var(--text-on-accent);
+        background-color: var(--color-mint11);
     }
 }
 

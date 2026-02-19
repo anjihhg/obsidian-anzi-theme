@@ -2054,8 +2054,8 @@ body {
 body {
   --bases-cards-background: var(--color-background);
   --bases-cards-cover-background: var(--color-baseA2);
-  --bases-cards-shadow: 0 0 0 1px var(--color-baseA5);
-  --bases-cards-shadow-hover: 0 0 0 1px var(--color-baseA7);
+  --bases-cards-shadow: none;
+  --bases-cards-shadow-hover: none;
   --bases-cards-line-height: 17px;
   --color-meta: var(--color-baseA10);
   --cards-base-padding: 10px;
@@ -2068,8 +2068,17 @@ body {
   flex-direction: column;
   gap: 0;
   border-radius: 1px;
-  transition: box-shadow, background-color 0.3s;
   padding: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: inset 1px 1px 0 0px var(--color-bgA8), inset -1px -1px 0 0px var(--color-baseA8);
+    z-index: 1;
+  }
   .bases-cards-label {
     display: none;
   }
@@ -2079,7 +2088,7 @@ body {
     left: unset;
     margin-top: auto;
     order: 99;
-    box-shadow: inset 0 0.5px 0 0 var(--color-baseA4);
+    box-shadow: inset 0 1px 0 0 var(--color-baseA5);
     background-position: center;
     &::after {
       content: "";
@@ -2125,7 +2134,6 @@ body {
 }
 @media (hover: hover) {
   .bases-cards-item:hover {
-    transition: 0s;
     box-shadow: var(--bases-cards-shadow-hover);
     background-color: var(--color-baseA1);
     .bases-cards-cover {
@@ -2136,13 +2144,16 @@ body {
   }
 }
 .bases-cards-item:active {
-  transition: box-shadow, background-color var(--anim-duration-fast);
   box-shadow: var(--bases-cards-shadow-hover);
   background-color: var(--color-baseA5);
   .bases-cards-cover {
     &::after {
       background-color: var(--color-baseA9);
     }
+  }
+  &::after {
+    box-shadow: inset -1px -1px 0 0px var(--color-bgA8), inset 1px 1px 0 0px var(--color-baseA8);
+    z-index: 1;
   }
 }
 .bases-cards-label {
@@ -3177,7 +3188,7 @@ body:not(.is-mobile) {
     color: var(--color-purple);
   }
   &.gray {
-    color: var(--color-gray);
+    color: var(--color-gray10);
   }
   &.bronze {
     color: var(--color-bronze11);
@@ -3185,7 +3196,7 @@ body:not(.is-mobile) {
   &.brown {
     color: var(--color-brown11);
   }
-  &.plum {
+  &.mint {
     color: var(--color-mint11);
   }
   &.weak {
@@ -3217,11 +3228,27 @@ body:not(.is-mobile) {
     color: var(--color-baseA12);
     background-color: var(--color-purpleA6);
   }
+  &.solid.bronze {
+    color: var(--color-baseA12);
+    background-color: var(--color-bronze6);
+  }
+  &.solid.brown {
+    color: var(--color-baseA12);
+    background-color: var(--color-brown6);
+  }
+  &.solid.mint {
+    color: var(--color-baseA12);
+    background-color: var(--color-mint6);
+  }
   &.solid {
     color: var(--text-on-accent);
     background-color: var(--color-baseA12);
     box-shadow: inset 0 0 0 0.5px var(--color-baseA6);
     font-weight: 500;
+  }
+  &.solid.gray {
+    color: var(--text-on-accent);
+    background-color: var(--color-gray10);
   }
   &.solid.red {
     color: var(--text-on-accent);
@@ -3246,6 +3273,18 @@ body:not(.is-mobile) {
   &.solid.purple {
     color: var(--text-on-accent);
     background-color: var(--color-purple10);
+  }
+  &.solid.bronze {
+    color: var(--text-on-accent);
+    background-color: var(--color-bronze11);
+  }
+  &.solid.brown {
+    color: var(--text-on-accent);
+    background-color: var(--color-brown11);
+  }
+  &.solid.mint {
+    color: var(--text-on-accent);
+    background-color: var(--color-mint11);
   }
 }
 .anzi-wrapper {
