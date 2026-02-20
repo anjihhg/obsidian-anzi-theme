@@ -25,6 +25,7 @@
 @import "./modal_v2.css";
 @import "./backlink.css";
 @import "./basesFormula.css";
+@import "./basesFormulaStatus.css";
 
 /* mobile */
 @import "./mobile.css";

@@ -15,7 +15,7 @@ body:not(.is-mobile) {
 		.suggestion-item {
 			color: var(--color-baseA11);
 			padding: 0 24px;
-			height: 40px;
+			min-height: 40px;
 			display: flex;
 			align-items: center;
 		}

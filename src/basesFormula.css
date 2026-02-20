@@ -1,6 +1,11 @@
 .anzi {
     display: inline-flex;
     width: auto;
+    font-weight: 500;
+
+    &.none {
+        display: none;
+    }
     &.ttc {
         text-transform: capitalize;
     }
@@ -8,8 +13,8 @@
         text-transform: uppercase;
     }
     &.tag{
-        padding: 1px 2px;
-        border-radius: 2px;
+        padding: 1px 3.5px;
+        border-radius: 0px;
         min-width: 14px;
         line-height: 1.3em;
         text-align: center;
@@ -23,8 +28,8 @@
         margin-inline: auto;
     }
     &.pill {
-        padding: 1px 7px;
-        border-radius: 12px;
+        padding: 1px 3.5px;
+        border-radius: 4px;
     }
     &.mono {
         font-family: var(--font-monospace);
@@ -37,8 +42,10 @@
         font-style: italic;
     }
     &.b {
-       font-weight: 500; 
+       font-weight: 600; 
     }
+
+    
     &.red {
         color: var(--color-red11);
     }
@@ -52,7 +59,7 @@
         color: var(--color-orange);
     }
     &.blue {
-        color: var(--color-accent-1);
+        color: var(--color-blue);
     }
     &.purple {
         color: var(--color-purple);
@@ -69,10 +76,11 @@
     &.mint {
         color: var(--color-mint11);
     }
+
+
     &.weak {
         color: var(--color-baseA12);
         background-color: var(--color-baseA4);
-        box-shadow: inset 0 0 0 0.5px var(--color-baseA3);
     }
     &.weak.red {
         color: var(--color-baseA12);
@@ -98,18 +106,21 @@
         color: var(--color-baseA12);
         background-color: var(--color-purpleA6);
     }
-    &.solid.bronze {
+    &.weak.bronze {
         color: var(--color-baseA12);
         background-color: var(--color-bronze6);
     }
-    &.solid.brown {
+    &.weak.brown {
         color: var(--color-baseA12);
         background-color: var(--color-brown6);
     }
-    &.solid.mint {
+    &.weak.mint {
         color: var(--color-baseA12);
         background-color: var(--color-mint6);
     }
+
+
+
     &.solid {
         color: var(--text-on-accent);
         background-color: var(--color-baseA12);
@@ -189,14 +200,6 @@
         &.c {
             color: var(--color-accent);
             background-color: r(--color-baseA4);
-        }
-    
-        &.b {
-            /* color: var(--color-brown10); */
-        }
-    
-        &.l {
-            /* color: var(--color-brown10); */
         }
     }
 }

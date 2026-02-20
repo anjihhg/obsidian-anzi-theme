@@ -2,21 +2,6 @@ body.theme-dark {
 	--link-weight: 500;
 }
 
-
-/* Anzi INIT */
-.theme-dark {
-	--accent-reference: hsl(119, 85%, 54%);
-	--accent-h: 119;
-	--accent-s: 85%;
-	--accent-l: 54%;
-	--checkbox-color: var(--color-accent);
-	--color-background: #0e151f;
-	--color-sidebarBackground: rgb(11, 14, 25);
-	--color-popoverBackground: #18202d;
-	--color-highlight: #48352f;
-	--link-color: var(--color-brown10);
-}
-
 /* ANTIGRAVITY Edition */
 .theme-dark {
 	--accent-reference: hsl(119, 85%, 54%);
@@ -42,6 +27,20 @@ body.theme-dark {
     --color-popoverBackground: #2d3d59;
     --color-highlight: #ffdb0030;
     --link-color: #fff1d5;
+}
+
+/* Anzi INIT */
+.theme-dark {
+	--accent-reference: hsl(119, 85%, 54%);
+	--accent-h: 119;
+	--accent-s: 85%;
+	--accent-l: 54%;
+	--checkbox-color: var(--color-accent);
+	--color-background: #0a0a0a;
+	--color-sidebarBackground: #111111;
+	--color-popoverBackground: #222;
+	--color-highlight: #48352f;
+	--link-color: var(--color-brown10);
 }
 
 

@@ -9,8 +9,8 @@
 	--link-color: var(--color-bronze12);
 
 	--color-coverBackground: var(--color-baseA2);
-	--color-background: hsl(58, 6.1%, 92.9%);
-	--color-sidebarBackground: hsl(57, 6%, 89%);
+	--color-background: #ffffff;
+	--color-sidebarBackground: #f9f8f7;
 	--color-borderHighlight: var(--color-bgA12);
 	--color-popoverBackground: #f8f8f8;
 	--color-blurredBackground: rgba(248, 248, 248, 0.5);
