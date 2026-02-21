@@ -3351,6 +3351,7 @@ body:not(.is-mobile) {
   background-size: contain;
   background-repeat: no-repeat;
   flex-shrink: 0;
+  margin-right: 6px;
   &.backlog {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgZmlsbD0ibm9uZSI+PGNpcmNsZSBjeD0iNyIgY3k9IjciIHI9IjYuMjUiIHN0cm9rZT0iIzdCN0I3QiIgc3Ryb2tlLWRhc2hhcnJheT0iMS43NSAxLjc1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3R5bGU9InN0cm9rZTojN2I3YjdiO3N0cm9rZTpjb2xvcihkaXNwbGF5LXAzIC40ODExIC40ODExIC40ODExKTtzdHJva2Utb3BhY2l0eToxIi8+PC9zdmc+);
   }
