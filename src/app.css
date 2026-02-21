@@ -6,6 +6,11 @@ button {
 	font-weight: 500;
 }
 
+.metadata-properties .metadata-input-longtext:not(:empty) {
+	display: inline-flex;
+	align-items: center;
+}
+
 .markdown-source-view.mod-cm6 .cm-scroller {
 	overflow-x: hidden;
 }
