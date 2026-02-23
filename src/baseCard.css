@@ -28,7 +28,7 @@ body.theme-dark {
 }
 
 .bases-cards-group {
-	gap: 16px;
+	gap: 12px;
 }
 
 .bases-view[data-view-type="cards"] {
@@ -68,7 +68,7 @@ body.theme-dark {
 		left: unset;
 		margin-top: 8px;
 		order: 99;
-		background-position: top;
+		/* background-position: top; */
 		mask-image: linear-gradient(to top, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
 		/* transform: scale(1.05); */
 

@@ -11,6 +11,10 @@ body {
 	/* --metadata-input-background-active: blue; */
 }
 
+.bases-table-header-icon {
+	display: none;
+}
+
 .bases-toolbar {
 	column-gap: 8px;
 
@@ -216,11 +220,11 @@ body {
 	}
 
 	font-family: var(--font-monospace);
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: var(--bases-group-heading-value-size);
 }
 
-.workspace-leaf-content[data-type="bases"]:has(.bases-view[data-view-type="table"]) {
+/* .workspace-leaf-content[data-type="bases"]:has(.bases-view[data-view-type="table"]) {
 	position: relative;
 	display: inline-block;
 
@@ -235,4 +239,4 @@ body {
 		z-index: 10;
 		pointer-events: none;
 	}
-}
+} */

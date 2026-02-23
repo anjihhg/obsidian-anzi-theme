@@ -21,6 +21,18 @@
 	--color-overlay: rgba(106, 106, 106, 0.5);
 	--color-white: white;
 	--color-black: black;
+
+	--c-gray: #9b9b9b;
+    --c-brown: #712200;
+	--c-bronze: #6e583d;
+    --c-orange: #FF4D00;
+    --c-yellow: #D37200;
+    --c-green: #038600;
+    --c-blue: #006BCE;
+    --c-purple: #7900D9;
+    --c-pink: #EE0056;
+    --c-red: #C60000;
+
 	--color-baseA1: hsla(60, 89.3%, 18.3%, 0.012);
 	--color-baseA2: hsla(60, 78.1%, 9%, 0.028);
 	--color-baseA3: hsla(60, 99%, 3.9%, 0.051);

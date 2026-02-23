@@ -2,6 +2,7 @@
     display: inline-flex;
     width: auto;
     font-weight: 500;
+    flex-shrink: 0;
 
     &.none {
         display: none;
@@ -13,8 +14,8 @@
         text-transform: uppercase;
     }
     &.tag{
-        padding: 1px 3.5px;
-        border-radius: 0px;
+        padding: 0.4px 3px;
+        border-radius: 1px;
         min-width: 14px;
         line-height: 1.3em;
         text-align: center;
@@ -27,9 +28,13 @@
     &.center { 
         margin-inline: auto;
     }
+    &.r {
+        padding: 0.4px 3px;
+        border-radius: 2.2px;
+    }
     &.pill {
-        padding: 1px 3.5px;
-        border-radius: 4px;
+        padding: 1px 4.5px;
+        border-radius: 50px;
     }
     &.mono {
         font-family: var(--font-monospace);
@@ -42,81 +47,83 @@
         font-style: italic;
     }
     &.b {
-       font-weight: 600; 
+       font-weight: 600 !important; 
     }
 
     
     &.red {
-        color: var(--color-red11);
+        color: var(--c-red);
     }
     &.green {
-        color: var(--color-green11);
+        color: var(--c-green);
     }
     &.yellow {
-        color: var(--color-yellow11);
+        color: var(--c-yellow);
     }
     &.orange {
-        color: var(--color-orange);
+        color: var(--c-orange);
     }
     &.blue {
-        color: var(--color-blue);
+        color: var(--c-blue);
     }
     &.purple {
-        color: var(--color-purple);
+        color: var(--c-purple);
     }
     &.gray {
-        color: var(--color-gray10);
+        color: var(--c-gray);
     }
     &.bronze {
-        color: var(--color-bronze11);
+        color: var(--c-bronze);
     }
     &.brown {
-        color: var(--color-brown11);
+        color: var(--c-brown);
     }
-    &.mint {
-        color: var(--color-mint11);
+    &.pink {
+        color: var(--c-pink);
+    }
+    &.accent { 
+        color: var(--color-accent);
     }
 
 
     &.weak {
         color: var(--color-baseA12);
         background-color: var(--color-baseA4);
+        box-shadow: inset 0 0 0 1px var(--color-baseA2);
+    }
+    &.weak.gray {
+        color: var(--color-baseA9);
+        background-color: color-mix(in srgb, var(--c-gray), transparent 80%);
     }
     &.weak.red {
-        color: var(--color-baseA12);
-        background-color: var(--color-redA6);
+        background-color: color-mix(in srgb, var(--c-red), transparent 80%);
     }
     &.weak.green {
-        color: var(--color-baseA12);
-        background-color: var(--color-greenA6);
+        background-color: color-mix(in srgb, var(--c-green), transparent 80%);
     }
     &.weak.yellow {
-        color: var(--color-baseA12);
-        background-color: var(--color-yellow6);
+        background-color: color-mix(in srgb, var(--c-yellow), transparent 80%);
     }
     &.weak.orange {
-        color: var(--color-baseA12);
-        background-color: var(--color-orangeA6);
+        background-color: color-mix(in srgb, var(--c-orange), transparent 80%);
     }
     &.weak.blue {
-        color: var(--color-baseA12);
-        background-color: var(--color-blueA6);
+        background-color: color-mix(in srgb, var(--c-blue), transparent 80%);
     }
     &.weak.purple {
-        color: var(--color-baseA12);
-        background-color: var(--color-purpleA6);
+        background-color: color-mix(in srgb, var(--c-purple), transparent 80%);
     }
     &.weak.bronze {
-        color: var(--color-baseA12);
-        background-color: var(--color-bronze6);
+        background-color: color-mix(in srgb, var(--c-bronze), transparent 80%);
     }
     &.weak.brown {
-        color: var(--color-baseA12);
-        background-color: var(--color-brown6);
+        background-color: color-mix(in srgb, var(--c-brown), transparent 80%);
     }
-    &.weak.mint {
-        color: var(--color-baseA12);
-        background-color: var(--color-mint6);
+    &.weak.pink {
+        background-color: color-mix(in srgb, var(--c-pink), transparent 80%);
+    }
+    &.weak.accent { 
+        background-color: color-mix(in srgb, var(--color-accent), transparent 80%);
     }
 
 
@@ -124,49 +131,119 @@
     &.solid {
         color: var(--text-on-accent);
         background-color: var(--color-baseA12);
-        box-shadow: inset 0 0 0 0.5px var(--color-baseA6);
         font-weight: 500;
     }
     &.solid.gray {
         color: var(--text-on-accent);
-        background-color: var(--color-gray10);
+        background-color: var(--c-gray);
     }
     &.solid.red {
         color: var(--text-on-accent);
-        background-color: var(--color-red10);
+        background-color: var(--c-red);
     }
     &.solid.green {
         color: var(--text-on-accent);
-        background-color: var(--color-green10);
+        background-color: var(--c-green);
     }
     &.solid.yellow {
         color: var(--text-on-accent);
-        background-color: var(--color-yellow10);
+        background-color: var(--c-yellow);
     }
     &.solid.orange {
         color: var(--text-on-accent);
-        background-color: var(--color-orange10);
+        background-color: var(--c-orange);
     }
     &.solid.blue {
         color: var(--text-on-accent);
-        background-color: var(--color-blue10);
+        background-color: var(--c-blue);
     }
     &.solid.purple {
         color: var(--text-on-accent);
-        background-color: var(--color-purple10);
+        background-color: var(--c-purple);
     }
     &.solid.bronze {
         color: var(--text-on-accent);
-        background-color: var(--color-bronze11);
+        background-color: var(--c-bronze);
     }
     &.solid.brown {
         color: var(--text-on-accent);
-        background-color: var(--color-brown11);
+        background-color: var(--c-brown);
     }
-    &.solid.mint {
+    &.solid.pink {
         color: var(--text-on-accent);
-        background-color: var(--color-mint11);
+        background-color: var(--c-pink);
     }
+    &.solid.accent { 
+        color: var(--text-on-accent);
+        background-color: var(--color-accent);
+    }
+
+
+
+    &.outline {
+        /* color: var(--text-on-accent); */
+        /* background-color: var(--color-baseA12); */
+        border-width: 1px;
+        border-style: solid;
+        border-color: color-mix(in srgb, var(--color-baseA12), transparent 50%);
+        font-weight: 500;
+    }
+    &.outline.gray {
+        color: var(--c-gray);
+        border-color: color-mix(in srgb, var(--c-gray), transparent 50%);
+        background-color: color-mix(in srgb, var(--c-gray), transparent 90%);
+    }
+    &.outline.red {
+        color: var(--c-red);
+        border-color: color-mix(in srgb, var(--c-red), transparent 50%);
+        background-color: color-mix(in srgb, var(--c-red), transparent 90%);
+    }
+    &.outline.green {
+        color: var(--c-green);
+        border-color: color-mix(in srgb, var(--c-green), transparent 50%);
+        background-color: color-mix(in srgb, var(--c-green), transparent 90%);
+    }
+    &.outline.yellow {
+        color: var(--c-yellow);
+        border-color: color-mix(in srgb, var(--c-yellow), transparent 50%);
+        background-color: color-mix(in srgb, var(--c-yellow), transparent 90%);
+    }
+    &.outline.orange {
+        color: var(--c-orange);
+        border-color: color-mix(in srgb, var(--c-orange), transparent 50%);
+        background-color: color-mix(in srgb, var(--c-orange), transparent 90%);
+    }
+    &.outline.blue {
+        color: var(--c-blue);
+        border-color: color-mix(in srgb, var(--c-blue), transparent 50%);
+        background-color: color-mix(in srgb, var(--c-blue), transparent 90%);
+    }
+    &.outline.purple {
+        color: var(--c-purple);
+        border-color: color-mix(in srgb, var(--c-purple), transparent 50%);
+        background-color: color-mix(in srgb, var(--c-purple), transparent 90%);
+    }
+    &.outline.bronze {
+        color: var(--c-bronze);
+        border-color: color-mix(in srgb, var(--c-bronze), transparent 50%);
+        background-color: color-mix(in srgb, var(--c-bronze), transparent 90%);
+    }
+    &.outline.brown {
+        color: var(--c-brown);
+        border-color: color-mix(in srgb, var(--c-brown), transparent 50%);
+        background-color: color-mix(in srgb, var(--c-brown), transparent 90%);
+    }
+    &.outline.pink {
+        color: var(--c-pink);
+        border-color: color-mix(in srgb, var(--c-pink), transparent 50%);
+        background-color: color-mix(in srgb, var(--c-pink), transparent 90%);
+    }
+    &.outline.accent { 
+        color: var(--color-accent);
+        border-color: color-mix(in srgb, var(--color-accent), transparent 50%);
+        background-color: color-mix(in srgb, var(--color-accent), transparent 90%);
+    }
+
 }
 
 .anzi-wrapper {

@@ -3,7 +3,7 @@ body.theme-dark {
 }
 
 /* ANTIGRAVITY Edition */
-.theme-dark {
+/* .theme-dark {
 	--accent-reference: hsl(119, 85%, 54%);
 	--accent-h: 119;
 	--accent-s: 85%;
@@ -14,10 +14,10 @@ body.theme-dark {
 	--color-popoverBackground: #20212f;
 	--color-highlight: #41363a;
 	--link-color: #e2bfb3;
-}
+} */
 
 /* LP Edition */
-.theme-dark {
+/* .theme-dark {
     --accent-h: 119;
     --accent-s: 85%;
     --accent-l: 54%;
@@ -27,7 +27,7 @@ body.theme-dark {
     --color-popoverBackground: #2d3d59;
     --color-highlight: #ffdb0030;
     --link-color: #fff1d5;
-}
+} */
 
 /* Anzi INIT */
 .theme-dark {
@@ -40,7 +40,7 @@ body.theme-dark {
 	--color-sidebarBackground: #111111;
 	--color-popoverBackground: #222;
 	--color-highlight: #48352f;
-	--link-color: var(--color-brown10);
+	--link-color: #ead0b8;
 }
 
 
@@ -56,6 +56,17 @@ body.theme-dark {
 	--color-danger: #ff305c;
 	--color-secondary: var(--color-tomato10);
 	--color-overlay: rgba(7, 10, 14, 0.7);
+
+	--c-gray: #747474;
+	--c-brown: #cf6e45;
+	--c-bronze: #c9a171;
+    --c-orange: #FF4D00;
+    --c-yellow: #FFC700;
+    --c-green: #00E04C;
+    --c-blue: #34C2FF;
+    --c-purple: #B85DFF;
+    --c-pink: #FF5391;
+    --c-red: #FF2C2C;
 
 	--color-baseA1: hsla(0, 0%, 0%, 0);
 	--color-baseA2: hsla(240, 76.7%, 91.2%, 0.031);
