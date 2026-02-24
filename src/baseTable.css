@@ -97,6 +97,7 @@ body {
 
 .bases-thead .bases-td {
 	box-shadow: unset;
+	mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 95%);
 	/* box-shadow: inset -0.5px 0 0 0 var(--color-baseA3) !important; */
 	/* background-color: var(--color-baseA2); */
 }
@@ -199,6 +200,7 @@ body {
 .bases-td {
 	box-shadow: calc(var(--bases-table-column-border-width) * -1) 0 0
 		var(--color-baseA3);
+	mask-image: linear-gradient(to right, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 96%);
 
 	&:first-child {
 		box-shadow: none;

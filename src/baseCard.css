@@ -96,6 +96,7 @@ body.theme-dark {
 			align-items: center;
 			max-width: 100%;
 			width: 100%;
+			mask-image: linear-gradient(to right, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 96%);
 
 			input {
 				position: relative;

@@ -49,6 +49,10 @@
     &.b {
        font-weight: 600 !important; 
     }
+    &.dimmed50 {
+        filter: grayscale(30%);
+        opacity: 0.5;
+    }
 
     
     &.red {
