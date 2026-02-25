@@ -19,10 +19,10 @@ body.theme-light {
 body.theme-dark {
 	--bases-view-background: var(--color-bgA2);
 
-	--bases-cards-background: var(--color-baseA3);
+	--bases-cards-background: var(--color-baseA2);
 	--bases-cards-background-hover: var(--color-baseA4);
 	--bases-cards-background-active: var(--color-baseA5);
-	--bases-cards-inner-shadow: inset 0 0 0 1px var(--color-baseA2), inset 0 1px 0 0 var(--color-baseA3);
+	--bases-cards-inner-shadow: inset 0 0 0 1px var(--color-baseA1), inset 0 1px 0 0 var(--color-baseA2);
 	--bases-cards-cover-background: var(--color-baseA2);
 	--bases-cards-shadow: 0 2px 4px 0 var(--color-bgA3);
 }
