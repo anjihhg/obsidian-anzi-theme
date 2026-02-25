@@ -1984,18 +1984,19 @@ body {
   text-decoration-line: underline;
   text-decoration-style: initial;
   text-underline-offset: 3px;
-  text-decoration-color: var(--color-baseA7) !important;
-  text-decoration-thickness: 1.4px !important;
+  text-decoration-color: var(--color-baseA6) !important;
+  text-decoration-thickness: 1.3px !important;
   background-color: var(--color-baseA1);
 }
 .cm-url:hover,
 .cm-link:hover,
 .internal-link:hover,
 .cm-hmd-internal-link:hover {
+  color: var(--color-baseA12) !important;
   text-decoration-line: underline !important;
   text-decoration-style: initial !important;
   text-underline-offset: 3px !important;
-  text-decoration-color: var(--color-baseA9);
+  text-decoration-color: var(--color-baseA7);
 }
 .cm-url:hover,
 .cm-link:hover,
@@ -2243,7 +2244,7 @@ body {
   --bases-table-cell-shadow-active: 0 0 0 1px var(--color-baseA10), inset 0 0 0 1px var(--color-baseA10);
   --bases-table-cell-radius-focus: 0;
   --bases-table-row-height: 36px;
-  --table-border-color: var(--color-baseA3);
+  --table-border-color: var(--color-baseA2);
   --bases-embed-border-color: var(--table-border-color);
   --bases-group-heading-value-size: 12px;
 }

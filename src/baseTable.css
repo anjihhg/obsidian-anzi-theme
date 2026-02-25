@@ -5,7 +5,7 @@ body {
 	--bases-table-cell-radius-focus: 0;
 	--bases-table-row-height: 36px;
 
-	--table-border-color: var(--color-baseA3);
+	--table-border-color: var(--color-baseA2);
 	--bases-embed-border-color: var(--table-border-color);
 	--bases-group-heading-value-size: 12px;
 	/* --metadata-input-background-active: blue; */
