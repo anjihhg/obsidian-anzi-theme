@@ -37,7 +37,7 @@ body.theme-dark {
 	--accent-l: 54%;
 	--checkbox-color: var(--color-accent);
 	--color-background: #0a0a0a;
-	--color-sidebarBackground: #111111;
+	--color-sidebarBackground: #151515;
 	--color-popoverBackground: #222;
 	--color-highlight: #48352f;
 	--link-color: #ead0b8;
@@ -46,6 +46,8 @@ body.theme-dark {
 
 .theme-dark {
 	color-scheme: dark;
+
+	--divider-color: var(--color-baseA4);
 	
 	--color-coverBackground: var(--color-bgA3);
 	--color-borderHighlight: var(--color-bgA7);

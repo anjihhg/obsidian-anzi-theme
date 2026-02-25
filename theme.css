@@ -690,13 +690,14 @@ body.theme-dark {
   --accent-l: 54%;
   --checkbox-color: var(--color-accent);
   --color-background: #0a0a0a;
-  --color-sidebarBackground: #111111;
+  --color-sidebarBackground: #151515;
   --color-popoverBackground: #222;
   --color-highlight: #48352f;
   --link-color: #ead0b8;
 }
 .theme-dark {
   color-scheme: dark;
+  --divider-color: var(--color-baseA4);
   --color-coverBackground: var(--color-bgA3);
   --color-borderHighlight: var(--color-bgA7);
   --color-blurredBackground: rgba(57, 71, 89, 0.5);
@@ -2245,7 +2246,7 @@ body {
   --bases-table-cell-shadow-active: 0 0 0 1px var(--color-baseA10), inset 0 0 0 1px var(--color-baseA10);
   --bases-table-cell-radius-focus: 0;
   --bases-table-row-height: 36px;
-  --table-border-color: var(--color-baseA5);
+  --table-border-color: var(--color-baseA3);
   --bases-embed-border-color: var(--table-border-color);
   --bases-group-heading-value-size: 12px;
 }
@@ -2402,7 +2403,7 @@ body {
     linear-gradient(
       to right,
       rgba(0, 0, 0, 1) 85%,
-      rgba(0, 0, 0, 0) 96%);
+      rgba(0, 0, 0, 0.7) 96%);
   &:first-child {
     box-shadow: none;
   }
@@ -2866,7 +2867,7 @@ input[type=number]:focus-visible {
     color: var(--color-baseA9);
   }
   &.is-active {
-    box-shadow: -1px 0 0 0 var(--color-baseA4), inset -1px 0 0 0 var(--color-baseA4);
+    box-shadow: inset -1px 0 0 0 var(--divider-color);
     .workspace-tab-header-inner-title {
       color: var(--color-baseA12) !important;
     }

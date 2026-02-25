@@ -308,10 +308,7 @@ input[type="number"]:focus-visible {
 	}
 
 	&.is-active {
-		box-shadow:
-			-1px 0 0 0 var(--color-baseA4),
-			inset -1px 0 0 0 var(--color-baseA4);
-		/* inset 0 1.5px 0 0 var(--color-accent); */
+		box-shadow: inset -1px 0 0 0 var(--divider-color);
 
 		.workspace-tab-header-inner-title {
 			color: var(--color-baseA12) !important;

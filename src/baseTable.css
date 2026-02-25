@@ -5,7 +5,7 @@ body {
 	--bases-table-cell-radius-focus: 0;
 	--bases-table-row-height: 36px;
 
-	--table-border-color: var(--color-baseA5);
+	--table-border-color: var(--color-baseA3);
 	--bases-embed-border-color: var(--table-border-color);
 	--bases-group-heading-value-size: 12px;
 	/* --metadata-input-background-active: blue; */
@@ -200,7 +200,7 @@ body {
 .bases-td {
 	box-shadow: calc(var(--bases-table-column-border-width) * -1) 0 0
 		var(--color-baseA3);
-	mask-image: linear-gradient(to right, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 96%);
+	mask-image: linear-gradient(to right, rgba(0,0,0,1) 85%, rgba(0,0,0,0.7) 96%);
 
 	&:first-child {
 		box-shadow: none;
