@@ -2625,6 +2625,9 @@ body {
 button {
   font-weight: 500;
 }
+.bases-table-container.is-selecting .bases-table-cell {
+  pointer-events: unset;
+}
 .metadata-properties .metadata-input-longtext:not(:empty) {
   display: inline-flex;
   align-items: center;
