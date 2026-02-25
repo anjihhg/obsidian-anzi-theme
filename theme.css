@@ -62,6 +62,7 @@ body {
 /* src/colorsCustomLight.css */
 .theme-light {
   color-scheme: light;
+  --divider-color: var(--color-baseA6);
   --accent-reference: hsl(144, 85%, 23%);
   --accent-h: 144;
   --accent-s: 85%;
@@ -680,20 +681,17 @@ body {
 }
 
 /* src/colorsCustomDark.css */
-body.theme-dark {
-  --link-weight: 500;
-}
 .theme-dark {
-  --accent-reference: hsl(119, 85%, 54%);
-  --accent-h: 119;
-  --accent-s: 85%;
-  --accent-l: 54%;
+  --accent-reference: hsl(133, 100%, 33%);
+  --accent-h: 124;
+  --accent-s: 100%;
+  --accent-l: 38%;
   --checkbox-color: var(--color-accent);
   --color-background: #0a0a0a;
   --color-sidebarBackground: #151515;
   --color-popoverBackground: #222;
   --color-highlight: #48352f;
-  --link-color: #ead0b8;
+  --link-color: #e2c5a8;
 }
 .theme-dark {
   color-scheme: dark;
@@ -706,7 +704,7 @@ body.theme-dark {
   --color-danger: #ff305c;
   --color-secondary: var(--color-tomato10);
   --color-overlay: rgba(7, 10, 14, 0.7);
-  --c-gray: #747474;
+  --c-gray: #847e72;
   --c-brown: #cf6e45;
   --c-bronze: #c9a171;
   --c-orange: #FF4D00;
@@ -716,18 +714,18 @@ body.theme-dark {
   --c-purple: #B85DFF;
   --c-pink: #FF5391;
   --c-red: #FF2C2C;
-  --color-baseA1: hsla(0, 0%, 0%, 0);
-  --color-baseA2: hsla(240, 76.7%, 91.2%, 0.031);
-  --color-baseA3: hsla(240, 86%, 95.8%, 0.061);
-  --color-baseA4: hsla(240, 91.8%, 94.7%, 0.087);
-  --color-baseA5: hsla(240, 91.5%, 95.8%, 0.113);
-  --color-baseA6: hsla(240, 92%, 93.8%, 0.148);
-  --color-baseA7: hsla(240, 94.8%, 95.3%, 0.191);
-  --color-baseA8: hsla(249, 98.1%, 95.2%, 0.273);
-  --color-baseA9: hsla(248, 97.6%, 96.2%, 0.416);
-  --color-baseA10: hsla(248, 95.5%, 96.6%, 0.477);
-  --color-baseA11: hsla(250, 98%, 98%, 0.615);
-  --color-baseA12: hsla(240, 93.9%, 99.6%, 0.931);
+  --color-baseA1: rgba(227,218,199,0.03);
+  --color-baseA2: rgba(227,218,199,0.05);
+  --color-baseA3: rgba(227,218,199,0.07);
+  --color-baseA4: rgba(227,218,199,0.1);
+  --color-baseA5: rgba(227,218,199,0.14);
+  --color-baseA6: rgba(227,218,199,0.2);
+  --color-baseA7: rgba(227,218,199,0.3);
+  --color-baseA8: rgba(227,218,199,0.4);
+  --color-baseA9: rgba(227,218,199,0.7);
+  --color-baseA10: rgba(227,218,199,0.8);
+  --color-baseA11: rgba(227,218,199,0.9);
+  --color-baseA12: #E3DAC7;
   --color-bgA1: rgba(0, 0, 0, 0.05);
   --color-bgA2: rgba(0, 0, 0, 0.1);
   --color-bgA3: rgba(0, 0, 0, 0.15);
@@ -1985,11 +1983,10 @@ body {
   text-decoration: underline !important;
   text-decoration-line: underline;
   text-decoration-style: initial;
-  text-underline-offset: 4px;
+  text-underline-offset: 3px;
   text-decoration-color: var(--color-baseA7) !important;
   text-decoration-thickness: 1.4px !important;
   background-color: var(--color-baseA1);
-  font-weight: 500;
 }
 .cm-url:hover,
 .cm-link:hover,
@@ -1997,7 +1994,7 @@ body {
 .cm-hmd-internal-link:hover {
   text-decoration-line: underline !important;
   text-decoration-style: initial !important;
-  text-underline-offset: 4px !important;
+  text-underline-offset: 3px !important;
   text-decoration-color: var(--color-baseA9);
 }
 .cm-url:hover,
@@ -2270,7 +2267,7 @@ body {
     .bases-view {
       .internal-link {
         letter-spacing: -0.015em;
-        font-weight: 500;
+        font-weight: 600;
       }
     }
   }

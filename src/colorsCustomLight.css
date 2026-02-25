@@ -1,6 +1,9 @@
 
 .theme-light {
 	color-scheme: light;
+
+	--divider-color: var(--color-baseA6);
+
 	--accent-reference: hsl(144, 85%, 23%);
 	--accent-h: 144;
 	--accent-s: 85%;

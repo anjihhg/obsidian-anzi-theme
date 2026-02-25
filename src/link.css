@@ -32,11 +32,11 @@ body {
 	text-decoration: underline !important;
 	text-decoration-line: underline;
 	text-decoration-style: initial;
-	text-underline-offset: 4px;
+	text-underline-offset: 3px;
 	text-decoration-color: var(--color-baseA7) !important;
 	text-decoration-thickness: 1.4px !important;
 	background-color: var(--color-baseA1);
-	font-weight: 500;
+	/* font-weight: 600; */
 }
 
 .cm-url:hover,
@@ -45,7 +45,7 @@ body {
 .cm-hmd-internal-link:hover {
 	text-decoration-line: underline !important;
 	text-decoration-style: initial !important;
-	text-underline-offset: 4px !important;
+	text-underline-offset: 3px !important;
 	text-decoration-color: var(--color-baseA9);
 }
 
