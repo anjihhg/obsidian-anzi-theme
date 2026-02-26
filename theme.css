@@ -1588,9 +1588,9 @@ ins {
   line-height: 1;
 }
 .cm-strong {
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   & * {
-    font-weight: 600 !important;
+    font-weight: 700 !important;
   }
 }
 .cm-strikethrough {
@@ -2888,8 +2888,11 @@ input[type=number]:focus-visible {
   .workspace-tab-header-inner-title {
     color: var(--color-baseA9);
   }
+  &.is-active:not(:first-child) {
+    box-shadow: inset -1px 0 0 0 var(--color-baseA6), inset 1px 0 0 0 var(--color-baseA6);
+  }
   &.is-active {
-    box-shadow: inset -1px 0 0 0 var(--divider-color);
+    box-shadow: inset -1px 0 0 0 var(--color-baseA6);
     .workspace-tab-header-inner-title {
       color: var(--color-baseA12) !important;
     }
