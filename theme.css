@@ -2898,6 +2898,9 @@ input[type=number]:focus-visible {
     }
   }
 }
+.sidebar-toggle-button.mod-left {
+  box-shadow: inset -1px 0 0 0 var(--color-baseA5);
+}
 .workspace-leaf-content[data-type=all-properties] {
   .tree-item-self {
     padding-left: 28px;
