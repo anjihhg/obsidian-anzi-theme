@@ -1,0 +1,24 @@
+.markdown-source-view.mod-cm6 {
+	/* padding: 2px 0 !important; */
+    
+    .is-loaded.image-embed {
+        display: inline-block !important;
+        line-height: 0;
+        position: relative;
+        border-radius: 2px !important;
+        overflow: hidden;
+        margin-block: 1px !important;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            left: 0;
+            top: 0;
+            box-shadow: inset 0 0 0 1px var(--color-baseA4);
+        }
+    }
+
+}

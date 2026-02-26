@@ -48,7 +48,7 @@ body:not(.is-mobile) {
 		border: unset;
 		border-radius: 5px;
 		background-color: var(--color-popoverBackground);
-		box-shadow: var(--shadows-modal) !important;
+		box-shadow: var(--shadows-modal);
 		animation-name: modalShow;
 		animation-fill-mode: both;
 		animation-timing-function: cubic-bezier(0,1.4,.8,1);

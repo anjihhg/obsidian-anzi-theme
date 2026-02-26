@@ -5,6 +5,7 @@
 @import "./typography.css";
 
 @import "./callout.css";
+@import "./image.css";
 @import "./code.css";
 @import "./embed.css";
 @import "./heading.css";
@@ -26,6 +27,7 @@
 @import "./backlink.css";
 @import "./basesFormula.css";
 @import "./basesFormulaStatus.css";
+@import "./misc.css";
 
 /* mobile */
 @import "./mobile.css";

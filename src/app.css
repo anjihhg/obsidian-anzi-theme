@@ -19,10 +19,6 @@ button {
 	overflow-x: hidden;
 }
 
-.markdown-source-view.mod-cm6 img {
-	padding: 2px 0 !important;
-}
-
 .status-bar-item {
 	font-family: var(--font-monospace);
 	font-size: 0.8em;

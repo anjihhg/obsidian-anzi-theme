@@ -1,0 +1,15 @@
+body {
+    /* 설정 모달  */
+    /* --background-primary: var(--color-sidebarBackground); */
+}
+
+.modal.mod-settings {
+    box-shadow: 2px 60px 60px 0 rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid var(--color-baseA2) !important;
+    border-top: 1px solid var(--color-baseA5) !important;
+    border-radius: 8px !important;
+
+    .vertical-tab-content-container > * {
+        background-color: var(--color-popoverBackground) !important;
+    }
+}
