@@ -6,9 +6,15 @@ body {
 	--bases-table-row-height: 36px;
 
 	--table-border-color: var(--color-baseA2);
-	--bases-embed-border-color: var(--table-border-color);
+	--bases-embed-border-color: var(--color-baseA2);
 	--bases-group-heading-value-size: 12px;
 	/* --metadata-input-background-active: blue; */
+}
+
+/* 본문 테이블 */
+.table-wrapper {
+	--table-header-border-color: var(--color-baseA4);
+	--table-border-color: var(--color-baseA4);
 }
 
 .bases-table-header-icon {

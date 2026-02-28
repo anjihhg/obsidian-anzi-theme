@@ -39,22 +39,24 @@ body {
 	/* font-weight: 600; */
 }
 
-.cm-url:hover,
-.cm-link:hover,
-.internal-link:hover,
-.cm-hmd-internal-link:hover {
-	color: var(--color-baseA12) !important;
-	text-decoration-line: underline !important;
-	text-decoration-style: initial !important;
-	text-underline-offset: 3px !important;
-	text-decoration-color: var(--color-baseA7);
-}
-
-.cm-url:hover,
-.cm-link:hover,
-.internal-link:hover,
-.cm-hmd-internal-link:hover {
-	background-color: var(--color-baseA4);
+@media (hover: hover) {
+	.cm-url:hover,
+	.cm-link:hover,
+	.internal-link:hover,
+	.cm-hmd-internal-link:hover {
+		color: var(--color-baseA12) !important;
+		text-decoration-line: underline !important;
+		text-decoration-style: initial !important;
+		text-underline-offset: 3px !important;
+		text-decoration-color: var(--color-baseA7);
+	}
+	
+	.cm-url:hover,
+	.cm-link:hover,
+	.internal-link:hover,
+	.cm-hmd-internal-link:hover {
+		background-color: var(--color-baseA4);
+	}
 }
 
 .cm-url:active,
@@ -102,8 +104,10 @@ body {
 	text-decoration-color: var(--color-baseA5);
 	text-underline-offset: 3px;
 
-	&:hover {
-		text-decoration-line: underline;
-		text-decoration-color: var(--color-baseA7);
+	@media (hover: hover) {
+		&:hover {
+			text-decoration-line: underline;
+			text-decoration-color: var(--color-baseA7);
+		}
 	}
 }

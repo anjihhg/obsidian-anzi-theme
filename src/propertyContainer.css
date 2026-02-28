@@ -41,8 +41,13 @@ input.metadata-property-key-input {
 	width: 100%;
 }
 
-.metadata-add-button:hover {
-	background-color: var(--color-baseA3);
+@media (hover: hover) {
+	.metadata-add-button:hover {
+		background-color: var(--color-baseA3);
+	}
+	.metadata-property:hover {
+		transition-duration: 0s;
+	}
 }
 .metadata-add-button:active {
 	background-color: var(--color-baseA5);
@@ -59,9 +64,6 @@ input.metadata-property-key-input {
 	transition-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
 }
 
-.metadata-property:hover {
-	transition-duration: 0s;
-}
 
 .metadata-properties-heading {
 	/* display: none; */

@@ -34,9 +34,12 @@ body {
 	
 }
 
-.cm-s-obsidian span.cm-inline-code:hover {
-	background-color: var(--color-amberA6);
+@media (hover: hover) {
+	.cm-s-obsidian span.cm-inline-code:hover {
+		background-color: var(--color-amberA6);
+	}
 }
+
 
 .cm-s-obsidian .HyperMD-codeblock {
 	font-size: 80%;

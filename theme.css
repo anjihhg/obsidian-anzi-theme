@@ -1772,8 +1772,10 @@ body {
   top: -0.1em;
   padding: 0.05em 0.2em !important;
 }
-.cm-s-obsidian span.cm-inline-code:hover {
-  background-color: var(--color-amberA6);
+@media (hover: hover) {
+  .cm-s-obsidian span.cm-inline-code:hover {
+    background-color: var(--color-amberA6);
+  }
 }
 .cm-s-obsidian .HyperMD-codeblock {
   font-size: 80%;
@@ -1887,8 +1889,13 @@ input.metadata-property-key-input {
   font-family: var(--font-monospace) !important;
   width: 100%;
 }
-.metadata-add-button:hover {
-  background-color: var(--color-baseA3);
+@media (hover: hover) {
+  .metadata-add-button:hover {
+    background-color: var(--color-baseA3);
+  }
+  .metadata-property:hover {
+    transition-duration: 0s;
+  }
 }
 .metadata-add-button:active {
   background-color: var(--color-baseA5);
@@ -1900,9 +1907,6 @@ input.metadata-property-key-input {
   transition-property: background-color;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
-}
-.metadata-property:hover {
-  transition-duration: 0s;
 }
 .metadata-properties-heading {
 }
@@ -1931,24 +1935,26 @@ input[type=checkbox] {
   transition: background-color, border-color 0.25s;
   cursor: pointer;
 }
-input[type=radio]:hover,
-input[type=checkbox]:hover {
-  background-color: var(--color-baseA4);
+@media (hover: hover) {
+  input[type=radio]:hover,
+  input[type=checkbox]:hover {
+    background-color: var(--color-baseA4);
+  }
+  input[type=radio]:hover,
+  input[type=checkbox]:hover,
+  input[type=radio]:focus,
+  input[type=checkbox]:focus {
+    box-shadow: 0 0 0 2px var(--color-baseA6);
+  }
+  input[type=radio]:checked:hover,
+  input[type=checkbox]:checked:hover {
+    background-color: var(--checkbox-color);
+    border-color: var(--checkbox-color);
+  }
 }
 input[type=radio]:active,
 input[type=checkbox]:active {
   background-color: var(--color-baseA7);
-}
-input[type=radio]:hover,
-input[type=checkbox]:hover,
-input[type=radio]:focus,
-input[type=checkbox]:focus {
-  box-shadow: 0 0 0 2px var(--color-baseA6);
-}
-input[type=radio]:checked:hover,
-input[type=checkbox]:checked:hover {
-  background-color: var(--checkbox-color);
-  border-color: var(--checkbox-color);
 }
 input[type=radio]:checked:focus,
 input[type=checkbox]:checked:focus {
@@ -2010,21 +2016,23 @@ body {
   text-decoration-thickness: 1.3px !important;
   background-color: var(--color-baseA1);
 }
-.cm-url:hover,
-.cm-link:hover,
-.internal-link:hover,
-.cm-hmd-internal-link:hover {
-  color: var(--color-baseA12) !important;
-  text-decoration-line: underline !important;
-  text-decoration-style: initial !important;
-  text-underline-offset: 3px !important;
-  text-decoration-color: var(--color-baseA7);
-}
-.cm-url:hover,
-.cm-link:hover,
-.internal-link:hover,
-.cm-hmd-internal-link:hover {
-  background-color: var(--color-baseA4);
+@media (hover: hover) {
+  .cm-url:hover,
+  .cm-link:hover,
+  .internal-link:hover,
+  .cm-hmd-internal-link:hover {
+    color: var(--color-baseA12) !important;
+    text-decoration-line: underline !important;
+    text-decoration-style: initial !important;
+    text-underline-offset: 3px !important;
+    text-decoration-color: var(--color-baseA7);
+  }
+  .cm-url:hover,
+  .cm-link:hover,
+  .internal-link:hover,
+  .cm-hmd-internal-link:hover {
+    background-color: var(--color-baseA4);
+  }
 }
 .cm-url:active,
 .cm-link:active,
@@ -2062,9 +2070,11 @@ body {
   transition: 0.2s;
   text-decoration-color: var(--color-baseA5);
   text-underline-offset: 3px;
-  &:hover {
-    text-decoration-line: underline;
-    text-decoration-color: var(--color-baseA7);
+  @media (hover: hover) {
+    &:hover {
+      text-decoration-line: underline;
+      text-decoration-color: var(--color-baseA7);
+    }
   }
 }
 
@@ -2267,8 +2277,12 @@ body {
   --bases-table-cell-radius-focus: 0;
   --bases-table-row-height: 36px;
   --table-border-color: var(--color-baseA2);
-  --bases-embed-border-color: var(--table-border-color);
+  --bases-embed-border-color: var(--color-baseA2);
   --bases-group-heading-value-size: 12px;
+}
+.table-wrapper {
+  --table-header-border-color: var(--color-baseA4);
+  --table-border-color: var(--color-baseA4);
 }
 .bases-table-header-icon {
   display: none;
