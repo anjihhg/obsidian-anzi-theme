@@ -1797,6 +1797,21 @@ body.is-phone {
     }
   }
 }
+.markdown-embed {
+  .internal-embed,
+  .markdown-embed {
+    display: none;
+  }
+}
+.popover.hover-popover {
+  .internal-embed,
+  .markdown-embed {
+    display: block !important;
+  }
+}
+.markdown-embed .markdown-rendered p {
+  margin-bottom: 1rem !important;
+}
 .embed-title {
   font-weight: 400;
   padding: 0;

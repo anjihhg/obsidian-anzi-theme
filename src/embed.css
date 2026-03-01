@@ -15,6 +15,24 @@ body.is-phone {
 	}
 }
 
+.markdown-embed {
+	.internal-embed, .markdown-embed {
+		display: none;
+	}
+}
+
+/* 마우스 호버 미리보기(Popover) 내부의 임베드는 유지 */
+.popover.hover-popover {
+	.internal-embed, .markdown-embed {
+		display: block !important;
+	}
+}
+
+/* 임베드된 문서 내부의 문단 간격(줄바꿈) 유지 */
+.markdown-embed .markdown-rendered p {
+    margin-bottom: 1rem !important; /* 숫자를 조절해 간격 크기 변경 가능 */
+}
+
 /* EMBED */
 .embed-title {
 	font-weight: 400;
