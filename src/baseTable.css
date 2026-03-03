@@ -108,8 +108,8 @@ body {
 }
 
 .bases-table-header-label  {
-	flex-grow: 1;
-	mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 95%);
+	/* flex-grow: 1; */
+	mask-image: linear-gradient(to right, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 95%);
 	.bases-table-header-name {
 	}
 }

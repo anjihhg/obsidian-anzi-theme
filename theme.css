@@ -2365,12 +2365,11 @@ body {
   box-shadow: unset;
 }
 .bases-table-header-label {
-  flex-grow: 1;
   mask-image:
     linear-gradient(
       to right,
-      rgba(0, 0, 0, 1) 50%,
-      rgba(0, 0, 0, 0) 95%);
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0.4) 95%);
   .bases-table-header-name {
   }
 }
@@ -3013,8 +3012,11 @@ input[type=number]:focus-visible {
   color: var(--color-amberA11) !important;
   box-shadow: inset 0 0 0 1px var(--color-amberA3) !important;
 }
-[data-path$=".base"] {
-  color: var(--link-color);
+.nav-file-title-content,
+.nav-folder-title-content,
+.tree-item-self {
+  font-family: var(--font-monospace);
+  letter-spacing: -0.0em;
 }
 .workspace-drawer-backdrop {
   background-color: var(--color-overlay);
