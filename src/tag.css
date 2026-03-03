@@ -1,12 +1,12 @@
-body {
+body, .is-mobile.theme-dark {
 	--tag-color: var(--color-text);
 	/* --tag-color-hover: blue; */
-	--tag-background: var(--color-baseA3);
+	--tag-background: var(--color-baseA4);
 	--tag-background-hover: var(--color-baseA7);
 	--tag-background-active: var(--color-baseA9);
-	--tag-radius: 1 px;
+	--tag-radius: 2px;
 	--tag-padding-x: 6px;
-	--tag-padding-y: 3px;
+	--tag-padding-y: 2.5px;
 	--tag-size: 0.8em;
 	--tag-weight: 500;
 }
@@ -28,22 +28,46 @@ body {
 	--pill-focus-width: 100%;
 	--pill-focus-left-adjust: 0;
 	cursor: var(--cursor-link);
-	line-height: 1;
+	line-height: 1.2;
 }
 
 .metadata-property-value[data-property-type="tags"] {
 	.multi-select-pill {
+		font-family: var(--font-monospace);
+		letter-spacing: -0.03em;
+		margin-left: -2px;
+		color: var(--color-baseA10);
+		box-shadow: inset 0 0 0 0.5px var(--color-baseA2);
+		font-size: 0.95em;
+		font-weight: 500;
+
+		&:hover {
+			color: inherit;
+		}
+
 		.multi-select-pill-content {
 		}
 
 		.multi-select-pill-remove-button {
 			margin-right: 3px !important;
+			opacity: 0.3;
+
+			&:hover {
+				opacity: 1;
+			}
 		}
 	}
 }
 
 .cm-hashtag {
 	transition: 0.1s;
+	font-family: var(--font-monospace);
+	letter-spacing: -0.05em;
+	font-size: 0.85em;
+	font-weight: 500;
+	color: var(--color-baseA10);
+	position: relative;
+	left: -2px;
 
 	&.cm-hashtag-begin {
 		border-start-start-radius: var(--tag-radius);
