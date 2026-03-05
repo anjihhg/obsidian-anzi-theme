@@ -687,7 +687,7 @@ body {
   --accent-s: 100%;
   --accent-l: 38%;
   --checkbox-color: var(--color-accent);
-  --color-background: #0a0a0a;
+  --color-background: #141414;
   --color-sidebarBackground: #151515;
   --color-popoverBackground: #222;
   --color-highlight: #ff840037;
@@ -1835,6 +1835,9 @@ body.is-phone {
   padding: 12px;
   border-inline-start-color: transparent;
 }
+.image-embed {
+  padding: 0;
+}
 
 /* src/heading.css */
 body {
@@ -2004,7 +2007,7 @@ body {
   --link-external-color: var(--color-baseA12);
   --link-external-color-hover: unset;
   --link-external-decoration-hover: unset;
-  --link-unresolved-color: var(--color-danger);
+  --link-unresolved-color: var(--color-orange);
   --link-unresolved-opacity: 1;
 }
 .cm-url,

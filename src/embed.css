@@ -61,3 +61,7 @@ body.is-phone {
 	padding: 12px;
 	border-inline-start-color: transparent;
 }
+
+.image-embed {
+	padding: 0;
+}
