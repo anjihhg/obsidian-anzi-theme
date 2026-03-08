@@ -1,0 +1,96 @@
+/* common */
+.workspace-tab-header {
+    &.is-active {
+        .workspace-tab-header-inner-icon::before {
+            color: var(--color-baseA12) !important;
+        }
+    }
+
+    .workspace-tab-header-inner {
+        .workspace-tab-header-inner-icon{
+        }
+        .workspace-tab-header-inner-title{
+
+        }
+        .workspace-tab-header-status-container{
+            .workspace-tab-header-status-icon.mod-pinned {
+                pointer-events: none;
+                display: none;
+            }
+        }
+    }
+}
+
+/* major tab */
+.workspace-tab-header:has(.mod-pinned) {
+    /* width: 56px !important; */
+    max-width: 44px !important;
+
+    .workspace-tab-header-inner-icon{
+        &::before {
+            font-family: 'Material Icons';
+            content: '\e8b6';
+            font-size: 19px;
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    .workspace-tab-header-inner-title{
+        display: none;
+    }
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="HOME"] .workspace-tab-header-inner-icon::before {
+    content: '\e88a';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="LOGS"] .workspace-tab-header-inner-icon::before {
+    content: '\e22b';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="PROJECTS"] .workspace-tab-header-inner-icon::before {
+    content: '\e719';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="WORKS"] .workspace-tab-header-inner-icon::before {
+    content: '\f10a';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TODOS"] .workspace-tab-header-inner-icon::before {
+    content: '\e834';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="R-MEDIAS"] .workspace-tab-header-inner-icon::before {
+    content: '\e019';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="R-PHOTOS"] .workspace-tab-header-inner-icon::before {
+    content: '\e412';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="R-SOURCES"] .workspace-tab-header-inner-icon::before {
+    content: '\f569';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="R-ITEMS"] .workspace-tab-header-inner-icon::before {
+    content: '\ef7b';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="R-PROFILES"] .workspace-tab-header-inner-icon::before {
+    content: '\f4ca';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="R-MEETINGS"] .workspace-tab-header-inner-icon::before {
+    content: '\e616';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="ALL"] .workspace-tab-header-inner-icon::before {
+    content: '\f01a';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="ARCHIVED"] .workspace-tab-header-inner-icon::before {
+    content: '\e872';
+}

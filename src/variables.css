@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  /* 경로를 본인의 프로젝트 구조에 맞게 수정하세요 */
+  src: url('./MaterialSymbolsSharp_Filled_36pt-Regular.ttf') format('truetype');
+}
+
 body {
 	--icon-m: 15px;
 	--modal-background: var(--color-popoverBackground);

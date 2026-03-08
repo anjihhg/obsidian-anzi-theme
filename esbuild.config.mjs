@@ -10,6 +10,9 @@ const context = await esbuild.context({
   entryPoints: ["src/theme.css"],
   bundle: true,
   outfile: outFile,
+  loader: {
+    ".ttf": "dataurl",
+  },
   plugins: [
     {
       name: "copy-to-obsidian",

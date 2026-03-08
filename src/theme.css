@@ -22,6 +22,7 @@
 
 /* app */
 @import "./app.css";
+@import "./app-tabs.css";
 /* @import "./modal.css"; */
 @import "./modal_v2.css";
 @import "./backlink.css";
