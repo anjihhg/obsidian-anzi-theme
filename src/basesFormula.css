@@ -195,57 +195,58 @@
     &.outline.gray {
         color: var(--c-gray);
         border-color: color-mix(in srgb, var(--c-gray), transparent 50%);
-        background-color: color-mix(in srgb, var(--c-gray), transparent 90%);
+        /* background-color: color-mix(in srgb, var(--c-gray), transparent 90%); */
     }
     &.outline.red {
         color: var(--c-red);
         border-color: color-mix(in srgb, var(--c-red), transparent 50%);
-        background-color: color-mix(in srgb, var(--c-red), transparent 90%);
+        /* background-color: color-mix(in srgb, var(--c-red), transparent 90%); */
     }
     &.outline.green {
         color: var(--c-green);
         border-color: color-mix(in srgb, var(--c-green), transparent 50%);
-        background-color: color-mix(in srgb, var(--c-green), transparent 90%);
+        /* background-color: color-mix(in srgb, var(--c-green), transparent 90%); */
     }
     &.outline.yellow {
         color: var(--c-yellow);
         border-color: color-mix(in srgb, var(--c-yellow), transparent 50%);
-        background-color: color-mix(in srgb, var(--c-yellow), transparent 90%);
+        /* background-color: color-mix(in srgb, var(--c-yellow), transparent 90%); */
     }
     &.outline.orange {
         color: var(--c-orange);
         border-color: color-mix(in srgb, var(--c-orange), transparent 50%);
-        background-color: color-mix(in srgb, var(--c-orange), transparent 90%);
+        /* background-color: color-mix(in srgb, var(--c-orange), transparent 90%); */
     }
     &.outline.blue {
         color: var(--c-blue);
         border-color: color-mix(in srgb, var(--c-blue), transparent 50%);
-        background-color: color-mix(in srgb, var(--c-blue), transparent 90%);
+        /* background-color: color-mix(in srgb, var(--c-blue), transparent 90%); */
     }
     &.outline.purple {
         color: var(--c-purple);
         border-color: color-mix(in srgb, var(--c-purple), transparent 50%);
-        background-color: color-mix(in srgb, var(--c-purple), transparent 90%);
+        /* background-color: color-mix(in srgb, var(--c-purple), transparent 90%); */
     }
     &.outline.bronze {
         color: var(--c-bronze);
         border-color: color-mix(in srgb, var(--c-bronze), transparent 50%);
-        background-color: color-mix(in srgb, var(--c-bronze), transparent 90%);
+        /* background-color: color-mix(in srgb, var(--c-bronze), transparent 90%); */
     }
     &.outline.brown {
         color: var(--c-brown);
         border-color: color-mix(in srgb, var(--c-brown), transparent 50%);
-        background-color: color-mix(in srgb, var(--c-brown), transparent 90%);
+        /* background-color: color-mix(in srgb, var(--c-brown), transparent 90%); */
     }
     &.outline.pink {
         color: var(--c-pink);
         border-color: color-mix(in srgb, var(--c-pink), transparent 50%);
-        background-color: color-mix(in srgb, var(--c-pink), transparent 90%);
+        /* background-color: color-mix(in srgb, var(--c-pink), transparent 90%); */
     }
     &.outline.accent { 
         color: var(--color-accent);
         border-color: color-mix(in srgb, var(--color-accent), transparent 50%);
-        background-color: color-mix(in srgb, var(--color-accent), transparent 90%);
+        background-color: transparent;
+        /* background-color: color-mix(in srgb, var(--color-accent), transparent 90%); */
     }
 
 }
