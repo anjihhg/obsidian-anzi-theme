@@ -63,7 +63,7 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 }
 
 body:not(.is-mobile) {
-	--file-line-width: 860px;
+	--file-line-width: 720px;
 	--nav-item-margin-bottom: 1px;
 	.view-header {
 		display: none;

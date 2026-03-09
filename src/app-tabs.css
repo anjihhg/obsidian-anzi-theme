@@ -25,6 +25,7 @@
 .workspace-tab-header:has(.mod-pinned) {
     /* width: 56px !important; */
     max-width: 44px !important;
+    overflow: hidden;
 
     .workspace-tab-header-inner-icon{
         &::before {
@@ -93,4 +94,8 @@
 
 .workspace-tab-header:has(.mod-pinned)[aria-label="ARCHIVED"] .workspace-tab-header-inner-icon::before {
     content: '\e872';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="R-NOTES"] .workspace-tab-header-inner-icon::before {
+    content: '\f1fc';
 }
