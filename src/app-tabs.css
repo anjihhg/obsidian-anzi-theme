@@ -99,3 +99,7 @@
 .workspace-tab-header:has(.mod-pinned)[aria-label="R-NOTES"] .workspace-tab-header-inner-icon::before {
     content: '\f1fc';
 }
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="RESOURCES"] .workspace-tab-header-inner-icon::before {
+    content: '\ef4a';
+}

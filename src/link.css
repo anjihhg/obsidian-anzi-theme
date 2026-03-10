@@ -35,7 +35,7 @@ body {
 	text-underline-offset: 3px;
 	text-decoration-color: var(--color-baseA6) !important;
 	text-decoration-thickness: 1.3px !important;
-	background-color: var(--color-baseA1);
+	/* background-color: var(--color-baseA1); */
 	/* font-weight: 600; */
 }
 
