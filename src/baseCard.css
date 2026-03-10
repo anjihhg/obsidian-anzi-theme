@@ -3,6 +3,11 @@ body {
 	--bases-cards-line-height: 17px;
 	--color-meta: var(--color-baseA8);
 	--cards-base-padding: 10px;
+	--cards-spacing: 8px;
+}
+
+body.is-mobile {
+	--cards-spacing: 8px;
 }
 
 body.theme-light {
@@ -27,8 +32,33 @@ body.theme-dark {
 	--bases-cards-shadow: 0 2px 4px 0 var(--color-bgA3);
 }
 
+body {
+	.workspace-leaf-content[data-type="bases"]:has(.bases-view[data-view-type="cards"]) .view-content {
+
+		.bases-header {
+			padding-left: 4px;
+			margin-left: 12px;
+
+			padding-right: 12px;
+		}
+
+		.bases-view {
+			padding: 0 !important;
+		}
+	}
+}
+
+
 .bases-cards-group {
-	gap: 12px;
+	gap: var(--cards-spacing);
+	padding: var(--cards-spacing);
+	padding-right: calc(var(--cards-spacing) / 2);
+}
+
+body.is-mobile {
+	.bases-cards-group {
+		padding: var(--cards-spacing) !important;
+	}
 }
 
 .bases-view[data-view-type="cards"] {
@@ -38,7 +68,7 @@ body.theme-dark {
 
 /* INIT */
 .bases-cards-item {
-	border-radius: 6px;
+	border-radius: 2px;
 	display: flex;
 	flex-direction: column;
 	gap: 0;
@@ -164,8 +194,8 @@ body.theme-dark {
 }
 
 .bases-cards-property.mod-title {
-	padding-bottom: 7px !important;
-	margin-top: var(--cards-base-padding);
+	margin-bottom: 5px !important;
+	margin-top: var(--cards-base-padding) !important;
 	
 	.bases-rendered-value {
 		padding: 0;

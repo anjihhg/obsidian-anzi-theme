@@ -81,7 +81,6 @@ body {
   --color-borderHighlight: var(--color-bgA12);
   --color-popoverBackground: #f8f8f8;
   --color-blurredBackground: rgba(248, 248, 248, 0.5);
-  --color-highlight: #ebdf9c;
   --color-secondary: var(--color-orangeA10);
   --color-danger: #ba3800;
   --color-overlay: rgba(106, 106, 106, 0.5);
@@ -696,7 +695,6 @@ body {
   --color-background: #141414;
   --color-sidebarBackground: #151515;
   --color-popoverBackground: #222;
-  --color-highlight: #ff840037;
   --link-color: #e2c5a8;
 }
 .theme-dark {
@@ -1558,6 +1556,12 @@ body {
   --list-bullet-radius: 1px;
   --list-bullet-size: 0.37em;
 }
+.theme-dark {
+  --color-highlight-text: var(--c-yellow);
+}
+.theme-light {
+  --color-highlight-text: var(--c-pink);
+}
 .cm-sup {
   vertical-align: unset;
   position: relative;
@@ -1580,6 +1584,8 @@ ins {
 }
 .cm-highlight {
   font-size: 99%;
+  font-weight: 500;
+  color: var(--color-highlight-text) !important;
 }
 .hr.cm-line hr,
 .markdown-source-view.mod-cm6 hr {
@@ -2106,8 +2112,12 @@ body {
 body {
   --bases-cards-shadow-hover: none;
   --bases-cards-line-height: 17px;
-  --color-meta: var(--color-baseA10);
+  --color-meta: var(--color-baseA8);
   --cards-base-padding: 10px;
+  --cards-spacing: 8px;
+}
+body.is-mobile {
+  --cards-spacing: 8px;
 }
 body.theme-light {
   --bases-view-background: var(--color-baseA1);
@@ -2127,14 +2137,33 @@ body.theme-dark {
   --bases-cards-cover-background: var(--color-baseA2);
   --bases-cards-shadow: 0 2px 4px 0 var(--color-bgA3);
 }
+body {
+  .workspace-leaf-content[data-type=bases]:has(.bases-view[data-view-type=cards]) .view-content {
+    .bases-header {
+      padding-left: 4px;
+      margin-left: 12px;
+      padding-right: 12px;
+    }
+    .bases-view {
+      padding: 0 !important;
+    }
+  }
+}
 .bases-cards-group {
-  gap: 12px;
+  gap: var(--cards-spacing);
+  padding: var(--cards-spacing);
+  padding-right: calc(var(--cards-spacing) / 2);
+}
+body.is-mobile {
+  .bases-cards-group {
+    padding: var(--cards-spacing) !important;
+  }
 }
 .bases-view[data-view-type=cards] {
   background-color: var(--bases-view-background);
 }
 .bases-cards-item {
-  border-radius: 6px;
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -2245,12 +2274,12 @@ body.theme-dark {
   letter-spacing: -0.03em;
 }
 .bases-cards-property.mod-title {
-  margin-bottom: 4px !important;
-  margin-top: var(--cards-base-padding);
+  margin-bottom: 5px !important;
+  margin-top: var(--cards-base-padding) !important;
   .bases-rendered-value {
     padding: 0;
-    font-size: 14.5px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
   }
 }
 .bases-cards-label,
@@ -2330,28 +2359,6 @@ body {
         letter-spacing: -0.015em;
         font-weight: 600;
       }
-    }
-  }
-  .workspace-leaf-content[data-type=bases]:has(.bases-view[data-view-type=cards]) .view-content {
-    .bases-header {
-      padding-left: 4px;
-      margin-left: 12px;
-      padding-right: 12px;
-    }
-    .bases-view {
-      padding-left: 12px !important;
-      padding-right: 4px !important;
-    }
-  }
-  .workspace-leaf-content[data-type=bases]:has(.bases-view[data-view-type=list]) .view-content {
-    .bases-header {
-      padding-left: 4px;
-      margin-left: 12px;
-      padding-right: 12px;
-    }
-    .bases-view {
-      padding-left: 12px !important;
-      padding-right: 4px !important;
     }
   }
 }
@@ -2755,7 +2762,7 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
   box-shadow: inset 0 0 0 1px var(--color-accent);
 }
 body:not(.is-mobile) {
-  --file-line-width: 860px;
+  --file-line-width: 720px;
   --nav-item-margin-bottom: 1px;
   .view-header {
     display: none;
@@ -3078,6 +3085,7 @@ input[type=number]:focus-visible {
 }
 .workspace-tab-header:has(.mod-pinned) {
   max-width: 44px !important;
+  overflow: hidden;
   .workspace-tab-header-inner-icon {
     &::before {
       font-family: "Material Icons";
@@ -3130,6 +3138,9 @@ input[type=number]:focus-visible {
 }
 .workspace-tab-header:has(.mod-pinned)[aria-label=ARCHIVED] .workspace-tab-header-inner-icon::before {
   content: "\e872";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=R-NOTES] .workspace-tab-header-inner-icon::before {
+  content: "\f1fc";
 }
 
 /* src/modal_v2.css */

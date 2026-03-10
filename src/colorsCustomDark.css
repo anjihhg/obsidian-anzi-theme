@@ -35,7 +35,7 @@
 	--color-background: #141414;
 	--color-sidebarBackground: #151515;
 	--color-popoverBackground: #222;
-	--color-highlight: #ff840037;
+	/* --color-highlight: color-mix(in srgb, var(--c-yellow), transparent 92%); */
 	--link-color: #e2c5a8;
 }
 

@@ -17,7 +17,7 @@
 	--color-borderHighlight: var(--color-bgA12);
 	--color-popoverBackground: #f8f8f8;
 	--color-blurredBackground: rgba(248, 248, 248, 0.5);
-	--color-highlight: #ebdf9c;
+	/* --color-highlight: #ebdf9c; */
 
 	--color-secondary: var(--color-orangeA10);
 	--color-danger: #ba3800;

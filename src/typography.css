@@ -17,6 +17,14 @@ body {
 	--list-bullet-size: 0.37em;
 }
 
+.theme-dark {
+	--color-highlight-text: var(--c-yellow);
+}
+
+.theme-light {
+	--color-highlight-text: var(--c-pink);
+}
+
 .cm-sup {
 	vertical-align: unset;
 	position: relative;
@@ -48,6 +56,8 @@ ins {
 
 .cm-highlight {
 	font-size: 99%;
+	font-weight: 500;
+	color: var(--color-highlight-text) !important;
 }
 
 /* HR STYLE */
