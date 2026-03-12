@@ -1,7 +1,7 @@
-.cm-highlight, .cm-custom-highlight {
-	border-radius: 1px;
-	background-color: var(--color-highlight) !important;
-	padding: 1px 2px;
+.cm-highlight, .cm-custom-highlight, .cm-highlight .cm-underline {
+	font-weight: 500;
+	color: var(--color-highlight-text) !important;
+	background-color: transparent !important;
 }
 
 .cm-custom-highlight-red {

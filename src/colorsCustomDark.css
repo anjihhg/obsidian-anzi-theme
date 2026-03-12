@@ -37,6 +37,7 @@
 	--color-popoverBackground: #222;
 	/* --color-highlight: color-mix(in srgb, var(--c-yellow), transparent 92%); */
 	--link-color: #e2c5a8;
+	--color-meta: var(--color-baseA8);
 }
 
 

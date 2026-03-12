@@ -22,7 +22,7 @@
 }
 
 /* major tab */
-.workspace-tab-header:has(.mod-pinned) {
+.workspace-tab-header[data-type="bases"]:has(.mod-pinned) {
     /* width: 56px !important; */
     max-width: 44px !important;
     overflow: hidden;
@@ -30,7 +30,7 @@
     .workspace-tab-header-inner-icon{
         &::before {
             font-family: 'Material Icons';
-            content: '\e8b6';
+            content: '\eb36';
             font-size: 19px;
         }
 
@@ -102,4 +102,8 @@
 
 .workspace-tab-header:has(.mod-pinned)[aria-label="RESOURCES"] .workspace-tab-header-inner-icon::before {
     content: '\ef4a';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAGS"] .workspace-tab-header-inner-icon::before {
+    content: '\f525';
 }

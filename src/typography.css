@@ -54,12 +54,6 @@ ins {
 	line-height: 1;
 } */
 
-.cm-highlight {
-	font-size: 99%;
-	font-weight: 500;
-	color: var(--color-highlight-text) !important;
-}
-
 /* HR STYLE */
 
 .hr.cm-line hr,
@@ -87,6 +81,7 @@ ins {
 
 .cm-strikethrough {
 	opacity: 0.5;
+	text-decoration: line-through !important;
 }
 
 .task-list-label {
