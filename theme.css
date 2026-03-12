@@ -2148,7 +2148,6 @@ body {
 .bases-cards-group {
   gap: var(--cards-spacing);
   padding: var(--cards-spacing);
-  padding-right: calc(var(--cards-spacing) / 2);
 }
 body.is-mobile {
   .bases-cards-group {
@@ -3130,7 +3129,7 @@ input[type=number]:focus-visible {
 .workspace-tab-header {
   &.is-active {
     .workspace-tab-header-inner-icon::before {
-      color: var(--color-baseA12) !important;
+      color: var(--c-orange) !important;
     }
   }
   .workspace-tab-header-inner {
@@ -3210,6 +3209,9 @@ input[type=number]:focus-visible {
 }
 .workspace-tab-header:has(.mod-pinned)[aria-label=TAGS] .workspace-tab-header-inner-icon::before {
   content: "\f525";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=LIKES] .workspace-tab-header-inner-icon::before {
+  content: "\e87d";
 }
 
 /* src/modal_v2.css */
