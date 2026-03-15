@@ -1,0 +1,52 @@
+.material {
+    font-family: 'Material Icons';
+    font-size: 14px;
+    text-align: center;
+    
+    &.xl { font-size: 18px; }
+    &.l { font-size: 16px; }
+    &.m { font-size: 14px; }
+    &.s { font-size: 12px; }
+    &.xs { font-size: 11px; }
+    
+    &.right { 
+        margin-left: auto;
+    }
+    &.center { 
+        margin-inline: auto;
+    }
+
+    &.red {
+        color: var(--c-red);
+    }
+    &.green {
+        color: var(--c-green);
+    }
+    &.yellow {
+        color: var(--c-yellow);
+    }
+    &.orange {
+        color: var(--c-orange);
+    }
+    &.blue {
+        color: var(--c-blue);
+    }
+    &.purple {
+        color: var(--c-purple);
+    }
+    &.gray {
+        color: var(--c-gray);
+    }
+    &.bronze {
+        color: var(--c-bronze);
+    }
+    &.brown {
+        color: var(--c-brown);
+    }
+    &.pink {
+        color: var(--c-pink);
+    }
+    &.accent { 
+        color: var(--color-accent);
+    }
+}

@@ -21,6 +21,7 @@
 @import "./tag.css";
 
 /* app */
+@import "./icon.css";
 @import "./app.css";
 @import "./app-tabs.css";
 /* @import "./modal.css"; */

@@ -2,7 +2,7 @@
 .workspace-tab-header {
     &.is-active {
         .workspace-tab-header-inner-icon::before {
-            color: var(--c-orange) !important;
+            color: var(--color-baseA12) !important;
         }
     }
 
