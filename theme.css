@@ -22,18 +22,7 @@ body {
   --background-secondary: var(--color-sidebarBackground);
   --background-modifier-form-field: var(--color-baseA3);
   --background-secondary-alt: var(--color-sidebarBackground);
-  --system-font:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  --font-serif: "Google Sans Code", serif;
   --radius-s: 2px;
   --radius-m: 2px;
   --radius-l: 2px;
@@ -43,7 +32,6 @@ body {
   --line-height-normal: 1.45;
   --line-height-tight: 1.3;
   --inline-title-size: 1.6em;
-  --list-marker-color: var(--text-muted);
   --text-normal: var(--color-baseA12);
   --text-muted: var(--color-baseA11);
   --text-faint: var(--color-baseA8);
@@ -691,7 +679,7 @@ body {
   --accent-h: 124;
   --accent-s: 100%;
   --accent-l: 38%;
-  --checkbox-color: var(--color-accent);
+  --checkbox-color: var(--color-gray11);
   --color-background: #141414;
   --color-sidebarBackground: #151515;
   --color-popoverBackground: #222;
@@ -711,7 +699,7 @@ body {
   --color-overlay: rgba(7, 10, 14, 0.7);
   --c-gray: #847e72;
   --c-brown: #cf6e45;
-  --c-bronze: #c9a171;
+  --c-bronze: #b39c81;
   --c-orange: #FF4D00;
   --c-yellow: #FFC700;
   --c-green: #00E04C;
@@ -1554,15 +1542,15 @@ body {
   --list-bullet-transform: none;
   --list-numbered-style: decimal;
   --list-bullet-end-padding: 1.3rem;
-  --list-marker-color: var(--color-baseA12);
+  --list-marker-color: var(--color-baseA9);
   --list-bullet-radius: 1px;
   --list-bullet-size: 0.37em;
 }
 .theme-dark {
-  --color-highlight-text: var(--c-yellow);
+  --color-highlight-text: var(--c-bronze);
 }
 .theme-light {
-  --color-highlight-text: var(--c-pink);
+  --color-highlight-text: var(--c-bronze);
 }
 .cm-sup {
   vertical-align: unset;
@@ -1596,6 +1584,11 @@ ins {
   padding: 0 !important;
   line-height: 1;
 }
+.cm-em {
+  font-family: var(--font-serif) !important;
+  letter-spacing: -0.03em;
+  font-size: 0.9em;
+}
 .cm-strong {
   font-weight: 700 !important;
   & * {
@@ -1603,7 +1596,7 @@ ins {
   }
 }
 .cm-strikethrough {
-  opacity: 0.5;
+  opacity: 0.3;
   text-decoration: line-through !important;
 }
 .task-list-label {
@@ -1617,16 +1610,34 @@ ins {
   }
 }
 .cm-formatting-list-ul {
-  &[class$="-1"] .list-bullet::after {
+  &[class$="-3"] .list-bullet::after {
     border-radius: 1px;
   }
   &[class$="-2"] .list-bullet::after {
     background-color: transparent;
     box-shadow: inset 0 0 0 1.5px var(--list-marker-color);
   }
-  &[class$="-3"] .list-bullet::after {
+  &[class$="-1"] .list-bullet::after {
     transform: rotate(45deg);
   }
+}
+.cm-s-obsidian span.cm-footref,
+.cm-s-obsidian span.cm-blockid {
+  font-size: min(0.7em, 13px) !important;
+  top: 0em;
+  vertical-align: sup;
+  color: var(--color-pink11) !important;
+}
+.cm-line:not(.cm-active) {
+  span.cm-footref,
+  span.cm-blockid {
+    margin-inline: 2px !important;
+  }
+}
+.cm-line:not(.cm-active) .cm-footref.cm-formatting-link {
+  color: inherit;
+  opacity: 0.4;
+  display: none !important;
 }
 
 /* src/callout.css */
@@ -1772,14 +1783,12 @@ body {
   --code-value: var(--color-purpleA11);
 }
 .cm-s-obsidian span.cm-inline-code {
-  box-shadow: inset 0 0 0 0.5px var(--color-amberA3);
   background-color: var(--color-amberA3);
-  color: var(--color-amberA11);
-  font-size: var(--code-size);
+  color: var(--color-amber11);
+  font-size: 0.9em !important;
   position: relative;
   font-weight: 400;
   margin-left: -0.1em;
-  top: -0.1em;
   padding: 0.05em 0.2em !important;
 }
 @media (hover: hover) {
@@ -1993,14 +2002,13 @@ input[type=checkbox]:checked:focus {
 .cm-s-obsidian span.cm-formatting-quote {
 }
 .cm-s-obsidian span.cm-quote {
-  opacity: 0.75;
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
 .markdown-source-view.mod-cm6 .cm-blockquote-border:before {
   content: "\200b";
   display: block;
   width: 1px;
-  border-inline-start: var(--blockquote-border-thickness) solid var(--color-baseA6);
+  border-inline-start: 2px solid var(--color-baseA8);
   color: transparent;
   position: absolute;
   top: 0;
@@ -3924,7 +3932,6 @@ span.external-link {
 .cm-custom-highlight,
 .cm-highlight .cm-underline,
 .markdown-rendered mark {
-  font-weight: 500;
   color: var(--color-highlight-text) !important;
   background-color: transparent !important;
 }

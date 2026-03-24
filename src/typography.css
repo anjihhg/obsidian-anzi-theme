@@ -12,17 +12,17 @@ body {
 	--list-numbered-style: decimal;
 	--list-bullet-end-padding: 1.3rem;
 
-	--list-marker-color: var(--color-baseA12);
+	--list-marker-color: var(--color-baseA9);
 	--list-bullet-radius: 1px;
 	--list-bullet-size: 0.37em;
 }
 
 .theme-dark {
-	--color-highlight-text: var(--c-yellow);
+	--color-highlight-text: var(--c-bronze);
 }
 
 .theme-light {
-	--color-highlight-text: var(--c-pink);
+	--color-highlight-text: var(--c-bronze);
 }
 
 .cm-sup {
@@ -70,6 +70,13 @@ ins {
   line-height: 1;
 }
 
+/* italic */
+.cm-em {
+	font-family: var(--font-serif) !important;
+	/* font-style: normal; */
+	letter-spacing: -0.03em;
+	font-size: 0.9em;
+}
 
 .cm-strong {
 	font-weight: 700 !important;
@@ -80,7 +87,7 @@ ins {
 }
 
 .cm-strikethrough {
-	opacity: 0.5;
+	opacity: 0.3;
 	text-decoration: line-through !important;
 }
 
@@ -99,7 +106,7 @@ ins {
 }
 
 .cm-formatting-list-ul {
-	&[class$="-1"] .list-bullet::after {
+	&[class$="-3"] .list-bullet::after {
 		border-radius: 1px;
 	}
 
@@ -108,7 +115,34 @@ ins {
 		box-shadow: inset 0 0 0 1.5px var(--list-marker-color);
 	}
 
-	&[class$="-3"] .list-bullet::after {
+	&[class$="-1"] .list-bullet::after {
 		transform: rotate(45deg);
 	}
+}
+
+.cm-s-obsidian span.cm-footref, .cm-s-obsidian span.cm-blockid {
+	font-size: min(0.7em, 13px) !important;
+	top: 0em;
+	vertical-align: sup;
+	color: var(--color-pink11) !important;
+}
+
+.cm-line:not(.cm-active) {
+	span.cm-footref, span.cm-blockid {
+		margin-inline: 2px !important;
+		/* &::before {
+			content:"[";
+			opacity: 0.4;
+		}
+		&::after {
+			content:"]";
+			opacity: 0.4;
+		} */
+	}
+}
+
+.cm-line:not(.cm-active) .cm-footref.cm-formatting-link {
+	color: inherit;
+	opacity: 0.4;
+	display: none !important;
 }

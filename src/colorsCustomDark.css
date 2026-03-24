@@ -31,7 +31,7 @@
 	--accent-h: 124;
 	--accent-s: 100%;
 	--accent-l: 38%;
-	--checkbox-color: var(--color-accent);
+	--checkbox-color: var(--color-gray11);
 	--color-background: #141414;
 	--color-sidebarBackground: #151515;
 	--color-popoverBackground: #222;
@@ -58,7 +58,7 @@
 
 	--c-gray: #847e72;
 	--c-brown: #cf6e45;
-	--c-bronze: #c9a171;
+	--c-bronze: #b39c81;
     --c-orange: #FF4D00;
     --c-yellow: #FFC700;
     --c-green: #00E04C;

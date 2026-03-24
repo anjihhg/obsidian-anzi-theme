@@ -1,5 +1,5 @@
 .cm-highlight, .cm-custom-highlight, .cm-highlight .cm-underline, .markdown-rendered mark {
-	font-weight: 500;
+	/* font-weight: 500; */
 	color: var(--color-highlight-text) !important;
 	background-color: transparent !important;
 }
