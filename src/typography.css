@@ -75,7 +75,17 @@ ins {
 	font-family: var(--font-serif) !important;
 	/* font-style: normal; */
 	letter-spacing: -0.03em;
-	font-size: 0.9em;
+	font-size: 0.94em;
+	/* position: relative;
+	display: inline-block;
+
+	&::before {
+		content:"•";
+		font-size: 11px;
+		position: absolute;
+		top: -0.8em;
+		left: 0;
+	} */
 }
 
 .cm-strong {
@@ -146,3 +156,24 @@ ins {
 	opacity: 0.4;
 	display: none !important;
 }
+
+.HyperMD-footnote {
+	opacity: 0.8;
+
+	&:has(br) {
+		line-height: 0 !important;
+		padding-block: 1px !important;
+	}
+}
+
+/* Footnotes 제목과 Footnote 컨텐츠 사이에 공백의 글줄이 있으면 제거하는 CSS */
+.cm-line:has(+ .HyperMD-footnote) {
+  &:has(br) {
+	display: none !important;
+  }
+}
+
+/* .inline-title {
+	font-style: italic !important;
+	letter-spacing: -0.05em !important;
+} */

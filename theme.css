@@ -22,7 +22,31 @@ body {
   --background-secondary: var(--color-sidebarBackground);
   --background-modifier-form-field: var(--color-baseA3);
   --background-secondary-alt: var(--color-sidebarBackground);
-  --font-serif: "Google Sans Code", serif;
+  --system-font:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  --font-serif:
+    "Google Sans Code",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   --radius-s: 2px;
   --radius-m: 2px;
   --radius-l: 2px;
@@ -31,6 +55,7 @@ body {
   --icon-color: var(--color-baseA8);
   --line-height-normal: 1.45;
   --line-height-tight: 1.3;
+  --inline-title-font: var(--system-font);
   --inline-title-size: 1.6em;
   --text-normal: var(--color-baseA12);
   --text-muted: var(--color-baseA11);
@@ -679,11 +704,11 @@ body {
   --accent-h: 124;
   --accent-s: 100%;
   --accent-l: 38%;
-  --checkbox-color: var(--color-gray11);
   --color-background: #141414;
   --color-sidebarBackground: #151515;
   --color-popoverBackground: #222;
   --link-color: #e2c5a8;
+  --checkbox-color: var(--link-color);
   --color-meta: var(--color-baseA8);
 }
 .theme-dark {
@@ -1587,7 +1612,7 @@ ins {
 .cm-em {
   font-family: var(--font-serif) !important;
   letter-spacing: -0.03em;
-  font-size: 0.9em;
+  font-size: 0.94em;
 }
 .cm-strong {
   font-weight: 700 !important;
@@ -1638,6 +1663,18 @@ ins {
   color: inherit;
   opacity: 0.4;
   display: none !important;
+}
+.HyperMD-footnote {
+  opacity: 0.8;
+  &:has(br) {
+    line-height: 0 !important;
+    padding-block: 1px !important;
+  }
+}
+.cm-line:has(+ .HyperMD-footnote) {
+  &:has(br) {
+    display: none !important;
+  }
 }
 
 /* src/callout.css */
