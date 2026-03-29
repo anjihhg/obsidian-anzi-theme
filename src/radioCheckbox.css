@@ -1,5 +1,9 @@
+.theme-dark {
+	--checkbox-color: var(--color-blue8);
+}
+
 body {
-	--checkbox-border-color: var(--text-muted);
+	--checkbox-border-color: var(--color-baseA9);
 	--checkbox-margin-inline-start: 0em;
 	--checkbox-margin-inline-end: 0em;
 	--checkbox-color-hover: var(--color-baseA12);
