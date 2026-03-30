@@ -1995,7 +1995,7 @@ input.metadata-property-key-input {
 
 /* src/radioCheckbox.css */
 .theme-dark {
-  --checkbox-color: var(--color-blue8);
+  --checkbox-color: var(--color-green9);
 }
 body {
   --checkbox-border-color: var(--color-baseA9);
