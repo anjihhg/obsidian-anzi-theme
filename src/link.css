@@ -50,7 +50,7 @@ body {
 		text-underline-offset: 3px !important;
 		text-decoration-color: var(--color-baseA7);
 	}
-	
+
 	.cm-url:hover,
 	.cm-link:hover,
 	.internal-link:hover,
@@ -110,4 +110,9 @@ body {
 			text-decoration-color: var(--color-baseA7);
 		}
 	}
+}
+
+.cm-hmd-barelink.cm-link {
+	opacity: 0.5;
+	color: var(--color-orange) !important;
 }

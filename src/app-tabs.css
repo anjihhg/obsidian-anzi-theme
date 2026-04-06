@@ -24,14 +24,14 @@
 /* major tab */
 .workspace-tab-header[data-type="bases"]:has(.mod-pinned) {
     /* width: 56px !important; */
-    max-width: 44px !important;
+    max-width: 38px !important;
     overflow: hidden;
 
     .workspace-tab-header-inner-icon{
         &::before {
             font-family: 'Material Icons';
             content: '\eb36';
-            font-size: 19px;
+            font-size: 18px;
         }
 
         svg {
@@ -89,7 +89,7 @@
 }
 
 .workspace-tab-header:has(.mod-pinned)[aria-label="ALL"] .workspace-tab-header-inner-icon::before {
-    content: '\f01a';
+    content: '\e0b8';
 }
 
 .workspace-tab-header:has(.mod-pinned)[aria-label="ARCHIVED"] .workspace-tab-header-inner-icon::before {

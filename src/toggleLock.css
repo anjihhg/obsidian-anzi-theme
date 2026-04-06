@@ -1,0 +1,13 @@
+.embed-base-locked {
+    .bases-embed {
+        border-top: 1px solid var(--table-border-color) !important;
+
+        .bases-thead, .bases-header {
+            display: none;
+        }
+    }
+
+    .cm-editor .metadata-add-button {
+        display: none;
+    }
+}

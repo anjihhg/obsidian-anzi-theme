@@ -23,6 +23,7 @@
 /* app */
 @import "./icon.css";
 @import "./app.css";
+@import "./canvas.css";
 @import "./app-tabs.css";
 /* @import "./modal.css"; */
 @import "./modal_v2.css";
@@ -40,3 +41,4 @@
 @import "./highlight.css";
 @import "./quickAdd.css";
 @import "./metaMaker.css";
+@import "./toggleLock.css";
