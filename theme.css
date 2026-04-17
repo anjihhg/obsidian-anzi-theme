@@ -57,6 +57,7 @@ body {
   --line-height-tight: 1.3;
   --inline-title-font: var(--system-font);
   --inline-title-size: 1.6em;
+  --inline-title-weight: 500;
   --text-normal: var(--color-baseA12);
   --text-muted: var(--color-baseA11);
   --text-faint: var(--color-baseA8);
@@ -1679,6 +1680,12 @@ b,
     display: none !important;
   }
 }
+.inline-title {
+  letter-spacing: -0.04em !important;
+}
+.inline-title[data-type-value]::before {
+  font-weight: 500;
+}
 
 /* src/callout.css */
 body {
@@ -2499,7 +2506,10 @@ body {
 }
 .bases-toolbar .text-icon-button {
   margin: 0;
-  color: var(--color-baseA8) !important;
+  color: var(--color-baseA9) !important;
+}
+.text-icon-button .mod-aux {
+  color: var(--color-baseA8);
 }
 .bases-view {
   scrollbar-gutter: inherit;
@@ -2889,9 +2899,6 @@ body,
 }
 
 /* src/app.css */
-body {
-  -webkit-font-smoothing: antialiased;
-}
 button {
   font-weight: 500;
 }

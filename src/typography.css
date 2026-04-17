@@ -179,7 +179,11 @@ b,
 	}
 }
 
-/* .inline-title {
-	font-style: italic !important;
-	letter-spacing: -0.05em !important;
-} */
+.inline-title {
+	/* font-style: italic !important; */
+	letter-spacing: -0.04em !important;
+}
+
+.inline-title[data-type-value]::before {
+	font-weight: 500;
+}

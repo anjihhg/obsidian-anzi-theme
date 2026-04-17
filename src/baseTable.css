@@ -85,7 +85,11 @@ body {
 
 .bases-toolbar .text-icon-button {
 	margin: 0;
-	color: var(--color-baseA8) !important;
+	color: var(--color-baseA9) !important;
+}
+
+.text-icon-button .mod-aux {
+	color: var(--color-baseA8);
 }
 
 .bases-view {

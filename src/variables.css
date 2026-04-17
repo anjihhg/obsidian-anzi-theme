@@ -44,7 +44,7 @@ body {
 	/* title */
 	--inline-title-font: var(--system-font);
 	--inline-title-size: 1.6em;
-	/* --inline-title-weight: 400; */
+	--inline-title-weight: 500;
 	/* --inline-title-color: var(--color-baseA10); */
 
 	/* Text */
