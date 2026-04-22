@@ -25,8 +25,9 @@
 .workspace-tab-header[data-type="bases"]:has(.mod-pinned) {
     /* width: 56px !important; */
     max-width: 38px !important;
+    min-width: 36px !important;
     overflow: hidden;
-
+    
     .workspace-tab-header-inner-icon{
         &::before {
             font-family: 'Material Icons';

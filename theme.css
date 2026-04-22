@@ -3281,6 +3281,7 @@ input[type=number]:focus-visible {
 }
 .workspace-tab-header[data-type=bases]:has(.mod-pinned) {
   max-width: 38px !important;
+  min-width: 36px !important;
   overflow: hidden;
   .workspace-tab-header-inner-icon {
     &::before {
