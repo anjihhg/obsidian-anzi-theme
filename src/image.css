@@ -9,7 +9,7 @@
         overflow: hidden;
         margin-block: 1px !important;
         
-        &::after {
+        .image-wrapper::after {
             content: "";
             position: absolute;
             width: 100%;

@@ -33,10 +33,11 @@ body {
 	text-decoration-line: underline;
 	text-decoration-style: initial;
 	text-underline-offset: 3px;
-	text-decoration-color: var(--color-baseA6) !important;
+	text-decoration-color: var(--color-baseA8) !important;
 	text-decoration-thickness: 1.3px !important;
 	/* background-color: var(--color-baseA1); */
-	/* font-weight: 600; */
+	font-weight: 500;
+	padding-inline: 1px;
 }
 
 @media (hover: hover) {
@@ -48,7 +49,7 @@ body {
 		text-decoration-line: underline !important;
 		text-decoration-style: initial !important;
 		text-underline-offset: 3px !important;
-		text-decoration-color: var(--color-baseA7);
+		text-decoration-color: var(--color-baseA11);
 	}
 
 	.cm-url:hover,
