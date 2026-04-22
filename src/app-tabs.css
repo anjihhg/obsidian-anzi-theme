@@ -105,9 +105,13 @@
 }
 
 .workspace-tab-header:has(.mod-pinned)[aria-label="TAGS"] .workspace-tab-header-inner-icon::before {
-    content: '\f525';
+    content: '\e9ef';
 }
 
 .workspace-tab-header:has(.mod-pinned)[aria-label="LIKES"] .workspace-tab-header-inner-icon::before {
     content: '\e87d';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="HIDE"] .workspace-tab-header-inner-icon::before {
+    content: '\e8f5';
 }

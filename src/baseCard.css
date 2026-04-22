@@ -48,13 +48,18 @@ body {
 
 
 .bases-cards-group {
-	gap: calc(var(--cards-spacing) / 1.5) !important;
+	gap: calc(var(--cards-spacing)) !important;
 	padding-inline: var(--cards-spacing) !important;
 	/* padding-right: calc(var(--cards-spacing) / 2); */
 
 	& ~ .bases-group-heading {
 		padding-inline: calc(var(--cards-spacing) + 4px) !important;
 	}
+}
+
+.bases-cards-group:has(.bases-cards-property[data-property="formula.cover-right"] img) {
+	gap: calc(var(--cards-spacing) / 2) !important;
+	padding-inline: var(--cards-spacing) !important;
 }
 
 body.is-mobile {
