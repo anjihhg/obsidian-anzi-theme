@@ -25,7 +25,7 @@
 .workspace-tab-header[data-type="bases"]:has(.mod-pinned) {
     /* width: 56px !important; */
     max-width: 38px !important;
-    min-width: 36px !important;
+    min-width: 34px !important;
     overflow: hidden;
     
     .workspace-tab-header-inner-icon{
@@ -115,4 +115,77 @@
 
 .workspace-tab-header:has(.mod-pinned)[aria-label="HIDE"] .workspace-tab-header-inner-icon::before {
     content: '\e8f5';
+}
+
+/* !!!TAGS!!! */
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-ALL"] .workspace-tab-header-inner-icon::before {
+    content: '\e9ef';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-AI"] .workspace-tab-header-inner-icon::before {
+    content: '\e3e4';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-BUY"] .workspace-tab-header-inner-icon::before {
+    content: '\e8cc';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-CAR"] .workspace-tab-header-inner-icon::before {
+    content: '\e531';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-CAREER"] .workspace-tab-header-inner-icon::before {
+    content: '\e8f9';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-DESIGN"] .workspace-tab-header-inner-icon::before {
+    content: '\e40a';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-DEV"] .workspace-tab-header-inner-icon::before {
+    content: '\fff8b';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-FOOD"] .workspace-tab-header-inner-icon::before {
+    content: '\e56c';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-GEAR"] .workspace-tab-header-inner-icon::before {
+    content: '\f00b';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-HANGOUT"] .workspace-tab-header-inner-icon::before {
+    content: '\e566';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-HEALTH"] .workspace-tab-header-inner-icon::before {
+    content: '\f2c3';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-HOBBY"] .workspace-tab-header-inner-icon::before {
+    content: '\f437';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-HOME"] .workspace-tab-header-inner-icon::before {
+    content: '\e21e';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-LEARN"] .workspace-tab-header-inner-icon::before {
+    content: '\f53e';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-MUSIC"] .workspace-tab-header-inner-icon::before {
+    content: '\e405';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-TOOLS"] .workspace-tab-header-inner-icon::before {
+    content: '\ea3c';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-TRAVEL"] .workspace-tab-header-inner-icon::before {
+    content: '\e6ca';
+}
+
+.workspace-tab-header:has(.mod-pinned)[aria-label="TAG-VIDEO"] .workspace-tab-header-inner-icon::before {
+    content: '\e04b';
 }

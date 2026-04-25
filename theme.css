@@ -2165,8 +2165,8 @@ body {
   }
 }
 .cm-hmd-barelink.cm-link {
-  opacity: 0.5;
-  color: var(--color-orange) !important;
+  opacity: 1 !important;
+  color: var(--c-gray) !important;
 }
 
 /* src/baseCard.css */
@@ -2216,7 +2216,7 @@ body {
   }
 }
 .bases-cards-group:has(.bases-cards-property[data-property="formula.cover-right"] img) {
-  gap: calc(var(--cards-spacing) / 2) !important;
+  gap: calc(var(--cards-spacing) / 1.8) !important;
   padding-inline: var(--cards-spacing) !important;
 }
 body.is-mobile {
@@ -2353,9 +2353,9 @@ body.is-mobile {
   margin-top: var(--cards-base-padding) !important;
   .bases-rendered-value {
     padding: 0;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: -0.03em;
+    font-size: 13.5px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
   }
 }
 .bases-cards-label,
@@ -2365,7 +2365,7 @@ body.is-mobile {
   .bases-rendered-value,
   .internal-link {
     padding: 0;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     color: var(--color-baseA11);
     pointer-events: none;
@@ -2471,8 +2471,8 @@ body {
     }
     .bases-view {
       .internal-link {
-        letter-spacing: -0.015em;
-        font-weight: 600;
+        letter-spacing: -0.01em;
+        font-weight: 500;
       }
     }
   }
@@ -3281,7 +3281,7 @@ input[type=number]:focus-visible {
 }
 .workspace-tab-header[data-type=bases]:has(.mod-pinned) {
   max-width: 38px !important;
-  min-width: 36px !important;
+  min-width: 34px !important;
   overflow: hidden;
   .workspace-tab-header-inner-icon {
     &::before {
@@ -3350,6 +3350,60 @@ input[type=number]:focus-visible {
 }
 .workspace-tab-header:has(.mod-pinned)[aria-label=HIDE] .workspace-tab-header-inner-icon::before {
   content: "\e8f5";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-ALL] .workspace-tab-header-inner-icon::before {
+  content: "\e9ef";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-AI] .workspace-tab-header-inner-icon::before {
+  content: "\e3e4";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-BUY] .workspace-tab-header-inner-icon::before {
+  content: "\e8cc";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-CAR] .workspace-tab-header-inner-icon::before {
+  content: "\e531";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-CAREER] .workspace-tab-header-inner-icon::before {
+  content: "\e8f9";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-DESIGN] .workspace-tab-header-inner-icon::before {
+  content: "\e40a";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-DEV] .workspace-tab-header-inner-icon::before {
+  content: "\fff8b";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-FOOD] .workspace-tab-header-inner-icon::before {
+  content: "\e56c";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-GEAR] .workspace-tab-header-inner-icon::before {
+  content: "\f00b";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-HANGOUT] .workspace-tab-header-inner-icon::before {
+  content: "\e566";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-HEALTH] .workspace-tab-header-inner-icon::before {
+  content: "\f2c3";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-HOBBY] .workspace-tab-header-inner-icon::before {
+  content: "\f437";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-HOME] .workspace-tab-header-inner-icon::before {
+  content: "\e21e";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-LEARN] .workspace-tab-header-inner-icon::before {
+  content: "\f53e";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-MUSIC] .workspace-tab-header-inner-icon::before {
+  content: "\e405";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-TOOLS] .workspace-tab-header-inner-icon::before {
+  content: "\ea3c";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-TRAVEL] .workspace-tab-header-inner-icon::before {
+  content: "\e6ca";
+}
+.workspace-tab-header:has(.mod-pinned)[aria-label=TAG-VIDEO] .workspace-tab-header-inner-icon::before {
+  content: "\e04b";
 }
 
 /* src/modal_v2.css */

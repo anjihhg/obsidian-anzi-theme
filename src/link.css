@@ -114,6 +114,6 @@ body {
 }
 
 .cm-hmd-barelink.cm-link {
-	opacity: 0.5;
-	color: var(--color-orange) !important;
+	opacity: 1 !important;
+	color: var(--c-gray) !important;
 }
