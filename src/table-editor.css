@@ -1,3 +1,7 @@
+body {
+    --table-header-weight: unset;
+}
+
 .table-editor {
     /* border: 1px solid var(--color-baseA6); */
     /* border-radius: 4px; */
@@ -5,4 +9,21 @@
          /* 두께, 선 종류, 색상 순으로 작성합니다 */
          border: 1px solid var(--color-baseA6) !important;
     }
+
+    .table-cell-wrapper {
+        min-height: 36px;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    th { 
+        color: var(--color-baseA11) !important;
+        background-color: var(--color-baseA3) !important;
+    }
+}
+
+/* 바로 뒤에 .cm-embed-block... 요소를 가진 .cm-active.cm-line을 선택 */
+/* 테이블 에디터 바로 앞 요소의 line을 제거 */
+.cm-line:has(+ .cm-embed-block.cm-table-widget.markdown-rendered) {
+    display: none;
 }
