@@ -2843,6 +2843,15 @@ body,
   background-color: var(--tag-background-active);
 }
 
+/* src/table-editor.css */
+.table-editor {
+  table,
+  th,
+  td {
+    border: 1px solid var(--color-baseA6) !important;
+  }
+}
+
 /* src/icon.css */
 .material {
   font-family: "Material Icons";

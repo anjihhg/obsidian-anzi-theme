@@ -1,0 +1,8 @@
+.table-editor {
+    /* border: 1px solid var(--color-baseA6); */
+    /* border-radius: 4px; */
+    table, th, td {
+         /* 두께, 선 종류, 색상 순으로 작성합니다 */
+         border: 1px solid var(--color-baseA6) !important;
+    }
+}

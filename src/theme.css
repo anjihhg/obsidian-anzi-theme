@@ -19,6 +19,7 @@
 @import "./prompt.css";
 @import "./popover.css";
 @import "./tag.css";
+@import "./table-editor.css";
 
 /* app */
 @import "./icon.css";
