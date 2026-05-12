@@ -1930,8 +1930,9 @@ body {
 .cm-s-obsidian .cm-line.HyperMD-header {
   padding-bottom: 0.15em;
   padding-top: 0.15em;
-  font-family: var(--system-font);
+  font-family: var(--font-serif);
   margin-block: .14em !important;
+  font-style: italic !important;
 }
 
 /* src/propertyContainer.css */
