@@ -33,10 +33,10 @@ body {
 	text-decoration-line: underline;
 	text-decoration-style: initial;
 	text-underline-offset: 3px;
-	text-decoration-color: var(--color-baseA8) !important;
+	text-decoration-color: var(--color-baseA9) !important;
 	text-decoration-thickness: 1.3px !important;
 	/* background-color: var(--color-baseA1); */
-	font-weight: 500;
+	/* font-weight: 500; */
 	padding-inline: 1px;
 }
 
@@ -64,13 +64,13 @@ body {
 .cm-link:active,
 .internal-link:active,
 .cm-hmd-internal-link:active {
-	background-color: var(--color-baseA8) !important;
+	background-color: var(--color-baseA9) !important;
 	transition: 0s;
 }
 
 .cm-url,
 .cm-link {
-	opacity: 0.7;
+	/* opacity: 0.7; */
 }
 
 .cm-line:not(.cm-active) .cm-url::after,

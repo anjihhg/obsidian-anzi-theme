@@ -12,7 +12,7 @@ body {
 	--list-numbered-style: decimal;
 	--list-bullet-end-padding: 1.3rem;
 
-	--list-marker-color: var(--color-baseA9);
+	--list-marker-color: var(--color-baseA10);
 	--list-bullet-radius: 1px;
 	--list-bullet-size: 0.37em;
 }
@@ -122,6 +122,7 @@ b,
 .cm-formatting-list-ul {
 	&[class$="-3"] .list-bullet::after {
 		border-radius: 1px;
+		transform: rotate(45deg);
 	}
 
 	&[class$="-2"] .list-bullet::after {
@@ -130,7 +131,7 @@ b,
 	}
 
 	&[class$="-1"] .list-bullet::after {
-		transform: rotate(45deg);
+		border-radius: 1.5px;
 	}
 }
 
