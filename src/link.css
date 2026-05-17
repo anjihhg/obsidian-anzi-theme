@@ -1,5 +1,5 @@
 body {
-	--link-color: var(--link-color);
+	/* 링크 컬러는 theme 에서 정의 */
 	--link-color-hover: unset;
 	--link-external-color: var(--color-baseA12);
 	--link-external-color-hover: unset;
@@ -15,7 +15,11 @@ body {
 .internal-link,
 .cm-hmd-internal-link {
 	text-decoration-line: unset;
-	text-decoration-color: var(--color-baseA5);
+	text-decoration-color: color-mix(
+		in srgb,
+		currentColor 70%,
+		transparent
+	) !important;
 	transition: 0.15s;
 }
 
@@ -33,7 +37,7 @@ body {
 	text-decoration-line: underline;
 	text-decoration-style: initial;
 	text-underline-offset: 3px;
-	text-decoration-color: var(--color-baseA9) !important;
+	text-decoration-color: inherit !important;
 	text-decoration-thickness: 1.3px !important;
 	/* background-color: var(--color-baseA1); */
 	/* font-weight: 500; */
@@ -49,7 +53,7 @@ body {
 		text-decoration-line: underline !important;
 		text-decoration-style: initial !important;
 		text-underline-offset: 3px !important;
-		text-decoration-color: var(--color-baseA11);
+		text-decoration-color: inherit;
 	}
 
 	.cm-url:hover,

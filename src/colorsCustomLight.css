@@ -1,4 +1,3 @@
-
 .theme-light {
 	color-scheme: light;
 
@@ -9,7 +8,7 @@
 	--accent-s: 100%;
 	--accent-l: 38%;
 	--checkbox-color: hsl(144, 80%, 22%);
-	--link-color: var(--color-bronze12);
+	--link-color: var(--color-baseA12);
 
 	--color-coverBackground: var(--color-baseA2);
 	--color-background: #f3f3f0;
@@ -26,15 +25,15 @@
 	--color-black: black;
 
 	--c-gray: #9b9b9b;
-    --c-brown: #712200;
+	--c-brown: #712200;
 	--c-bronze: #6e583d;
-    --c-orange: #FF4D00;
-    --c-yellow: #D37200;
-    --c-green: #038600;
-    --c-blue: #006BCE;
-    --c-purple: #7900D9;
-    --c-pink: #EE0056;
-    --c-red: #C60000;
+	--c-orange: #ff4d00;
+	--c-yellow: #d37200;
+	--c-green: #038600;
+	--c-blue: #006bce;
+	--c-purple: #7900d9;
+	--c-pink: #ee0056;
+	--c-red: #c60000;
 
 	--color-baseA1: hsla(60, 89.3%, 18.3%, 0.012);
 	--color-baseA2: hsla(60, 78.1%, 9%, 0.028);

@@ -88,7 +88,7 @@ body {
   --accent-s: 100%;
   --accent-l: 38%;
   --checkbox-color: hsl(144, 80%, 22%);
-  --link-color: var(--color-bronze12);
+  --link-color: var(--color-baseA12);
   --color-coverBackground: var(--color-baseA2);
   --color-background: #f3f3f0;
   --color-sidebarBackground: #f9f8f7;
@@ -103,13 +103,13 @@ body {
   --c-gray: #9b9b9b;
   --c-brown: #712200;
   --c-bronze: #6e583d;
-  --c-orange: #FF4D00;
-  --c-yellow: #D37200;
+  --c-orange: #ff4d00;
+  --c-yellow: #d37200;
   --c-green: #038600;
-  --c-blue: #006BCE;
-  --c-purple: #7900D9;
-  --c-pink: #EE0056;
-  --c-red: #C60000;
+  --c-blue: #006bce;
+  --c-purple: #7900d9;
+  --c-pink: #ee0056;
+  --c-red: #c60000;
   --color-baseA1: hsla(60, 89.3%, 18.3%, 0.012);
   --color-baseA2: hsla(60, 78.1%, 9%, 0.028);
   --color-baseA3: hsla(60, 99%, 3.9%, 0.051);
@@ -2072,7 +2072,6 @@ input[type=checkbox]:checked:focus {
 
 /* src/link.css */
 body {
-  --link-color: var(--link-color);
   --link-color-hover: unset;
   --link-external-color: var(--color-baseA12);
   --link-external-color-hover: unset;
@@ -2085,7 +2084,7 @@ body {
 .internal-link,
 .cm-hmd-internal-link {
   text-decoration-line: unset;
-  text-decoration-color: var(--color-baseA5);
+  text-decoration-color: color-mix(in srgb, currentColor 70%, transparent) !important;
   transition: 0.15s;
 }
 .cm-hmd-internal-link::before {
@@ -2100,7 +2099,7 @@ body {
   text-decoration-line: underline;
   text-decoration-style: initial;
   text-underline-offset: 3px;
-  text-decoration-color: var(--color-baseA9) !important;
+  text-decoration-color: inherit !important;
   text-decoration-thickness: 1.3px !important;
   padding-inline: 1px;
 }
@@ -2113,7 +2112,7 @@ body {
     text-decoration-line: underline !important;
     text-decoration-style: initial !important;
     text-underline-offset: 3px !important;
-    text-decoration-color: var(--color-baseA11);
+    text-decoration-color: inherit;
   }
   .cm-url:hover,
   .cm-link:hover,
