@@ -708,7 +708,7 @@ body {
   --color-background: #141414;
   --color-sidebarBackground: #151515;
   --color-popoverBackground: #222;
-  --link-color: #e2c5a8;
+  --link-color: var(--color-baseA12);
   --color-meta: var(--color-baseA8);
 }
 .theme-dark {
@@ -2130,6 +2130,7 @@ body {
 }
 .cm-url,
 .cm-link {
+  opacity: 0.6;
 }
 .cm-line:not(.cm-active) .cm-url::after,
 .cm-line:not(.cm-active) .cm-link::after {
