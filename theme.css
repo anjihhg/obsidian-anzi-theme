@@ -1829,6 +1829,7 @@ body {
   --code-string: var(--color-greenA11);
   --code-tag: var(--color-redA11);
   --code-value: var(--color-purpleA11);
+  --code-outline-color: var(--color-baseA3);
 }
 .cm-s-obsidian span.cm-inline-code {
   background-color: var(--color-amberA3);
@@ -1845,8 +1846,30 @@ body {
   }
 }
 .cm-s-obsidian .HyperMD-codeblock {
+  --size-4-4: 24px;
   font-size: 80%;
   line-height: 1.3em;
+}
+.HyperMD-codeblock {
+  box-shadow: inset 0.5px 0 0 var(--code-outline-color), inset -0.5px 0 0 var(--code-outline-color);
+}
+.HyperMD-codeblock-begin {
+  box-shadow:
+    inset 0 0.5px 0 var(--code-outline-color),
+    inset 0.5px 0 0 var(--code-outline-color),
+    inset -0.5px 0 0 var(--code-outline-color);
+  border-top: 2px solid var(--color-background) !important;
+}
+.HyperMD-codeblock-end {
+  box-shadow:
+    inset 0 -0.5px 0 var(--code-outline-color),
+    inset 0.5px 0 0 var(--code-outline-color),
+    inset -0.5px 0 0 var(--code-outline-color);
+  border-bottom: 2px solid var(--color-background) !important;
+}
+.HyperMD-codeblock-begin,
+.HyperMD-codeblock-end {
+  color: var(--color-baseA8) !important;
 }
 
 /* src/embed.css */
